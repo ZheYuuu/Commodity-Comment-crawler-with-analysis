@@ -1,0 +1,329 @@
+2019-03-26 16:51:34 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: JDSpider)
+2019-03-26 16:51:34 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'JDSpider', 'HTTPCACHE_ENABLED': True, 'LOG_FILE': 'logs\\JDSpider\\getCommodityInfo\\595bf24c4fa411e9b6bcace010528bab.log', 'NEWSPIDER_MODULE': 'JDSpider.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['JDSpider.spiders'], 'USER_AGENT': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'}
+2019-03-26 16:51:35 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-03-26 16:51:35 [scrapy.middleware] WARNING: Disabled HttpCacheMiddleware: Unable to find scrapy.cfg file to infer project data dir
+2019-03-26 16:51:35 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-03-26 16:51:35 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-03-26 16:51:35 [py.warnings] WARNING: c:\users\柘宇\appdata\local\temp_~1\jdspider-1553584540-zgxqijzg.egg\JDSpider\pipelines.py:11: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+
+2019-03-26 16:51:35 [scrapy.middleware] INFO: Enabled item pipelines:
+['JDSpider.pipelines.JdspiderPipeline']
+2019-03-26 16:51:35 [scrapy.core.engine] INFO: Spider opened
+2019-03-26 16:51:35 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-03-26 16:51:35 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6024
+2019-03-26 16:51:35 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error.aspx> from <GET https://search.jd.com/robots.txt>
+2019-03-26 16:51:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jd.com/error.aspx> (referer: None)
+2019-03-26 16:51:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://search.jd.com/Search?keyword=%E7%AC%94%E8%A2%8B&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1> (referer: None)
+2019-03-26 16:51:36 [py.warnings] WARNING: d:\anacaonda\lib\site-packages\bs4\__init__.py:181: UserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("lxml"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
+
+The code that caused this warning is on line 193 of the file d:\anacaonda\lib\runpy.py. To get rid of this warning, change code that looks like this:
+
+ BeautifulSoup(YOUR_MARKUP})
+
+to this:
+
+ BeautifulSoup(YOUR_MARKUP, "lxml")
+
+  markup_type=markup_type))
+
+2019-03-26 16:51:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://search.jd.com/Search?keyword=%E7%AC%94%E8%A2%8B&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1> (referer: https://search.jd.com/Search?keyword=%E7%AC%94%E8%A2%8B&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1)
+2019-03-26 16:51:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E7%AC%94%E8%A2%8B&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '得力',
+ 'category': 'Book',
+ 'name': '得力(deli)汪汪队立大功救援大巴车文具盒 马口铁三层可折叠铅笔盒 多功能收纳盒笔袋 红色70854',
+ 'price': 14.8,
+ 'searchKey': '笔袋',
+ 'uniqueId': '100001454002',
+ 'url': 'https://ccc-x.jd.com/dsp/nc?ext=aHR0cHM6Ly9pdGVtLmpkLmNvbS8xMDAwMDE0NTQwMDIuaHRtbA&log=6LbOmpk-euwsZNvXC_LgdOvVSCX8CERPD3SEUWn6iqYLFX8u_5nEvG7q0o8DRBNLhjIy7j4mKdBpZEdJV1ZH0Qsy4mLiYFTYM1OrKX-5RSP8Deiyw3lnTfo5yBSXMLtQXBJtTDRWithOSN7t5WjET6Bpq_Co7ICNLR56BxFXeAfjt_gbphnjLwqiwGyIbRnik71I2YHuTAC7nLvDbAhe-xZ-vFU7Ux1RxhtFenrbL2e0U8nIjM7-UFSOOyZMqaZguO1AZblRyTbq2otAvcAYzQXjtk8W2TZTkDPw7YuvmzQWmpChKwLS03is-xc1_aJ7_GxZbQHafEZdbDc_k03GBmfvKS09wKjKa5-SCuPBTH4A_auxOcAlD6iPVZtN7Nw8NWu7TBj1YKxuUyYec4dyATtETeZAbr1VS_zc_udcLwZhv7gHls_gqDzGUif68BqF4H5y-B10m2r0jrRyfxBqTm1wb3jn5l07Pw2tkxC3u26RW8qkS0bkVtE-B4rM27YBRiDs06MKpKzJMtYIW31YeuQfkk83CDJoAqUWW6kJKwxw-YvrGnETk4AtShuGkGH1PeCU_rxQE5W2n7ZijoRoBqhXL6zMhpxGmY0zt7AKMn-lLeelrgBuX6eqiSpl42SL&v=404'}
+2019-03-26 16:51:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E7%AC%94%E8%A2%8B&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '得力',
+ 'category': 'Book',
+ 'name': '得力(deli)多功能多层笔袋大容量铅笔收纳袋 星空蓝66720\n多样内袋，尼龙材质，简约设计。进店获取更多品质好具！！',
+ 'price': 21.5,
+ 'searchKey': '笔袋',
+ 'uniqueId': '6402143',
+ 'url': '//item.jd.com/6402143.html'}
+2019-03-26 16:51:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E7%AC%94%E8%A2%8B&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '得力',
+ 'category': 'Book',
+ 'name': '得力(deli)学生大容量笔袋方形铅笔收纳袋 格调灰66683',
+ 'price': 11.5,
+ 'searchKey': '笔袋',
+ 'uniqueId': '6157652',
+ 'url': '//item.jd.com/6157652.html'}
+2019-03-26 16:51:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E7%AC%94%E8%A2%8B&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '迪士尼',
+ 'category': 'Book',
+ 'name': '迪士尼（Disney）小学生笔袋冰雪奇缘带镜子大容量多功能笔盒文具盒铅笔盒 P85053\n'
+         '【京东自营极速达】1、EVA材质轻盈耐用，带安全抗摔小镜子2、订单金额满29元加4元可换购12支皮头铅笔3、多买更优惠-3件8折专区快戳',
+ 'price': 36.0,
+ 'searchKey': '笔袋',
+ 'uniqueId': '8001320',
+ 'url': '//item.jd.com/8001320.html'}
+2019-03-26 16:51:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E7%AC%94%E8%A2%8B&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '迪士尼',
+ 'category': 'Book',
+ 'name': '迪士尼（Disney）美国队长3D大容量硬质耐摔笔袋文具盒学生笔盒男 蓝色E6028A08\n'
+         '【京东自营极速达】1、EVA+PU材质，轻盈耐用，防泼水易清洁2、订单金额满29元加4元可换购12支皮头铅笔3、多买更优惠-3件8折专区快戳',
+ 'price': 33.0,
+ 'searchKey': '笔袋',
+ 'uniqueId': '7591437',
+ 'url': '//item.jd.com/7591437.html'}
+2019-03-26 16:51:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E7%AC%94%E8%A2%8B&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '猫太子',
+ 'category': 'Book',
+ 'name': '猫太子（MAOTAIZI）帆布笔袋多层大容量铅笔袋文具盒包男女中小学生韩版简约文具袋 黑色\n'
+         '此商品将于2019-03-28,00点结束闪购特卖，潮电青春',
+ 'price': 22.0,
+ 'searchKey': '笔袋',
+ 'uniqueId': '6414159',
+ 'url': '//item.jd.com/6414159.html'}
+2019-03-26 16:51:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E7%AC%94%E8%A2%8B&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '晨光',
+ 'category': 'Book',
+ 'name': '晨光(M&G)透明网纱笔袋黑色1个装APB95494\n【3件7折/5件6折，办公采购焕新盛典】更多3件7折/5件6折好物请猛戳',
+ 'price': 8.0,
+ 'searchKey': '笔袋',
+ 'uniqueId': '5963246',
+ 'url': '//item.jd.com/5963246.html'}
+2019-03-26 16:51:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E7%AC%94%E8%A2%8B&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '晨光',
+ 'category': 'Book',
+ 'name': '晨光(M&G)文具蓝色多功能多层大号笔袋文具盒铅笔收纳袋 单个装APB93598\n'
+         '【5件5折超值钜惠，睿智办公购晨光】\n'
+         '经久耐磨，牢固耐用，功能多样，容量大更多每满99立减30好物请猛戳',
+ 'price': 25.0,
+ 'searchKey': '笔袋',
+ 'uniqueId': '1851690',
+ 'url': '//item.jd.com/1851690.html'}
+2019-03-26 16:51:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E7%AC%94%E8%A2%8B&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '得力',
+ 'category': 'Book',
+ 'name': '得力(deli)机器侠外观大容量EVA耐压笔袋/铅笔盒/文具盒/多功能收纳袋男 深蓝66854',
+ 'price': 29.0,
+ 'searchKey': '笔袋',
+ 'uniqueId': '100001184057',
+ 'url': 'https://ccc-x.jd.com/dsp/nc?ext=aHR0cHM6Ly9pdGVtLmpkLmNvbS8xMDAwMDExODQwNTcuaHRtbA&log=6LbOmpk-euwsZNvXC_LgdOvVSCX8CERPD3SEUWn6iqa-ieP3YWJd_R6t4HV1ZFj3VVFFfCHFXR154bJnHBaXHUBBKxnflxRq-JdZ14DSFce0aEslccgCsrWKoWttD3EbMZLwHoXIazWJ6tQhOuTZsU9ZYCcSW0wvQGUyXADvlh8oZC3VWpu0s2p8HGPpEgGGHXrjO6NXSbOK8VsSsTEZIowx9IdLMK7fHBY5uUL79y8MecOHpn0KrknRQ2yBv9pkeJ2SL1V1kRyasL00IhgJ4TKh9mJ0LVUx4hzVpy3AaspaKRXUunh-mUihulhlm4BrrQo-77N8cgP8xgf1wCDgGlDGyMx6kp8Jt2Z8Vftmht3B3ECdt8p9jwAQhG14SsFQ1SJzPSiq_cfthJOi1YTFp3UJ131irlBlKETIaAMSqfUP4v9selzx7WJjSZ4_8pEgaKkbPhEnIEXQNb_aaiKFxFqle_dchs3FB07Ap4uEZGeUCSqWjHf1_3EEF3TrnqmuSKhY77h-6zK1IZGlCQHR93mIkJyJKNkKlc_6k3sGQrFghZImmJnQNgP6h6pMtkOub3cEft-J4pcJjmuVGqjW-7-1W7I_zmF0fH8HmQ11rt2l-acDowR_l0SBJWpkcOCo&v=404'}
+2019-03-26 16:51:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E7%AC%94%E8%A2%8B&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '得力',
+ 'category': 'Book',
+ 'name': '得力(deli)小清新笔袋简约学生铅笔收纳袋文具盒 蓝色66643',
+ 'price': 9.6,
+ 'searchKey': '笔袋',
+ 'uniqueId': '100000247119',
+ 'url': '//item.jd.com/100000247119.html'}
+2019-03-26 16:51:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E7%AC%94%E8%A2%8B&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': 'Hello Kitty',
+ 'category': 'Book',
+ 'name': 'Hello Kitty凯蒂猫笔盒儿童小学生笔袋女 3D大容量耐压可爱文具盒铅笔盒 KT36006-2\n'
+         '【京东自营极速达】1、EVA+PU材质，轻盈耐用，防泼水易清洁2、订单金额满29元加4元可换购12支皮头铅笔3、多买更优惠-3件8折专区快戳',
+ 'price': 36.0,
+ 'searchKey': '笔袋',
+ 'uniqueId': '8001222',
+ 'url': '//item.jd.com/8001222.html'}
+2019-03-26 16:51:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E7%AC%94%E8%A2%8B&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '国誉',
+ 'category': 'Book',
+ 'name': '日本国誉（KOKUYO）学生用大容量直立式竖款笔袋 文具盒 收纳袋Ｃ２－Ｒ 中号  深灰WSG-PC22-DM\n'
+         '当你选择文具的时候是在选择什么~~~日本文具给你答案》》》点此去往日本文具馆',
+ 'price': 23.0,
+ 'searchKey': '笔袋',
+ 'uniqueId': '7634689',
+ 'url': '//item.jd.com/7634689.html'}
+2019-03-26 16:51:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E7%AC%94%E8%A2%8B&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '迪士尼',
+ 'category': 'Book',
+ 'name': '迪士尼（Disney）小学生笔袋米奇大容量儿童笔盒帆布收纳袋铅笔盒文具盒双层设计 蓝色DM5617\n'
+         '【京东自营极速达】1、两层分隔，大容量设计，价格实惠2、订单金额满29元加4元可换购12支皮头铅笔3、多买更优惠-3件8折专区快戳',
+ 'price': 10.0,
+ 'searchKey': '笔袋',
+ 'uniqueId': '4640758',
+ 'url': '//item.jd.com/4640758.html'}
+2019-03-26 16:51:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E7%AC%94%E8%A2%8B&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '国誉',
+ 'category': 'Book',
+ 'name': '日本KOKUYO国誉笔袋女大容量笔袋对开中学生创意简约方形笔盒文具袋文具盒PC22 黑+浓棕(PC22-D2)\n'
+         '买就送中性笔1支拉链可当手提拎带方便携带',
+ 'price': 19.0,
+ 'searchKey': '笔袋',
+ 'uniqueId': '29661881611',
+ 'url': '//item.jd.com/29661881611.html'}
+2019-03-26 16:51:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E7%AC%94%E8%A2%8B&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '变形金刚',
+ 'category': 'Book',
+ 'name': '变形金刚（Transformers）小学生笔袋男童简约大容量铅笔盒文具盒多功能文具袋防水防压 大黄蜂浅蓝\n'
+         '【新品折扣】9块9削笔机，立即点击购买《《',
+ 'price': 9.9,
+ 'searchKey': '笔袋',
+ 'uniqueId': '42128072364',
+ 'url': '//item.jd.com/42128072364.html'}
+2019-03-26 16:51:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E7%AC%94%E8%A2%8B&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '得力',
+ 'category': 'Book',
+ 'name': '得力(deli)大容量手提多层笔袋/多功能牛津布铅笔收纳袋 深海蓝66772',
+ 'price': 17.5,
+ 'searchKey': '笔袋',
+ 'uniqueId': '6289590',
+ 'url': '//item.jd.com/6289590.html'}
+2019-03-26 16:51:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E7%AC%94%E8%A2%8B&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '得力',
+ 'category': 'Book',
+ 'name': '得力文具66783笔袋男女文具袋文具盒小学生铅笔盒中性笔收纳纯色简约三角大容量韩国多功能拉链袋 灰色-66782',
+ 'price': 64.74,
+ 'searchKey': '笔袋',
+ 'uniqueId': '35163182466',
+ 'url': 'https://ccc-x.jd.com/dsp/nc?ext=aHR0cHM6Ly9pdGVtLmpkLmNvbS8zNTE2MzE4MjQ2Ni5odG1s&log=6LbOmpk-euwsZNvXC_LgdOvVSCX8CERPD3SEUWn6iqYBq53yTcBnR7_4PT_iuP3ZkPvfQlj93el0EfJ_LOWkrxuV5JbyjSjOZSN_Q-jKOJvb3GuHSoF2_7bZRTVdMHt32uJsXqM962GvNjsAPBseHwLGaf0laW_97y102SarNdWpv4zpIADUyhqzSl7Ewqt4xZxCeytfIepRVBYoyRxO48HFwiVv6gOTPTn7_pxM9lk6mkxRJbBwtTtaYnLbDqIphG8fEI2VN87ftvOAyC1JyBX71Ohjht9KJKhyG2ZSZPfjFiJb54NRfwUqUkhiVfdlaYJGAS-llTn5dkJtr8S5ACmLS7UrtWOhLLMFZKX_LRlVdCwj1ItA8cTc5zjBEPHWLBR9Xf_V0VlgnpEbw-_ZQjPb5tc6bcbNZp5_8TLoeN4HHhixXFzKtz2KkYfn9Sc1ULSdSgXOBuWNNmR_7ZfU6GrVyk1vKqu65hz2Hk62E4yln4f-x3s050gfn8_6Dk4rLEQC8dvaIjGSd7yhJjtHWRcbBR2_i4vF3MY-YkNwSQqpK6vNdM5FG731qKwcABSmINMpTUZoc89jjDCZ_IanNtNocvRzGFZTLlNimqZJH1E&v=404'}
+2019-03-26 16:51:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E7%AC%94%E8%A2%8B&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '其他',
+ 'category': 'Book',
+ 'name': '法拉蒙（faramon） 法拉蒙 文具袋学生笔袋韩风男女简约笔盒创意海盗便携笔套铅笔袋 蓝色',
+ 'price': 15.2,
+ 'searchKey': '笔袋',
+ 'uniqueId': '10340144540',
+ 'url': '//item.jd.com/10340144540.html'}
+2019-03-26 16:51:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E7%AC%94%E8%A2%8B&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '其他',
+ 'category': 'Book',
+ 'name': 'newmebox网红笔盒抖音网红文具盒女男铅笔盒多功能笔盒小学生笔袋 少女草莓心 【送文具15件套】\n'
+         '包邮，升级版，新品限时45，赠品已调整为15件套（卷笔刀橡皮铅笔，白板笔便利贴等）送完即止',
+ 'price': 39.9,
+ 'searchKey': '笔袋',
+ 'uniqueId': '38810096564',
+ 'url': '//item.jd.com/38810096564.html'}
+2019-03-26 16:51:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E7%AC%94%E8%A2%8B&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '迪士尼',
+ 'category': 'Book',
+ 'name': '迪士尼（Disney）小学生笔袋3D美国队长大容量EVA耐压轻盈铅笔盒儿童文具盒铅笔盒 E6025A8\n'
+         '【3件8折】1、EVA+PU材质，轻盈耐用，防泼水易清洁2、订单金额满29元加4元可换购12支皮头铅笔3、多买更优惠-3件8折专区快戳',
+ 'price': 30.0,
+ 'searchKey': '笔袋',
+ 'uniqueId': '5959348',
+ 'url': '//item.jd.com/5959348.html'}
+2019-03-26 16:51:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E7%AC%94%E8%A2%8B&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '绍泽文化',
+ 'category': 'Book',
+ 'name': '绍泽文化 大容量笔袋女款学生文具盒铅笔收纳袋 甜心女孩粉红\n'
+         '《满129减30》缤纷春游、联合大促、焕新盛典。更多满129立减30好货请猛戳！',
+ 'price': 19.0,
+ 'searchKey': '笔袋',
+ 'uniqueId': '4324712',
+ 'url': '//item.jd.com/4324712.html'}
+2019-03-26 16:51:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E7%AC%94%E8%A2%8B&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '国誉',
+ 'category': 'Book',
+ 'name': '日本国誉（KOKUYO）笔袋·ASSORT WSG-PC102-DM 深灰（200*60*65mm）\n'
+         '当你选择文具的时候是在选择什么~~~日本文具给你答案》》》点此去往日本文具馆',
+ 'price': 32.0,
+ 'searchKey': '笔袋',
+ 'uniqueId': '7420356',
+ 'url': '//item.jd.com/7420356.html'}
+2019-03-26 16:51:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E7%AC%94%E8%A2%8B&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '国誉',
+ 'category': 'Book',
+ 'name': '日本国誉（KOKUYO）学生用大容量直立式竖款笔袋 文具盒 收纳袋NOViTA-R 中号 深灰WSG-PC122-DM\n'
+         '当你选择文具的时候是在选择什么~~~日本文具给你答案》》》点此去往日本文具馆',
+ 'price': 29.0,
+ 'searchKey': '笔袋',
+ 'uniqueId': '7634675',
+ 'url': '//item.jd.com/7634675.html'}
+2019-03-26 16:51:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E7%AC%94%E8%A2%8B&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '迪士尼',
+ 'category': 'Book',
+ 'name': '迪士尼（Disney）小学生笔袋PU皮密码锁笔盒女韩国简约大容量铅笔盒苏菲亚文具盒收纳袋 粉色\n'
+         '【3件8折】1、赠送密码锁，三层分隔，可放20cm尺子2、订单金额满29元加4元可换购12支皮头铅笔3、多买更优惠-3件8折专区快戳',
+ 'price': 39.0,
+ 'searchKey': '笔袋',
+ 'uniqueId': '5098348',
+ 'url': '//item.jd.com/5098348.html'}
+2019-03-26 16:51:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E7%AC%94%E8%A2%8B&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '绍泽文化',
+ 'category': 'Book',
+ 'name': '绍泽文化 多功能仿亚麻大容量笔袋学生文具盒铅笔收纳袋 薄荷绿',
+ 'price': 19.0,
+ 'searchKey': '笔袋',
+ 'uniqueId': '100002080575',
+ 'url': 'https://ccc-x.jd.com/dsp/nc?ext=aHR0cHM6Ly9pdGVtLmpkLmNvbS8xMDAwMDIwODA1NzUuaHRtbA&log=6LbOmpk-euwsZNvXC_LgdOvVSCX8CERPD3SEUWn6iqYYLKt87ZY9U-ZthaBbrig7fQUZXFMHEfzzKyCWnC-d7PtXgdOtS2lhqhBOX7AkYazOVQkPXoNWtqPtNHvzbkFYZ0Cg8Cmnw_FHsInnhUHxNTNQUkj1tcx9Uv5Bkr33krTOEAVy6iHCQjl01dsGLJdUiXNo82ob-clp3Kse2s9n20oQfrghoNrtFGVDF9-zDizycF2W-PyE7e2Fywd0XkHU03sVPEIqFoGGEpx-zpeVlXwL2qKJ3lXK7sg01-NtmybY16WSyWFtXcuN9MgeFR-AotURHY1ECKtWHUyOsUB-KAOPPD5APSF7WStTth3xmvL42Sr-lYXKEMaGvB9DQI-jxxn-xf-t2H2GR62OXRl6SamSIgBy74mbHZ1qn6b3_r-j9lTZ4Z7yw11gEq85y4hvjnPsO7AXQOtqdy-7Yfmo697p2bKyYXvP45UtIbgV0MzMPB53QHwDaumDPVblcQV2E_JHR7DQdrqjWWll5iUmLshsSOuFxLKKmHRYD0vYFrSVrrQR7pio7Ubs9mljLqRumxOJfl5WNEYZy3Ud-SWv8g&v=404'}
+2019-03-26 16:51:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E7%AC%94%E8%A2%8B&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '得力',
+ 'category': 'Book',
+ 'name': '得力(deli)牛津布笔帘/笔袋/大容量铅笔收纳袋 深邃蓝66852',
+ 'price': 16.9,
+ 'searchKey': '笔袋',
+ 'uniqueId': '100001184075',
+ 'url': '//item.jd.com/100001184075.html'}
+2019-03-26 16:51:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E7%AC%94%E8%A2%8B&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '迪士尼',
+ 'category': 'Book',
+ 'name': '迪士尼（Disney）小学生笔袋女苏菲亚EVA笔盒大容量3D儿童铅笔盒文具盒  P95015S\n'
+         '【3件8折】1、EVA+PU材质，轻盈耐用，防泼水易清洁2、订单金额满29元加4元可换购12支皮头铅笔3、多买更优惠-3件8折专区快戳',
+ 'price': 28.0,
+ 'searchKey': '笔袋',
+ 'uniqueId': '4245213',
+ 'url': '//item.jd.com/4245213.html'}
+2019-03-26 16:51:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E7%AC%94%E8%A2%8B&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '国誉',
+ 'category': 'Book',
+ 'name': '日本进口KOKUYO国誉PC102杜邦纸复古拉链笔袋学生大容量文具袋清新简约文具铅笔盒收纳袋 复古星空灰\n'
+         '【日本进口，品质保证】复古杜邦纸笔袋，大容量笔袋',
+ 'price': 27.8,
+ 'searchKey': '笔袋',
+ 'uniqueId': '42074936876',
+ 'url': '//item.jd.com/42074936876.html'}
+2019-03-26 16:51:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E7%AC%94%E8%A2%8B&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '得力',
+ 'category': 'Book',
+ 'name': '得力(deli)大容量方型笔袋/尼龙网纱包袋/手提铅笔收纳袋 传奇黑66747',
+ 'price': 12.0,
+ 'searchKey': '笔袋',
+ 'uniqueId': '6020769',
+ 'url': '//item.jd.com/6020769.html'}
+2019-03-26 16:51:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E7%AC%94%E8%A2%8B&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '得力',
+ 'category': 'Book',
+ 'name': '得力(deli)大容量学生笔袋/多功能文具盒/铅笔收纳盒 深海蓝66788',
+ 'price': 21.9,
+ 'searchKey': '笔袋',
+ 'uniqueId': '6990580',
+ 'url': '//item.jd.com/6990580.html'}
+2019-03-26 16:51:37 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-03-26 16:51:37 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1363,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/GET': 4,
+ 'downloader/response_bytes': 93215,
+ 'downloader/response_count': 4,
+ 'downloader/response_status_count/200': 3,
+ 'downloader/response_status_count/302': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 3, 26, 8, 51, 37, 370702),
+ 'item_scraped_count': 30,
+ 'log_count/DEBUG': 35,
+ 'log_count/INFO': 7,
+ 'log_count/WARNING': 3,
+ 'request_depth_max': 1,
+ 'response_received_count': 3,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2019, 3, 26, 8, 51, 35, 106328)}
+2019-03-26 16:51:37 [scrapy.core.engine] INFO: Spider closed (finished)

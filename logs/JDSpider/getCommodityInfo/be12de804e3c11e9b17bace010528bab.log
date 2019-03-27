@@ -1,0 +1,319 @@
+2019-03-24 21:57:25 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: JDSpider)
+2019-03-24 21:57:25 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'JDSpider', 'HTTPCACHE_ENABLED': True, 'LOG_FILE': 'logs\\JDSpider\\getCommodityInfo\\be12de804e3c11e9b17bace010528bab.log', 'NEWSPIDER_MODULE': 'JDSpider.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['JDSpider.spiders'], 'USER_AGENT': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'}
+2019-03-24 21:57:26 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-03-24 21:57:26 [scrapy.middleware] WARNING: Disabled HttpCacheMiddleware: Unable to find scrapy.cfg file to infer project data dir
+2019-03-24 21:57:26 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-03-24 21:57:26 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-03-24 21:57:26 [py.warnings] WARNING: c:\users\柘宇\appdata\local\temp_~1\jdspider-1553435237-i6wfv47q.egg\JDSpider\pipelines.py:11: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+
+2019-03-24 21:57:26 [scrapy.middleware] INFO: Enabled item pipelines:
+['JDSpider.pipelines.JdspiderPipeline']
+2019-03-24 21:57:26 [scrapy.core.engine] INFO: Spider opened
+2019-03-24 21:57:26 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-03-24 21:57:26 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2019-03-24 21:57:26 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error.aspx> from <GET https://search.jd.com/robots.txt>
+2019-03-24 21:57:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jd.com/error.aspx> (referer: None)
+2019-03-24 21:57:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://search.jd.com/Search?keyword=%E9%BC%A0%E6%A0%87&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1> (referer: None)
+2019-03-24 21:57:27 [py.warnings] WARNING: d:\anacaonda\lib\site-packages\bs4\__init__.py:181: UserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("lxml"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
+
+The code that caused this warning is on line 193 of the file d:\anacaonda\lib\runpy.py. To get rid of this warning, change code that looks like this:
+
+ BeautifulSoup(YOUR_MARKUP})
+
+to this:
+
+ BeautifulSoup(YOUR_MARKUP, "lxml")
+
+  markup_type=markup_type))
+
+2019-03-24 21:57:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://search.jd.com/Search?keyword=%E9%BC%A0%E6%A0%87&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1> (referer: https://search.jd.com/Search?keyword=%E9%BC%A0%E6%A0%87&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1)
+2019-03-24 21:57:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E9%BC%A0%E6%A0%87&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '英菲克',
+ 'category': 'Electronics',
+ 'name': '英菲克（INPHIC）PM9 铝合金可充电无线鼠标静音超薄便携2.4G小手家用电脑台式机办公苹果MAC笔记本鼠标 银色',
+ 'price': 49.0,
+ 'searchKey': '鼠标',
+ 'uniqueId': '100000121624',
+ 'url': 'https://ccc-x.jd.com/dsp/nc?ext=aHR0cHM6Ly9pdGVtLmpkLmNvbS8xMDAwMDAxMjE2MjQuaHRtbA&log=cTMjSccMPU3Jw446B5ePundBSDqfU843v4DeKn83ub6Mw1RHGTQS_1bJivaRUNZBoR6b_JqGR4gg7KCN-if6qfwh1CnGaMOFj5AlmHVySPCKsBkDhdB8C09GC6GkK1KXD-AC_rXiauLM-H_fhrmFZ7Ygm9AAMtRK8j9MB7TdLCx4Bi8LqhL7w1DaFDQFpgyskgC7ymcl23Ygr4pt1B8NZ8cR3QG7WZIWJVjFoWMYyLqQ2GRkEcpFb5YDgBDKmTmK_N_1gA-O64CMqLNm5-x79HuRuV2cZ0VH9UF3RHMmxwIenZw4UkrGyeUdlDUnWsf_biQUKJj1k4dW5QJ6LEg-YZ2sicYEx4j1Tt8fhbH_XD3HTZtkUQTyvb-JK7LL9-GMRQpUzNoIE-6GGTFuac2-jzSZaL6k82TqAXy217_FluD6_aH_3wQkckgsTLqEl_YvZX_uogbGJ4YXk_QMFJ8Ei9Y9sZvIOOWHsra-BtEw6yRCleHM0mIIEJXNgcrvr4ughqmMXAAtORaFfY8aQuj-MWaLRafi1btU1gZv2YvwonM2R9_1WAUODHHdm0vbv8FrAdHZOBU4yEtye4UXe2skVJqmpy31YDoeT772l4io2cI&v=404'}
+2019-03-24 21:57:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E9%BC%A0%E6%A0%87&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '罗技',
+ 'category': 'Electronics',
+ 'name': '罗技（G）G502 炫光自适应游戏鼠标 RGB鼠标 FPS鼠标 吃鸡鼠标 绝地求生',
+ 'price': 429.0,
+ 'searchKey': '鼠标',
+ 'uniqueId': '2269354',
+ 'url': '//item.jd.com/2269354.html'}
+2019-03-24 21:57:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E9%BC%A0%E6%A0%87&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '雷蛇',
+ 'category': 'Electronics',
+ 'name': '雷蛇（Razer）蝰蛇标准版 有线游戏鼠标 人体工程学设计 6400DPI 吃鸡鼠标  黑色\n'
+         '人体工程学设计，舒适手感，5个高速响应按键，反应灵敏，上万好评反馈！',
+ 'price': 149.0,
+ 'searchKey': '鼠标',
+ 'uniqueId': '8141909',
+ 'url': '//item.jd.com/8141909.html'}
+2019-03-24 21:57:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E9%BC%A0%E6%A0%87&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '罗技',
+ 'category': 'Electronics',
+ 'name': '罗技（Logitech）G903 LIGHTSPEED 无线游戏鼠标 无线鼠标 RGB鼠标 吃鸡鼠标 绝地求生',
+ 'price': 899.0,
+ 'searchKey': '鼠标',
+ 'uniqueId': '4870951',
+ 'url': '//item.jd.com/4870951.html'}
+2019-03-24 21:57:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E9%BC%A0%E6%A0%87&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '罗技',
+ 'category': 'Electronics',
+ 'name': '罗技（Logitech）M330 无线静音鼠标 舒适曲线 黑色 M275升级版',
+ 'price': 109.0,
+ 'searchKey': '鼠标',
+ 'uniqueId': '3290993',
+ 'url': '//item.jd.com/3290993.html'}
+2019-03-24 21:57:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E9%BC%A0%E6%A0%87&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '小米',
+ 'category': 'Electronics',
+ 'name': '小米便携鼠标 小米无线鼠标 小米无线蓝牙4.0 男女生家用/笔记本电脑办公/鼠标 银色',
+ 'price': 99.0,
+ 'searchKey': '鼠标',
+ 'uniqueId': '3633865',
+ 'url': '//item.jd.com/3633865.html'}
+2019-03-24 21:57:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E9%BC%A0%E6%A0%87&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '罗技',
+ 'category': 'Electronics',
+ 'name': '罗技（G）G102 游戏鼠标 8000DPI RGB鼠标 黑色 吃鸡鼠标 绝地求生',
+ 'price': 129.0,
+ 'searchKey': '鼠标',
+ 'uniqueId': '4155894',
+ 'url': '//item.jd.com/4155894.html'}
+2019-03-24 21:57:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E9%BC%A0%E6%A0%87&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '罗技',
+ 'category': 'Electronics',
+ 'name': '罗技（Logitech）M220 无线静音鼠标 畅销外形 灰色 M185升级版',
+ 'price': 79.0,
+ 'searchKey': '鼠标',
+ 'uniqueId': '3290987',
+ 'url': '//item.jd.com/3290987.html'}
+2019-03-24 21:57:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E9%BC%A0%E6%A0%87&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '前行者',
+ 'category': 'Electronics',
+ 'name': '前行者牧马人3代电竞游戏绝地求生lolcf吃鸡机械2代台式电脑笔记本家用有线宏鼠标办公光电静音非无声 3代牧马人黑鼠标【静音升级版】',
+ 'price': 39.0,
+ 'searchKey': '鼠标',
+ 'uniqueId': '1724526555',
+ 'url': 'https://ccc-x.jd.com/dsp/nc?ext=aHR0cHM6Ly9pdGVtLmpkLmNvbS8xNzI0NTI2NTU1Lmh0bWw&log=cTMjSccMPU3Jw446B5ePundBSDqfU843v4DeKn83ub5CdTahWAMh-a25Y8hn5UUCy7y88q6xyrkmCBPIM29NYbxMvT3XvhaxP2HHJdbohArvEZAVyJUooEacIV4z00kU3KIBrdWDGqSECe1hShX0oSbYujgro44TabRrZGRcrhSXGk2TGuxuKc_g163x7fIry-EqkxNLLZzSDaEGTLYJzFjom_sLNMoYaER6625e5cWac3VU9K7HPPhGlQxdD8E74JibZHtaCbRmxdGSce_eng4dtYj07Nk5TBkUF40_geX6788E5qw4B0JjHGDL2LcwRoCgMVD5qDNODoW9rj9pESAwJWUzAgrv-z0_nsc9GCL6a2zsmD3YontAo1G89lVEeMD4-gcMeATZBtFU-cNO93ESBujmZ21GtMC8ggI-JD9k0vQZ0AYq2IMX2F5N9EnCPCnBK2PylLd5eDScTdz-765mN2FNm1QaHrKKO6dwl14eSQLIQQQgw8stJWPBubiGLDyVrcxE8rxBiusbRBgen4gd_vUddOGqUwwt28LRQ4PCsKfebNNDCtpcLsBppufTyhTvVd7fQnRKjSa5Sl5VkA&v=404'}
+2019-03-24 21:57:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E9%BC%A0%E6%A0%87&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '联想',
+ 'category': 'Electronics',
+ 'name': '联想（Lenovo）鼠标 有线鼠标 办公鼠标 联想大红点M120Pro有线鼠标 台式机鼠标 笔记本鼠标 京东自营\n'
+         '经典大红点系列，按键灵敏，精选耐磨防滑滚轮。搭配经典巧克力有线键盘，让办公更轻松！',
+ 'price': 29.0,
+ 'searchKey': '鼠标',
+ 'uniqueId': '1337248',
+ 'url': '//item.jd.com/1337248.html'}
+2019-03-24 21:57:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E9%BC%A0%E6%A0%87&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '罗技',
+ 'category': 'Electronics',
+ 'name': '罗技（Logitech）M546（M545）无线鼠标 侧键 双向滚轮 黑色',
+ 'price': 129.0,
+ 'searchKey': '鼠标',
+ 'uniqueId': '1748084',
+ 'url': '//item.jd.com/1748084.html'}
+2019-03-24 21:57:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E9%BC%A0%E6%A0%87&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '微软',
+ 'category': 'Electronics',
+ 'name': '微软（Microsoft）Designer 无线蓝牙鼠标 轻薄便携 办公鼠标\n'
+         '微软IE-Pro游戏鼠标3.22-3.24惊喜直降！舒适手感，稳定操作点击查看',
+ 'price': 169.0,
+ 'searchKey': '鼠标',
+ 'uniqueId': '1552422',
+ 'url': '//item.jd.com/1552422.html'}
+2019-03-24 21:57:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E9%BC%A0%E6%A0%87&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '雷蛇',
+ 'category': 'Electronics',
+ 'name': '雷蛇（Razer）曼巴眼镜蛇精英版 黑色 有线电竞游戏鼠标 绝地求生鼠标 吃鸡鼠标\n'
+         '此商品将于2019-03-25,00点参加闪购特卖，潮电青春',
+ 'price': 369.0,
+ 'searchKey': '鼠标',
+ 'uniqueId': '7928520',
+ 'url': '//item.jd.com/7928520.html'}
+2019-03-24 21:57:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E9%BC%A0%E6%A0%87&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '罗技',
+ 'category': 'Electronics',
+ 'name': '罗技（Logitech）M590 多设备静音无线鼠标 无线蓝牙优联双模跨计算机控制鼠标 侧键 石墨黑',
+ 'price': 169.0,
+ 'searchKey': '鼠标',
+ 'uniqueId': '4462467',
+ 'url': '//item.jd.com/4462467.html'}
+2019-03-24 21:57:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E9%BC%A0%E6%A0%87&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '罗技',
+ 'category': 'Electronics',
+ 'name': '罗技（Logitech）G402 高速追踪游戏鼠标 吃鸡鼠标 绝地求生 FPS',
+ 'price': 219.0,
+ 'searchKey': '鼠标',
+ 'uniqueId': '1192014',
+ 'url': '//item.jd.com/1192014.html'}
+2019-03-24 21:57:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E9%BC%A0%E6%A0%87&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '雷蛇',
+ 'category': 'Electronics',
+ 'name': '雷蛇（Razer）锐蝮蛇Lancehead竞技版 韦神同款游戏鼠标 有线电竞游戏鼠标 绝地求生鼠标 吃鸡鼠标\n'
+         '此商品将于2019-03-25,00点参加闪购特卖，潮电青春',
+ 'price': 429.0,
+ 'searchKey': '鼠标',
+ 'uniqueId': '4991110',
+ 'url': '//item.jd.com/4991110.html'}
+2019-03-24 21:57:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E9%BC%A0%E6%A0%87&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '牧马人',
+ 'category': 'Electronics',
+ 'name': '沃野 牧马人3代静音笔记本台式机电脑家用办公 LOL吃鸡CF绝地求生宏电竞非无声加重游戏鼠标有线 机械蛇牧马人磨砂黑(静音升级版)',
+ 'price': 39.0,
+ 'searchKey': '鼠标',
+ 'uniqueId': '10078145471',
+ 'url': 'https://ccc-x.jd.com/dsp/nc?ext=aHR0cHM6Ly9pdGVtLmpkLmNvbS8xMDA3ODE0NTQ3MS5odG1s&log=cTMjSccMPU3Jw446B5ePundBSDqfU843v4DeKn83ub78orywFU6eaFg_dbx1qKWA7YHCPQt4hS3qh8ExWLS7NZpPqTPq0sfc5dLz_M1Oa1zULmlswPVUTKufo5OuThZRVyen86oQPPT8qF-7SP-2des62tbhqbjF5RHjq5BIOvsuRbalrbVq_VGh_TjDMjGUd4Eou3bc2ABWdb6So611zxNLZ_Pq-r-LW92-ymSh7zuKNcoPhiZgZeZCrPsexig4emQKf5CTEFqCqhxyYQgpiDQmH0LxJlFIWmejoZAmg2_AvOmAq9MjrZkjIkweYhPuiZmi--SSeF5J1kUBQMAT4SPFN5wWayFsjTMn-7nNJju8HVfKnGAgeB_vXXAkV_JP2t3y2WfFIm72ewuH48qdNKHfDyLZi2frvZ0rp1Eld5sqaTYC76rHmCNX8BEnex1U4M9fBfNXvjyqoOMSf3Y0cRaek590sFW3g_maRyqyBXKWV1OMtV6BUF2re62vpX37RxwQRi8a-KTeYsYS7s9VNxWIjHsUrXTL4hAOC4JDcDshK89YvcaR7TR5dj-vZyi0PG5fD5aQbaZXEuNQcJ3V9w&v=404'}
+2019-03-24 21:57:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E9%BC%A0%E6%A0%87&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '小米',
+ 'category': 'Electronics',
+ 'name': '小米（MI）小米便携鼠标 深空灰 无线蓝牙4.0 男女生家用 笔记本电脑办公 鼠标',
+ 'price': 99.0,
+ 'searchKey': '鼠标',
+ 'uniqueId': '5899817',
+ 'url': '//item.jd.com/5899817.html'}
+2019-03-24 21:57:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E9%BC%A0%E6%A0%87&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '罗技',
+ 'category': 'Electronics',
+ 'name': '罗技（Logitech）MX Master 2S 无线鼠标 无线蓝牙优联双模跨计算机控制鼠标 儒雅黑',
+ 'price': 579.0,
+ 'searchKey': '鼠标',
+ 'uniqueId': '4294661',
+ 'url': '//item.jd.com/4294661.html'}
+2019-03-24 21:57:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E9%BC%A0%E6%A0%87&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '罗技',
+ 'category': 'Electronics',
+ 'name': '罗技 (G) G304 LIGHTSPEED无线游戏鼠标 黑色 无线鼠标 吃鸡鼠标 绝地求生 鼠标宏',
+ 'price': 289.0,
+ 'searchKey': '鼠标',
+ 'uniqueId': '7571300',
+ 'url': '//item.jd.com/7571300.html'}
+2019-03-24 21:57:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E9%BC%A0%E6%A0%87&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '雷蛇',
+ 'category': 'Electronics',
+ 'name': '雷蛇（Razer）蝰蛇精英版 有线游戏鼠标 可自定义RGB幻彩 人体工程学设计 电竞鼠标\n'
+         '此商品将于2019-03-25,00点参加闪购特卖，潮电青春',
+ 'price': 319.0,
+ 'searchKey': '鼠标',
+ 'uniqueId': '3493265',
+ 'url': '//item.jd.com/3493265.html'}
+2019-03-24 21:57:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E9%BC%A0%E6%A0%87&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '微软',
+ 'category': 'Electronics',
+ 'name': '微软（Microsoft）Surface Arc蓝牙无线鼠标 轻薄便携可折叠 办公鼠标（典雅黑）\n'
+         '微软IE-Pro游戏鼠标3.22-3.24惊喜直降！舒适手感，稳定操作点击查看',
+ 'price': 599.0,
+ 'searchKey': '鼠标',
+ 'uniqueId': '4835591',
+ 'url': '//item.jd.com/4835591.html'}
+2019-03-24 21:57:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E9%BC%A0%E6%A0%87&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '罗技',
+ 'category': 'Electronics',
+ 'name': '罗技（Logitech）M185（M186）无线鼠标 黑色灰边',
+ 'price': 59.0,
+ 'searchKey': '鼠标',
+ 'uniqueId': '423478',
+ 'url': '//item.jd.com/423478.html'}
+2019-03-24 21:57:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E9%BC%A0%E6%A0%87&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '罗技',
+ 'category': 'Electronics',
+ 'name': '罗技（G）MX518 经典游戏鼠标 MX500/MX510/MX518经典复刻 16000DPI 舒适握感',
+ 'price': 199.0,
+ 'searchKey': '鼠标',
+ 'uniqueId': '100000430210',
+ 'url': '//item.jd.com/100000430210.html'}
+2019-03-24 21:57:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E9%BC%A0%E6%A0%87&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '达尔优',
+ 'category': 'Electronics',
+ 'name': '达尔优（dareu）EM915经典裂纹版鼠标 游戏鼠标 鼠标有线 鼠标宏 吃鸡鼠标 6000DPI 黑色',
+ 'price': 128.0,
+ 'searchKey': '鼠标',
+ 'uniqueId': '8311686',
+ 'url': 'https://ccc-x.jd.com/dsp/nc?ext=aHR0cHM6Ly9pdGVtLmpkLmNvbS84MzExNjg2Lmh0bWw&log=cTMjSccMPU3Jw446B5ePundBSDqfU843v4DeKn83ub6x92WpHYGXA23sz3i9OzKjMwCQoTWCElveTlCRu6YyLr5ci5EiFvxasoqW6Bh9T0peb9c2KBcoxI6hVz7-fQc6lamYvGu4941Ue-7UyYHF4mubMJiUVgT6PbYb4E97T5SaeKtE3A7sntvEXPsXqcDfrATK-BqOtVFrYSzFDsPfQ-0W38ED_E_E4jmK6y714wW2WtKYepCrL0H9qKfxGTMIeGDGhF2B4EghjoWxIhVi24I7veFGQiSzeUAmFL46fljH83jP2PSc9ShEBy2IiD2VnPlQtXPUypyUdVwXAxtEov7mqxelNMYMwMBYXADXiZjBV12kPGGMDuIUpBNdKKtZs_o_r00l9uim9sQEOHXuWJpXNQcvwEGL1vO3To-6UIa1Wv3ENrBOnHWDY88XmfesVNribPWZcSVlYqltS3b0c6S7RE88DmB1q6pYvfuXCje4kOr-Raxu5dUyaafl_TjdWN-009DBZSQMMrSyWZnr6y9IcdyYH93Zyz9u4wDrvGya0QewHivUcLi1ajp9LS8qE5gGnrdGcCcGy_bNA_xs6A&v=404'}
+2019-03-24 21:57:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E9%BC%A0%E6%A0%87&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '双飞燕',
+ 'category': 'Electronics',
+ 'name': '双飞燕（A4TECH) N-810FX 有线鼠标 办公鼠标 USB鼠标 笔记本鼠标 黑色',
+ 'price': 44.0,
+ 'searchKey': '鼠标',
+ 'uniqueId': '911672',
+ 'url': '//item.jd.com/911672.html'}
+2019-03-24 21:57:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E9%BC%A0%E6%A0%87&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '赛睿',
+ 'category': 'Electronics',
+ 'name': '赛睿（SteelSeries）Rival 600 绝地求生吃鸡利器 幻彩版 电竞 游戏鼠标 黑色 有线鼠标',
+ 'price': 599.0,
+ 'searchKey': '鼠标',
+ 'uniqueId': '6910296',
+ 'url': '//item.jd.com/6910296.html'}
+2019-03-24 21:57:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E9%BC%A0%E6%A0%87&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '罗技',
+ 'category': 'Electronics',
+ 'name': '罗技（G）G403 游戏鼠标 RGB鼠标 吃鸡鼠标 绝地求生 12000DPI FPS鼠标 压枪怪',
+ 'price': 349.0,
+ 'searchKey': '鼠标',
+ 'uniqueId': '3777926',
+ 'url': '//item.jd.com/3777926.html'}
+2019-03-24 21:57:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E9%BC%A0%E6%A0%87&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '戴尔',
+ 'category': 'Electronics',
+ 'name': '戴尔（DELL）MS116 有线鼠标 商务办公鼠标（黑色） 京东自营\n【京东自营】MS111升级版，戴尔商务办公USB接口经典有线鼠标',
+ 'price': 22.9,
+ 'searchKey': '鼠标',
+ 'uniqueId': '2136538',
+ 'url': '//item.jd.com/2136538.html'}
+2019-03-24 21:57:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E9%BC%A0%E6%A0%87&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '联想',
+ 'category': 'Electronics',
+ 'name': '联想（Lenovo）鼠标 无线鼠标 蓝牙鼠标 小新Air蓝牙无线鼠标 便携办公鼠标 台式机笔记本鼠标 京东自营\n'
+         '全金属上盖，4000可调节DPI，蓝光反馈技术，适用多种表层。一年质保，只换不修。店铺签到赢好礼！(此商品不参加上述活动)',
+ 'price': 99.0,
+ 'searchKey': '鼠标',
+ 'uniqueId': '8703914',
+ 'url': '//item.jd.com/8703914.html'}
+2019-03-24 21:57:28 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-03-24 21:57:28 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1363,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/GET': 4,
+ 'downloader/response_bytes': 82918,
+ 'downloader/response_count': 4,
+ 'downloader/response_status_count/200': 3,
+ 'downloader/response_status_count/302': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 3, 24, 13, 57, 28, 421494),
+ 'item_scraped_count': 30,
+ 'log_count/DEBUG': 35,
+ 'log_count/INFO': 7,
+ 'log_count/WARNING': 3,
+ 'request_depth_max': 1,
+ 'response_received_count': 3,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2019, 3, 24, 13, 57, 26, 119059)}
+2019-03-24 21:57:28 [scrapy.core.engine] INFO: Spider closed (finished)

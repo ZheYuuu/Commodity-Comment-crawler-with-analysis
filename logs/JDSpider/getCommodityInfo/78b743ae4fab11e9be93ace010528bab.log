@@ -1,0 +1,337 @@
+2019-03-26 17:42:34 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: JDSpider)
+2019-03-26 17:42:34 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'JDSpider', 'HTTPCACHE_ENABLED': True, 'LOG_FILE': 'logs\\JDSpider\\getCommodityInfo\\78b743ae4fab11e9be93ace010528bab.log', 'NEWSPIDER_MODULE': 'JDSpider.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['JDSpider.spiders'], 'USER_AGENT': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'}
+2019-03-26 17:42:34 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-03-26 17:42:34 [scrapy.middleware] WARNING: Disabled HttpCacheMiddleware: Unable to find scrapy.cfg file to infer project data dir
+2019-03-26 17:42:34 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-03-26 17:42:34 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-03-26 17:42:34 [py.warnings] WARNING: c:\users\柘宇\appdata\local\temp_~1\jdspider-1553592105-pb0dnyne.egg\JDSpider\pipelines.py:11: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+
+2019-03-26 17:42:34 [scrapy.middleware] INFO: Enabled item pipelines:
+['JDSpider.pipelines.JdspiderPipeline']
+2019-03-26 17:42:34 [scrapy.core.engine] INFO: Spider opened
+2019-03-26 17:42:34 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-03-26 17:42:34 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6024
+2019-03-26 17:42:35 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error.aspx> from <GET https://search.jd.com/robots.txt>
+2019-03-26 17:42:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jd.com/error.aspx> (referer: None)
+2019-03-26 17:42:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://search.jd.com/Search?keyword=%E4%BF%9D%E6%B8%A9%E6%9D%AF&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1> (referer: None)
+2019-03-26 17:42:35 [py.warnings] WARNING: d:\anacaonda\lib\site-packages\bs4\__init__.py:181: UserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("lxml"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
+
+The code that caused this warning is on line 193 of the file d:\anacaonda\lib\runpy.py. To get rid of this warning, change code that looks like this:
+
+ BeautifulSoup(YOUR_MARKUP})
+
+to this:
+
+ BeautifulSoup(YOUR_MARKUP, "lxml")
+
+  markup_type=markup_type))
+
+2019-03-26 17:42:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://search.jd.com/Search?keyword=%E4%BF%9D%E6%B8%A9%E6%9D%AF&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1> (referer: https://search.jd.com/Search?keyword=%E4%BF%9D%E6%B8%A9%E6%9D%AF&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1)
+2019-03-26 17:42:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E4%BF%9D%E6%B8%A9%E6%9D%AF&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '富光',
+ 'category': 'Health&Beauty',
+ 'name': '富光 304不锈钢茶杯 真空商务保温杯保温壶 男女士带滤网时尚直身水杯子480ML黑色（WFZ1063-480)\n'
+         '富光圆趣花茶杯,茶水分离,多功能杯盖,防尘易清洗.C3.3高硼硅玻璃,冷热不惧,可控温加热,随时饮水.（此页面非花茶杯)点击购买花茶杯(此商品不参加上述活动)',
+ 'price': 59.0,
+ 'searchKey': '保温杯',
+ 'uniqueId': '5068393',
+ 'url': '//item.jd.com/5068393.html'}
+2019-03-26 17:42:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E4%BF%9D%E6%B8%A9%E6%9D%AF&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '富光',
+ 'category': 'Health&Beauty',
+ 'name': '富光 星海系列泡茶杯 316不锈钢户外运动保温杯保温壶 男女子弹头便携真空水杯子 500ML 黑色（WFZ6003-500)\n'
+         '富光圆趣花茶杯,茶水分离,多功能杯盖,防尘易清洗.C3.3高硼硅玻璃,冷热不惧,可控温加热,随时饮水.（此页面非花茶杯)点击购买花茶杯(此商品不参加上述活动)',
+ 'price': 69.0,
+ 'searchKey': '保温杯',
+ 'uniqueId': '8360781',
+ 'url': '//item.jd.com/8360781.html'}
+2019-03-26 17:42:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E4%BF%9D%E6%B8%A9%E6%9D%AF&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '其他',
+ 'category': 'Health&Beauty',
+ 'name': '京东超市然也（RAE）保温杯304不锈钢内胆双层茶杯保温壶 男女士商务时尚过滤车载泡茶学生水杯子 450ml黑色R3106\n'
+         '【然也rae】京东直达/更放心/450Ml大容量/304不锈钢内胆24小时长效保温，累计评价33万+，立即查看！！(此商品不参加上述活动)',
+ 'price': 39.9,
+ 'searchKey': '保温杯',
+ 'uniqueId': '3532532',
+ 'url': '//item.jd.com/3532532.html'}
+2019-03-26 17:42:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E4%BF%9D%E6%B8%A9%E6%9D%AF&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '乐扣乐扣',
+ 'category': 'Health&Beauty',
+ 'name': '京东超市乐扣乐扣（LOCK&LOCK）保温杯不锈钢水杯 情侣杯商务杯子 掌心杯两件套黑色+红色(400ML*2) '
+         'LHC4028SH602',
+ 'price': 139.0,
+ 'searchKey': '保温杯',
+ 'uniqueId': '4062308',
+ 'url': '//item.jd.com/4062308.html'}
+2019-03-26 17:42:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E4%BF%9D%E6%B8%A9%E6%9D%AF&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '富光',
+ 'category': 'Health&Beauty',
+ 'name': '富光 金刚系列保温杯具 不锈钢大容量保温瓶 车载真空保温水壶 户外保温壶黑色 2.2L（WFZ6019-2200）\n'
+         '富光圆趣花茶杯,茶水分离,多功能杯盖,防尘易清洗.C3.3高硼硅玻璃,冷热不惧,可控温加热,随时饮水.（此页面非花茶杯)点击购买花茶杯(此商品不参加上述活动)',
+ 'price': 99.0,
+ 'searchKey': '保温杯',
+ 'uniqueId': '3566786',
+ 'url': '//item.jd.com/3566786.html'}
+2019-03-26 17:42:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E4%BF%9D%E6%B8%A9%E6%9D%AF&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '南极人',
+ 'category': 'Health&Beauty',
+ 'name': '南极人 Nanjiren 黑色保温杯450ML珠光漆双层不锈钢内胆保温杯 男女过滤车载杯子商务时尚水杯  NJR108',
+ 'price': 29.9,
+ 'searchKey': '保温杯',
+ 'uniqueId': '100001177163',
+ 'url': '//item.jd.com/100001177163.html'}
+2019-03-26 17:42:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E4%BF%9D%E6%B8%A9%E6%9D%AF&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '象印',
+ 'category': 'Health&Beauty',
+ 'name': '海囤全球日本进口 象印(ZOJIRUSHI)单手弹盖保温杯保温壶 不锈钢真空户外防漏水杯车载杯子SM KC48 VD咖啡色480ml\n'
+         '轻量便捷，长效保温，多种款式，自用送人好礼物！精选大牌狂欢大促点击抢购',
+ 'price': 159.0,
+ 'searchKey': '保温杯',
+ 'uniqueId': '3154224',
+ 'url': '//item.jd.com/3154224.html'}
+2019-03-26 17:42:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E4%BF%9D%E6%B8%A9%E6%9D%AF&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '咔咔',
+ 'category': 'Health&Beauty',
+ 'name': '京东超市咔咔保温壶家用暖壶水壶热水瓶暖瓶2L开水瓶保温瓶大容量不锈钢保暖壶欧式家用热水壶保温咖啡杯壶 香槟金\n'
+         '【到手价仅59.9】【24小时强效保温】【304不锈钢内胆】【购物车+19.9换购爆款水杯】',
+ 'price': 89.9,
+ 'searchKey': '保温杯',
+ 'uniqueId': '1626336666',
+ 'url': '//item.jd.com/1626336666.html'}
+2019-03-26 17:42:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E4%BF%9D%E6%B8%A9%E6%9D%AF&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '哈尔斯',
+ 'category': 'Health&Beauty',
+ 'name': '哈尔斯（HAERS） 保温杯男士女士学生子弹头商务车载真空不锈钢水杯子便携手提绳户外大容量500ML 曜石黑500ML',
+ 'price': 59.9,
+ 'searchKey': '保温杯',
+ 'uniqueId': '10343913877',
+ 'url': 'https://ccc-x.jd.com/dsp/nc?ext=aHR0cHM6Ly9pdGVtLmpkLmNvbS8xMDM0MzkxMzg3Ny5odG1s&log=BLnL-ILQp3owLDM2lfyIqD1DkHvQEg8vAZ1DnMibnrHTsUGVMI_emS1UcnmzaJ_bBCihpEgsUdOLhkUwkgvYezAaZzNhkGf8PK4Xev1guKHUbQKD65rfzE2KdZb7tTUz3QQ-Qj6oaTEmJ80jrRXUqIwBFA3vX8LfHg5hCOl7-NfPIiFHs7v3nYUoK7gubVyaIBloBeidXFlyUNxqinYyQMAY7d525Dpt3xtkFVEJcZM0IloOIjIjZiDc17QOk8mZnhz-rsc5_ma3HddpAy7CfMGRRcJWUBQaMXigpU2rB3WUiD5mLq3uQ38KKBVQWKtpRvxGv-hfz216gxMtULGgCHWb0hQ4ZvAwM2waFEfv1xieWm6oo74O9EHqyM081yhNqEw2LOkwburmlO3AQK5rCFwwSs--1ZnbQXtUD8qZzuhunXTElG2u4Y7cWMFjguP7buzXxn84KA__it5QmHnofGtivqlHXHT9Mhia98btDDWlVAeFQch9LtkzcgQByvOj9mBYEnn7NQjmmcI6Q04SMXTBZoS0dOiY9X2YHFqbxlv7_MwNsEiGvw6MGfjfBzMoZgxUBAESZlntT5DxEWFoSA&v=404'}
+2019-03-26 17:42:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E4%BF%9D%E6%B8%A9%E6%9D%AF&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '其他',
+ 'category': 'Health&Beauty',
+ 'name': '摩欧（MOOU）玻璃杯 双层防摔隔热水杯过滤带盖泡茶杯便携男女士办公定制杯子 绅士黑',
+ 'price': 78.0,
+ 'searchKey': '保温杯',
+ 'uniqueId': '12715855611',
+ 'url': 'https://ccc-x.jd.com/dsp/nc?ext=aHR0cHM6Ly9pdGVtLmpkLmNvbS8xMjcxNTg1NTYxMS5odG1s&log=BLnL-ILQp3owLDM2lfyIqD1DkHvQEg8vAZ1DnMibnrE3BrsFM7s8mSZEdrCEIKDt4c1X77ZGHwoz6qI5-h125PjtEHK-lXgyy2bNn-7f7LAdnvQ4XlkPXcwlGjmgY1xuCuwNRaS7dG_BiYkA25YOg0wCz9JjDanRC24GEfwOQzUYu3W4XbKnWPv2pRxH_3pfuWdEng3oNet_lYBfWiNwbVhXJo-0xEn5xah-ScOirrygNf3_A81tkHgf668FP4QJs6zoL4iOs-FabWSzbG6p3sBqQM4AuVnSoRsmEygJpKdhF4-KnHfzZcxXwWTwhQAOCP1TqHrEsP0T4RRQ1MkKFx0Jo_F6wh0bNpNkTCAGjojdDH4TC10xapPFf-f9IzML2RfMPl5OaqOkOEYapPK0nZFTajoKZnazcVEvFDJv2vSOk-dX67QzwNGatInxf0341m_dEVt7uSbuh91CbHIszYuU3ECC7gCpfv5xTSDE2933rXLjdJg3xzXylWis3RfOt6kbh29TvTmGamzSmmelPqgJhRq6MB0Q99j9I1taXJGHiEolbJGr3PXTJpjj7bjA&v=404'}
+2019-03-26 17:42:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E4%BF%9D%E6%B8%A9%E6%9D%AF&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '咔咔',
+ 'category': 'Health&Beauty',
+ 'name': '京东超市咔咔保温壶户外大容量保温瓶暖壶运动水壶热开水瓶暖瓶不锈钢旅游壶保温杯水杯子车载保温杯家用保温壶男女 1.2L优雅黑\n'
+         '【到手价仅49.9】【24小时强效保温】【304不锈钢内胆】【1200ML大容量】',
+ 'price': 49.9,
+ 'searchKey': '保温杯',
+ 'uniqueId': '12170098679',
+ 'url': '//item.jd.com/12170098679.html'}
+2019-03-26 17:42:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E4%BF%9D%E6%B8%A9%E6%9D%AF&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '其他',
+ 'category': 'Health&Beauty',
+ 'name': '德国EDISH高档316不锈钢保温杯男女士便携水杯子车载水壶商务定制刻字LOGO泡茶杯 绅士黑\n'
+         '【现量领券立减50元现金 抢购价低至79元】\n'
+         '【自营配送】全国七仓急送发货 当日达 次日达\n'
+         '【德国品质】5次抽真空 内胆镀铜 七层锁温 24小时长效保温\n'
+         '【轻量设计】316医疗不锈钢 更健康 360°不漏水 车载便携随行 \n'
+         '【京东超市】放心购物 破损包赔 免费换新 支持团购定制',
+ 'price': 129.0,
+ 'searchKey': '保温杯',
+ 'uniqueId': '31222149096',
+ 'url': '//item.jd.com/31222149096.html'}
+2019-03-26 17:42:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E4%BF%9D%E6%B8%A9%E6%9D%AF&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '炊大皇',
+ 'category': 'Health&Beauty',
+ 'name': '炊大皇 保温壶  304不锈钢内胆 2L大容量 防滑底 非玻璃 家用泡茶儿童泡奶 保温杯 热水壶 暖壶开水瓶咖啡壶\n'
+         '【京东配送】【专区满199减100满399减200】【活动时间：3月26日-3月28日】限时点击立抢(此商品不参加上述活动)',
+ 'price': 79.0,
+ 'searchKey': '保温杯',
+ 'uniqueId': '5951792',
+ 'url': '//item.jd.com/5951792.html'}
+2019-03-26 17:42:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E4%BF%9D%E6%B8%A9%E6%9D%AF&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '乐扣乐扣',
+ 'category': 'Health&Beauty',
+ 'name': '乐扣乐扣（lock&lock）缤纷弹跳盖马克杯白色390ML 保温杯 杯子 LHC3222WHT',
+ 'price': 89.0,
+ 'searchKey': '保温杯',
+ 'uniqueId': '4062330',
+ 'url': '//item.jd.com/4062330.html'}
+2019-03-26 17:42:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E4%BF%9D%E6%B8%A9%E6%9D%AF&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '草莓生活',
+ 'category': 'Health&Beauty',
+ 'name': '草莓生活（CMSH） 保温杯男女士学生水杯子儿童不锈钢保温壶便携户外茶杯创意直身杯 梦幻粉\n'
+         '【活动后恢复79元！买一送一！亏本赚销量】\n'
+         '【专利设计，24长效保温，304不锈钢】【同价秒杀：49元，领券立减10元！送爆款玻璃杯】',
+ 'price': 59.0,
+ 'searchKey': '保温杯',
+ 'uniqueId': '32922125960',
+ 'url': '//item.jd.com/32922125960.html'}
+2019-03-26 17:42:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E4%BF%9D%E6%B8%A9%E6%9D%AF&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '富光',
+ 'category': 'Health&Beauty',
+ 'name': '富光拾喜保温杯保温壶男女士水杯学生情侣便携杯子大容量户外运动车载不锈钢茶杯 黑色 450ml 450ml\n'
+         '【304不锈钢.长效保温保冷.便携防漏】',
+ 'price': 29.9,
+ 'searchKey': '保温杯',
+ 'uniqueId': '12224539473',
+ 'url': '//item.jd.com/12224539473.html'}
+2019-03-26 17:42:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E4%BF%9D%E6%B8%A9%E6%9D%AF&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '其他',
+ 'category': 'Health&Beauty',
+ 'name': '日本格沵（GERM）保温杯女日式男女小巧便携杯子316不锈钢保冷水杯300ml免费刻字 优雅白300ml',
+ 'price': 198.0,
+ 'searchKey': '保温杯',
+ 'uniqueId': '43071411379',
+ 'url': 'https://ccc-x.jd.com/dsp/nc?ext=aHR0cHM6Ly9pdGVtLmpkLmNvbS80MzA3MTQxMTM3OS5odG1s&log=BLnL-ILQp3owLDM2lfyIqD1DkHvQEg8vAZ1DnMibnrHZBlXcoP-SNYF08hObu2QS6mJmIcGJPc0zscvzEFwqmG2fQZl3xiojJNkF5GSOfCBxkIh04iZ2cg0Wiphc1g2lk7_Z6zjaauGyPvhHgv7VgnmQyqgoCkgizIeyybfCkSwy7uItscRUsolAZRT4gekt7EkmtF-9lyn9r6tZqN9aLTZrUOz_vZK4ShijN7zgy0rLC7jQOQb7jwRt1U2ATF4pK0OSbpXiFD62DpgOMkX0ZggCUdBJwFG2_JCVOm2shdi2f3q0PmwgmtT21FM8TwFgkQ0A4D3Z9gkSshH-6agMoVOnyd-cIC0h6Mj2nEBSyMI6oO0_ubCJfUnKdycw-mDh6GRtBAOJ5fZaApxUBLHmMPbWASnaJwwbfjc2Z0yFzNF4LmQPMvb16q2y6Cexet3O-MQrxSs1wd3hFIDHWW5CBoq_ffYJ8_5JySFE2alKJ7AsjtIDOVfp17WWRjFTY9DpRSMBJFc_UouMCDPrPOh5iaNkihaTb9DA-uf29CNreZwWlHAPxeZL0O4lLEv0_27qFhwJk7GSjsMt79kJAIM_Mg&v=404'}
+2019-03-26 17:42:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E4%BF%9D%E6%B8%A9%E6%9D%AF&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '天喜',
+ 'category': 'Health&Beauty',
+ 'name': '天喜(TIANXI)保温杯 304真空不锈钢水杯男士商务办公泡茶杯 带茶漏滤网带手柄 黑色420ml\n'
+         '【京东直配送】天喜大容量保温壶，304不锈钢内胆，居家旅行办公室必备，狂戳',
+ 'price': 44.91,
+ 'searchKey': '保温杯',
+ 'uniqueId': '8453540',
+ 'url': '//item.jd.com/8453540.html'}
+2019-03-26 17:42:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E4%BF%9D%E6%B8%A9%E6%9D%AF&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '咔咔',
+ 'category': 'Health&Beauty',
+ 'name': '京东超市咔咔保温杯水杯杯子男女儿童大容量商务便携保温水杯茶杯真空不锈钢保温办公杯车载保温户外保温杯壶 曜石黑\n'
+         '【黑色款领券下单29.9】【商务经典】【强悍保温】【便携随行】【三色可选】',
+ 'price': 44.9,
+ 'searchKey': '保温杯',
+ 'uniqueId': '17295451806',
+ 'url': '//item.jd.com/17295451806.html'}
+2019-03-26 17:42:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E4%BF%9D%E6%B8%A9%E6%9D%AF&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '乐扣乐扣',
+ 'category': 'Health&Beauty',
+ 'name': '乐扣乐扣(LOCK&LOCK) 保温杯轻量杯 菲特旋盖情侣杯商务杯 白红黑蓝450ml*2 LHC4131S602',
+ 'price': 159.0,
+ 'searchKey': '保温杯',
+ 'uniqueId': '6936839',
+ 'url': '//item.jd.com/6936839.html'}
+2019-03-26 17:42:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E4%BF%9D%E6%B8%A9%E6%9D%AF&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '物生物',
+ 'category': 'Health&Beauty',
+ 'name': '物生物（RELEA）保温杯 500ML创意便携情侣保温杯男女不锈钢真空保温杯水杯茶杯学生杯子 free哑光黑\n'
+         '内外304不锈钢;便携提手,一盖多用新设计;食品级PP,一键按压出水;24小时高效锁温',
+ 'price': 42.8,
+ 'searchKey': '保温杯',
+ 'uniqueId': '8737252',
+ 'url': '//item.jd.com/8737252.html'}
+2019-03-26 17:42:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E4%BF%9D%E6%B8%A9%E6%9D%AF&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '天喜',
+ 'category': 'Health&Beauty',
+ 'name': '天喜(TIANXI)保温杯 男女士304真空不锈钢水杯商务办公泡茶杯 带茶漏滤网 黑色500ml\n'
+         '【京东直配送】天喜大容量保温壶，304不锈钢内胆，居家旅行办公室必备，狂戳',
+ 'price': 29.9,
+ 'searchKey': '保温杯',
+ 'uniqueId': '100000331548',
+ 'url': '//item.jd.com/100000331548.html'}
+2019-03-26 17:42:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E4%BF%9D%E6%B8%A9%E6%9D%AF&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': 'cuipo',
+ 'category': 'Health&Beauty',
+ 'name': 'Cuipo儿童保温杯带吸管两用宝宝男女学生户外便携保温水壶316不锈钢水杯子600ml 红色老虎\n'
+         'cuipo爆款儿童保温壶，316不锈钢，轻量设计，600ml大容量，送同款便携杯套点击进入抢购(此商品不参加上述活动)',
+ 'price': 99.0,
+ 'searchKey': '保温杯',
+ 'uniqueId': '6098255',
+ 'url': '//item.jd.com/6098255.html'}
+2019-03-26 17:42:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E4%BF%9D%E6%B8%A9%E6%9D%AF&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '乐扣乐扣',
+ 'category': 'Health&Beauty',
+ 'name': '乐扣乐扣（lock&lock）缤纷保温杯 LHC4015BLK（390ml）黑色',
+ 'price': 69.9,
+ 'searchKey': '保温杯',
+ 'uniqueId': '1219922',
+ 'url': '//item.jd.com/1219922.html'}
+2019-03-26 17:42:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E4%BF%9D%E6%B8%A9%E6%9D%AF&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '膳魔师',
+ 'category': 'Health&Beauty',
+ 'name': '海囤全球膳魔师（THERMOS）超轻防漏不锈钢保温杯保温瓶保冷杯车载水杯杯子保温壶焖烧杯 500ml JNL-500 PCH 粉红色\n'
+         '日本新款上线，进入膳魔师店铺，更多选择，更多优惠~点击查看',
+ 'price': 169.0,
+ 'searchKey': '保温杯',
+ 'uniqueId': '2122634',
+ 'url': '//item.jd.com/2122634.html'}
+2019-03-26 17:42:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E4%BF%9D%E6%B8%A9%E6%9D%AF&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '史努比',
+ 'category': 'Health&Beauty',
+ 'name': '京东超市史努比（SNOOPY）带手柄不锈钢办公保温杯水杯420ML可爱杯子情侣杯 DP-58002H 黑色\n'
+         '【好货推荐】迪士尼双盖吸管塑料杯，广口设计易清洗，一杯双盖多用，tritan杯身，柔软硅胶吸嘴，双重锁扣，加固尼龙背带，防漏便携更放心。点击查看》》',
+ 'price': 29.9,
+ 'searchKey': '保温杯',
+ 'uniqueId': '998187',
+ 'url': '//item.jd.com/998187.html'}
+2019-03-26 17:42:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E4%BF%9D%E6%B8%A9%E6%9D%AF&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '膳魔师',
+ 'category': 'Health&Beauty',
+ 'name': '海囤全球膳魔师（THERMOS）超轻防漏不锈钢保温杯保温瓶保温壶保冷杯车载水杯杯子保温壶焖烧杯 500ml JNL-502 黑色\n'
+         '日本新款上线，进入膳魔师店铺，更多选择，更多优惠~点击查看',
+ 'price': 169.0,
+ 'searchKey': '保温杯',
+ 'uniqueId': '2669346',
+ 'url': '//item.jd.com/2669346.html'}
+2019-03-26 17:42:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E4%BF%9D%E6%B8%A9%E6%9D%AF&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '苏泊尔',
+ 'category': 'Health&Beauty',
+ 'name': '苏泊尔supor随行真空保温杯304不锈钢时尚男女士水杯情侣杯子竹韵系列 350mL两件套装 TK1623K',
+ 'price': 99.0,
+ 'searchKey': '保温杯',
+ 'uniqueId': '5224398',
+ 'url': '//item.jd.com/5224398.html'}
+2019-03-26 17:42:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E4%BF%9D%E6%B8%A9%E6%9D%AF&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '膳魔师',
+ 'category': 'Health&Beauty',
+ 'name': '海囤全球膳魔师（THERMOS）超轻防漏不锈钢保温杯保温瓶保冷杯车载水杯杯子保温壶焖烧杯 JNL-502 ALB-F 500ml磨砂黑\n'
+         '日本新款上线，进入膳魔师店铺，更多选择，更多优惠~点击查看',
+ 'price': 169.0,
+ 'searchKey': '保温杯',
+ 'uniqueId': '100000564335',
+ 'url': '//item.jd.com/100000564335.html'}
+2019-03-26 17:42:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E4%BF%9D%E6%B8%A9%E6%9D%AF&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '乐扣乐扣',
+ 'category': 'Health&Beauty',
+ 'name': '乐扣乐扣（LOCK&LOCK）爱的弹跳保温杯（马卡龙）男女茶杯运动水杯 杯子450ml LHC3231IVY 米白色',
+ 'price': 129.0,
+ 'searchKey': '保温杯',
+ 'uniqueId': '100000283195',
+ 'url': '//item.jd.com/100000283195.html'}
+2019-03-26 17:42:36 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-03-26 17:42:36 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1390,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/GET': 4,
+ 'downloader/response_bytes': 101272,
+ 'downloader/response_count': 4,
+ 'downloader/response_status_count/200': 3,
+ 'downloader/response_status_count/302': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 3, 26, 9, 42, 36, 868298),
+ 'item_scraped_count': 30,
+ 'log_count/DEBUG': 35,
+ 'log_count/INFO': 7,
+ 'log_count/WARNING': 3,
+ 'request_depth_max': 1,
+ 'response_received_count': 3,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2019, 3, 26, 9, 42, 34, 694934)}
+2019-03-26 17:42:36 [scrapy.core.engine] INFO: Spider closed (finished)

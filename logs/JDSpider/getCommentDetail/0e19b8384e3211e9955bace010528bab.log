@@ -1,0 +1,524 @@
+2019-03-24 20:40:59 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: JDSpider)
+2019-03-24 20:40:59 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'JDSpider', 'HTTPCACHE_ENABLED': True, 'LOG_FILE': 'logs\\JDSpider\\getCommentDetail\\0e19b8384e3211e9955bace010528bab.log', 'NEWSPIDER_MODULE': 'JDSpider.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['JDSpider.spiders'], 'USER_AGENT': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'}
+2019-03-24 20:40:59 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-03-24 20:40:59 [scrapy.middleware] WARNING: Disabled HttpCacheMiddleware: Unable to find scrapy.cfg file to infer project data dir
+2019-03-24 20:40:59 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-03-24 20:40:59 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-03-24 20:40:59 [py.warnings] WARNING: c:\users\柘宇\appdata\local\temp_~1\jdspider-1553429887-6rrx99zg.egg\JDSpider\pipelines.py:11: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+
+2019-03-24 20:40:59 [scrapy.middleware] INFO: Enabled item pipelines:
+['JDSpider.pipelines.JdspiderPipeline']
+2019-03-24 20:40:59 [scrapy.core.engine] INFO: Spider opened
+2019-03-24 20:40:59 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-03-24 20:40:59 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2019-03-24 20:40:59 [scrapy.core.engine] DEBUG: Crawled (404) <GET http://sclub.jd.com/robots.txt> (referer: None)
+2019-03-24 20:40:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1> (referer: None)
+2019-03-24 20:41:00 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2019-03-24 20:41:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=13> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 20:41:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=7> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 20:41:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=8> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 20:41:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=10> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 20:41:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=6> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 20:41:00 [scrapy.core.scraper] ERROR: Spider error processing <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=13> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+Traceback (most recent call last):
+  File "d:\anacaonda\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\柘宇\appdata\local\temp_~1\jdspider-1553429887-6rrx99zg.egg\JDSpider\spiders\getCommentDetail.py", line 36, in getCommentDetail
+    comments = j['comment']
+KeyError: 'comment'
+2019-03-24 20:41:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=5> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 20:41:00 [scrapy.core.scraper] ERROR: Spider error processing <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=7> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+Traceback (most recent call last):
+  File "d:\anacaonda\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\柘宇\appdata\local\temp_~1\jdspider-1553429887-6rrx99zg.egg\JDSpider\spiders\getCommentDetail.py", line 36, in getCommentDetail
+    comments = j['comment']
+KeyError: 'comment'
+2019-03-24 20:41:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=0> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 20:41:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=4> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 20:41:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=3> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 20:41:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=2> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 20:41:00 [scrapy.core.scraper] ERROR: Spider error processing <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=8> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+Traceback (most recent call last):
+  File "d:\anacaonda\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\柘宇\appdata\local\temp_~1\jdspider-1553429887-6rrx99zg.egg\JDSpider\spiders\getCommentDetail.py", line 36, in getCommentDetail
+    comments = j['comment']
+KeyError: 'comment'
+2019-03-24 20:41:00 [scrapy.core.scraper] ERROR: Spider error processing <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=10> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+Traceback (most recent call last):
+  File "d:\anacaonda\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\柘宇\appdata\local\temp_~1\jdspider-1553429887-6rrx99zg.egg\JDSpider\spiders\getCommentDetail.py", line 36, in getCommentDetail
+    comments = j['comment']
+KeyError: 'comment'
+2019-03-24 20:41:00 [scrapy.core.scraper] ERROR: Spider error processing <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=6> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+Traceback (most recent call last):
+  File "d:\anacaonda\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\柘宇\appdata\local\temp_~1\jdspider-1553429887-6rrx99zg.egg\JDSpider\spiders\getCommentDetail.py", line 36, in getCommentDetail
+    comments = j['comment']
+KeyError: 'comment'
+2019-03-24 20:41:00 [scrapy.core.scraper] ERROR: Spider error processing <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=5> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+Traceback (most recent call last):
+  File "d:\anacaonda\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\柘宇\appdata\local\temp_~1\jdspider-1553429887-6rrx99zg.egg\JDSpider\spiders\getCommentDetail.py", line 36, in getCommentDetail
+    comments = j['comment']
+KeyError: 'comment'
+2019-03-24 20:41:00 [scrapy.core.scraper] ERROR: Spider error processing <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=0> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+Traceback (most recent call last):
+  File "d:\anacaonda\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\柘宇\appdata\local\temp_~1\jdspider-1553429887-6rrx99zg.egg\JDSpider\spiders\getCommentDetail.py", line 36, in getCommentDetail
+    comments = j['comment']
+KeyError: 'comment'
+2019-03-24 20:41:00 [scrapy.core.scraper] ERROR: Spider error processing <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=4> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+Traceback (most recent call last):
+  File "d:\anacaonda\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\柘宇\appdata\local\temp_~1\jdspider-1553429887-6rrx99zg.egg\JDSpider\spiders\getCommentDetail.py", line 36, in getCommentDetail
+    comments = j['comment']
+KeyError: 'comment'
+2019-03-24 20:41:00 [scrapy.core.scraper] ERROR: Spider error processing <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=3> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+Traceback (most recent call last):
+  File "d:\anacaonda\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\柘宇\appdata\local\temp_~1\jdspider-1553429887-6rrx99zg.egg\JDSpider\spiders\getCommentDetail.py", line 36, in getCommentDetail
+    comments = j['comment']
+KeyError: 'comment'
+2019-03-24 20:41:00 [scrapy.core.scraper] ERROR: Spider error processing <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=2> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+Traceback (most recent call last):
+  File "d:\anacaonda\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\柘宇\appdata\local\temp_~1\jdspider-1553429887-6rrx99zg.egg\JDSpider\spiders\getCommentDetail.py", line 36, in getCommentDetail
+    comments = j['comment']
+KeyError: 'comment'
+2019-03-24 20:41:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=28> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 20:41:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=25> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 20:41:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=27> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 20:41:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=12> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 20:41:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=26> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 20:41:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=9> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 20:41:00 [scrapy.core.scraper] ERROR: Spider error processing <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=28> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+Traceback (most recent call last):
+  File "d:\anacaonda\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\柘宇\appdata\local\temp_~1\jdspider-1553429887-6rrx99zg.egg\JDSpider\spiders\getCommentDetail.py", line 36, in getCommentDetail
+    comments = j['comment']
+KeyError: 'comment'
+2019-03-24 20:41:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=24> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 20:41:00 [scrapy.core.scraper] ERROR: Spider error processing <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=25> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+Traceback (most recent call last):
+  File "d:\anacaonda\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\柘宇\appdata\local\temp_~1\jdspider-1553429887-6rrx99zg.egg\JDSpider\spiders\getCommentDetail.py", line 36, in getCommentDetail
+    comments = j['comment']
+KeyError: 'comment'
+2019-03-24 20:41:00 [scrapy.core.scraper] ERROR: Spider error processing <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=27> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+Traceback (most recent call last):
+  File "d:\anacaonda\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\柘宇\appdata\local\temp_~1\jdspider-1553429887-6rrx99zg.egg\JDSpider\spiders\getCommentDetail.py", line 36, in getCommentDetail
+    comments = j['comment']
+KeyError: 'comment'
+2019-03-24 20:41:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=11> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 20:41:00 [scrapy.core.scraper] ERROR: Spider error processing <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=12> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+Traceback (most recent call last):
+  File "d:\anacaonda\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\柘宇\appdata\local\temp_~1\jdspider-1553429887-6rrx99zg.egg\JDSpider\spiders\getCommentDetail.py", line 36, in getCommentDetail
+    comments = j['comment']
+KeyError: 'comment'
+2019-03-24 20:41:00 [scrapy.core.scraper] ERROR: Spider error processing <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=26> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+Traceback (most recent call last):
+  File "d:\anacaonda\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\柘宇\appdata\local\temp_~1\jdspider-1553429887-6rrx99zg.egg\JDSpider\spiders\getCommentDetail.py", line 36, in getCommentDetail
+    comments = j['comment']
+KeyError: 'comment'
+2019-03-24 20:41:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=23> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 20:41:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=21> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 20:41:00 [scrapy.core.scraper] ERROR: Spider error processing <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=9> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+Traceback (most recent call last):
+  File "d:\anacaonda\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\柘宇\appdata\local\temp_~1\jdspider-1553429887-6rrx99zg.egg\JDSpider\spiders\getCommentDetail.py", line 36, in getCommentDetail
+    comments = j['comment']
+KeyError: 'comment'
+2019-03-24 20:41:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=22> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 20:41:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=20> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 20:41:00 [scrapy.core.scraper] ERROR: Spider error processing <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=24> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+Traceback (most recent call last):
+  File "d:\anacaonda\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\柘宇\appdata\local\temp_~1\jdspider-1553429887-6rrx99zg.egg\JDSpider\spiders\getCommentDetail.py", line 36, in getCommentDetail
+    comments = j['comment']
+KeyError: 'comment'
+2019-03-24 20:41:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=18> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 20:41:00 [scrapy.core.scraper] ERROR: Spider error processing <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=11> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+Traceback (most recent call last):
+  File "d:\anacaonda\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\柘宇\appdata\local\temp_~1\jdspider-1553429887-6rrx99zg.egg\JDSpider\spiders\getCommentDetail.py", line 36, in getCommentDetail
+    comments = j['comment']
+KeyError: 'comment'
+2019-03-24 20:41:00 [scrapy.core.scraper] ERROR: Spider error processing <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=23> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+Traceback (most recent call last):
+  File "d:\anacaonda\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\柘宇\appdata\local\temp_~1\jdspider-1553429887-6rrx99zg.egg\JDSpider\spiders\getCommentDetail.py", line 36, in getCommentDetail
+    comments = j['comment']
+KeyError: 'comment'
+2019-03-24 20:41:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=16> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 20:41:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=19> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 20:41:00 [scrapy.core.scraper] ERROR: Spider error processing <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=21> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+Traceback (most recent call last):
+  File "d:\anacaonda\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\柘宇\appdata\local\temp_~1\jdspider-1553429887-6rrx99zg.egg\JDSpider\spiders\getCommentDetail.py", line 36, in getCommentDetail
+    comments = j['comment']
+KeyError: 'comment'
+2019-03-24 20:41:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=15> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 20:41:00 [scrapy.core.scraper] ERROR: Spider error processing <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=22> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+Traceback (most recent call last):
+  File "d:\anacaonda\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\柘宇\appdata\local\temp_~1\jdspider-1553429887-6rrx99zg.egg\JDSpider\spiders\getCommentDetail.py", line 36, in getCommentDetail
+    comments = j['comment']
+KeyError: 'comment'
+2019-03-24 20:41:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=17> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 20:41:00 [scrapy.core.scraper] ERROR: Spider error processing <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=20> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+Traceback (most recent call last):
+  File "d:\anacaonda\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\柘宇\appdata\local\temp_~1\jdspider-1553429887-6rrx99zg.egg\JDSpider\spiders\getCommentDetail.py", line 36, in getCommentDetail
+    comments = j['comment']
+KeyError: 'comment'
+2019-03-24 20:41:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=14> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 20:41:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=29> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 20:41:00 [scrapy.core.scraper] ERROR: Spider error processing <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=18> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+Traceback (most recent call last):
+  File "d:\anacaonda\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\柘宇\appdata\local\temp_~1\jdspider-1553429887-6rrx99zg.egg\JDSpider\spiders\getCommentDetail.py", line 36, in getCommentDetail
+    comments = j['comment']
+KeyError: 'comment'
+2019-03-24 20:41:00 [scrapy.core.scraper] ERROR: Spider error processing <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=16> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+Traceback (most recent call last):
+  File "d:\anacaonda\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\柘宇\appdata\local\temp_~1\jdspider-1553429887-6rrx99zg.egg\JDSpider\spiders\getCommentDetail.py", line 36, in getCommentDetail
+    comments = j['comment']
+KeyError: 'comment'
+2019-03-24 20:41:00 [scrapy.core.scraper] ERROR: Spider error processing <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=19> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+Traceback (most recent call last):
+  File "d:\anacaonda\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\柘宇\appdata\local\temp_~1\jdspider-1553429887-6rrx99zg.egg\JDSpider\spiders\getCommentDetail.py", line 36, in getCommentDetail
+    comments = j['comment']
+KeyError: 'comment'
+2019-03-24 20:41:00 [scrapy.core.scraper] ERROR: Spider error processing <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=15> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+Traceback (most recent call last):
+  File "d:\anacaonda\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\柘宇\appdata\local\temp_~1\jdspider-1553429887-6rrx99zg.egg\JDSpider\spiders\getCommentDetail.py", line 36, in getCommentDetail
+    comments = j['comment']
+KeyError: 'comment'
+2019-03-24 20:41:00 [scrapy.core.scraper] ERROR: Spider error processing <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=17> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+Traceback (most recent call last):
+  File "d:\anacaonda\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\柘宇\appdata\local\temp_~1\jdspider-1553429887-6rrx99zg.egg\JDSpider\spiders\getCommentDetail.py", line 36, in getCommentDetail
+    comments = j['comment']
+KeyError: 'comment'
+2019-03-24 20:41:00 [scrapy.core.scraper] ERROR: Spider error processing <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=14> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+Traceback (most recent call last):
+  File "d:\anacaonda\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\柘宇\appdata\local\temp_~1\jdspider-1553429887-6rrx99zg.egg\JDSpider\spiders\getCommentDetail.py", line 36, in getCommentDetail
+    comments = j['comment']
+KeyError: 'comment'
+2019-03-24 20:41:00 [scrapy.core.scraper] ERROR: Spider error processing <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=29> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=8141909&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+Traceback (most recent call last):
+  File "d:\anacaonda\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\anacaonda\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\柘宇\appdata\local\temp_~1\jdspider-1553429887-6rrx99zg.egg\JDSpider\spiders\getCommentDetail.py", line 36, in getCommentDetail
+    comments = j['comment']
+KeyError: 'comment'
+2019-03-24 20:41:00 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-03-24 20:41:00 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 18768,
+ 'downloader/request_count': 31,
+ 'downloader/request_method_count/GET': 31,
+ 'downloader/response_bytes': 207797,
+ 'downloader/response_count': 31,
+ 'downloader/response_status_count/200': 30,
+ 'downloader/response_status_count/404': 1,
+ 'dupefilter/filtered': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 3, 24, 12, 41, 0, 922453),
+ 'log_count/DEBUG': 33,
+ 'log_count/ERROR': 29,
+ 'log_count/INFO': 7,
+ 'log_count/WARNING': 2,
+ 'request_depth_max': 1,
+ 'response_received_count': 31,
+ 'scheduler/dequeued': 30,
+ 'scheduler/dequeued/memory': 30,
+ 'scheduler/enqueued': 30,
+ 'scheduler/enqueued/memory': 30,
+ 'spider_exceptions/KeyError': 29,
+ 'start_time': datetime.datetime(2019, 3, 24, 12, 40, 59, 761254)}
+2019-03-24 20:41:00 [scrapy.core.engine] INFO: Spider closed (finished)

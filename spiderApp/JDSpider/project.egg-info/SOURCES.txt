@@ -1,0 +1,16 @@
+setup.py
+JDSpider/__init__.py
+JDSpider/entrypoint.py
+JDSpider/items.py
+JDSpider/middlewares.py
+JDSpider/pipelines.py
+JDSpider/settings.py
+JDSpider/spiders/__init__.py
+JDSpider/spiders/getCommentDetail.py
+JDSpider/spiders/getCommentSummary.py
+JDSpider/spiders/getCommodityInfo.py
+project.egg-info/PKG-INFO
+project.egg-info/SOURCES.txt
+project.egg-info/dependency_links.txt
+project.egg-info/entry_points.txt
+project.egg-info/top_level.txt

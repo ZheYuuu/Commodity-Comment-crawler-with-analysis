@@ -1,0 +1,55 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CommentSummary</title>
+    <link href="{% static 'main/bootstrap.min.css' %}" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <table class="table table-hover">
+            <th>commodityId</th>
+            <th>name</th>
+            <tr>
+                <td>{{commentSummary.commodityId}}</td>
+                <td>{{name}}</td>
+            </tr>
+        </table>
+        <table class="table table-hover">
+            <th>goodRate</th>
+            <th>commentCountStr</th>
+            <th>goodCountStr</th>
+            <th>generalCountStr</th>
+            <th>poorCountStr</th>
+            <tr>
+                <td>{{commentSummary.goodRate}}</td>
+                <td>{{commentSummary.commentCountStr}}</td>
+                <td>{{commentSummary.goodCountStr}}</td>
+                <td>{{commentSummary.generalCountStr}}</td>
+                <td>{{commentSummary.poorCountStr}}</td>
+            </tr>
+            <th>videoCountStr</th>
+            <th>afterCountStr</th>
+            <th>imageListCount</th>
+            <tr>
+                <td>{{commentSummary.videoCountStr}}</td>
+                <td>{{commentSummary.afterCountStr}}</td>
+                <td>{{commentSummary.imageListCount}}</td>
+            </tr>
+        </table>
+
+        <div>
+            <table class="table table-hover">
+                <th>hotTag</th>
+                <th>Count</th>
+                {% for tag in hotTags %}
+                    <tr>
+                        <td>{{tag.name}}</td>
+                        <td>{{tag.count}}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+</body>
+</html>

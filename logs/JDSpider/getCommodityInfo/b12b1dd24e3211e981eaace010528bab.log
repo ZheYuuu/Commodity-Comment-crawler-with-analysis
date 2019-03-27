@@ -1,0 +1,338 @@
+2019-03-24 20:45:28 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: JDSpider)
+2019-03-24 20:45:28 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'JDSpider', 'HTTPCACHE_ENABLED': True, 'LOG_FILE': 'logs\\JDSpider\\getCommodityInfo\\b12b1dd24e3211e981eaace010528bab.log', 'NEWSPIDER_MODULE': 'JDSpider.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['JDSpider.spiders'], 'USER_AGENT': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'}
+2019-03-24 20:45:28 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-03-24 20:45:28 [scrapy.middleware] WARNING: Disabled HttpCacheMiddleware: Unable to find scrapy.cfg file to infer project data dir
+2019-03-24 20:45:28 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-03-24 20:45:28 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-03-24 20:45:28 [py.warnings] WARNING: c:\users\柘宇\appdata\local\temp_~1\jdspider-1553431492-7vfgkvp8.egg\JDSpider\pipelines.py:11: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+
+2019-03-24 20:45:28 [scrapy.middleware] INFO: Enabled item pipelines:
+['JDSpider.pipelines.JdspiderPipeline']
+2019-03-24 20:45:28 [scrapy.core.engine] INFO: Spider opened
+2019-03-24 20:45:28 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-03-24 20:45:28 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2019-03-24 20:45:28 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.jd.com/error.aspx> from <GET https://search.jd.com/robots.txt>
+2019-03-24 20:45:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.jd.com/error.aspx> (referer: None)
+2019-03-24 20:45:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://search.jd.com/Search?keyword=%E5%B0%8F%E8%93%9D%E7%93%B6&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1> (referer: None)
+2019-03-24 20:45:29 [py.warnings] WARNING: d:\anacaonda\lib\site-packages\bs4\__init__.py:181: UserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("lxml"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
+
+The code that caused this warning is on line 193 of the file d:\anacaonda\lib\runpy.py. To get rid of this warning, change code that looks like this:
+
+ BeautifulSoup(YOUR_MARKUP})
+
+to this:
+
+ BeautifulSoup(YOUR_MARKUP, "lxml")
+
+  markup_type=markup_type))
+
+2019-03-24 20:45:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://search.jd.com/Search?keyword=%E5%B0%8F%E8%93%9D%E7%93%B6&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1> (referer: https://search.jd.com/Search?keyword=%E5%B0%8F%E8%93%9D%E7%93%B6&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1)
+2019-03-24 20:45:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E5%B0%8F%E8%93%9D%E7%93%B6&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': 'TAKAMI',
+ 'category': 'Health&Beauty',
+ 'name': '海囤全球TAKAMI 小蓝瓶肌底代谢美容液 精华  去闭口  收缩毛孔 30ml\n'
+         '惊喜店庆,激情好礼从天降。贝德玛卸妆水14点秒杀,2件免邮,4件抢券再减30元,券后低至71.5元,立即抢购',
+ 'price': 329.0,
+ 'searchKey': '小蓝瓶',
+ 'uniqueId': '31896422916',
+ 'url': '//item.jd.com/31896422916.html'}
+2019-03-24 20:45:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E5%B0%8F%E8%93%9D%E7%93%B6&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '透真',
+ 'category': 'Health&Beauty',
+ 'name': '京东超市【第2件0元】透真寡肽原液淡化痘印修护痘坑去粉刺祛痘精华液男女收缩毛孔护肤化妆品 小蓝瓶30ml\n'
+         '\n'
+         '【抽奖领券，抢万份好礼】\n'
+         '①郭俊辰力荐底妆买1得3，第2件0元！\n'
+         '②更多爆品买1送1，面膜买3免1，套装满199减100疯抢！\n'
+         '③关注店铺抽奖， 猛戳进',
+ 'price': 89.9,
+ 'searchKey': '小蓝瓶',
+ 'uniqueId': '37686813083',
+ 'url': '//item.jd.com/37686813083.html'}
+2019-03-24 20:45:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E5%B0%8F%E8%93%9D%E7%93%B6&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '娇韵诗',
+ 'category': 'Health&Beauty',
+ 'name': '海囤全球法国进口 娇韵诗CLARINS 沁润奇肌保湿精华液30ml  不死鸟水精华 面部精华深层滋润孕妇精华小蓝瓶',
+ 'price': 415.0,
+ 'searchKey': '小蓝瓶',
+ 'uniqueId': '4786222',
+ 'url': '//item.jd.com/4786222.html'}
+2019-03-24 20:45:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E5%B0%8F%E8%93%9D%E7%93%B6&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '兰蔻',
+ 'category': 'Health&Beauty',
+ 'name': '海囤全球兰蔻（LANCOME）小黑瓶肌底修护安瓶精华小蓝瓶 20ml',
+ 'price': 449.0,
+ 'searchKey': '小蓝瓶',
+ 'uniqueId': '8815109',
+ 'url': '//item.jd.com/8815109.html'}
+2019-03-24 20:45:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E5%B0%8F%E8%93%9D%E7%93%B6&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '自然之谜',
+ 'category': 'Health&Beauty',
+ 'name': '自然之谜玻尿酸原液买一送一精华液女补水保湿提亮收缩毛孔30ML滴管小蓝瓶7天安瓶精华正品男女',
+ 'price': 59.9,
+ 'searchKey': '小蓝瓶',
+ 'uniqueId': '25068072203',
+ 'url': '//item.jd.com/25068072203.html'}
+2019-03-24 20:45:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E5%B0%8F%E8%93%9D%E7%93%B6&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '娇韵诗',
+ 'category': 'Health&Beauty',
+ 'name': '娇韵诗CLARINS 沁润奇肌保湿精华液 30ml 小蓝瓶保湿精华 不死鸟深层滋润锁水舒缓 法国原装进口\n'
+         '京东美妆，懂你的美！年度狂欢来袭！爆款直降，低至满499减100，更有惊喜好礼不停歇，不预约不预售，京东物流火力全开。预售不用等待，变美就是现在',
+ 'price': 529.0,
+ 'searchKey': '小蓝瓶',
+ 'uniqueId': '6658836',
+ 'url': '//item.jd.com/6658836.html'}
+2019-03-24 20:45:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E5%B0%8F%E8%93%9D%E7%93%B6&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': 'TAKAMI',
+ 'category': 'Health&Beauty',
+ 'name': '海囤全球【品质保障 海外直供】日本TAKAMI小蓝瓶角质软化美容液精华液肌底液 去角质黑头精华30ml 软化角质美容液30ml\n'
+         '全球进口美妆护肤精选好货，全场领券满减点击进入精选专场',
+ 'price': 318.0,
+ 'searchKey': '小蓝瓶',
+ 'uniqueId': '32461057184',
+ 'url': '//item.jd.com/32461057184.html'}
+2019-03-24 20:45:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E5%B0%8F%E8%93%9D%E7%93%B6&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '珀薇',
+ 'category': 'Health&Beauty',
+ 'name': '珀薇（BOVEY）补水保湿精华液男女士通用玻尿酸原液收缩毛孔紧致面部去痘印肌底乳液 三重玻尿酸深补水保湿小蓝瓶\n'
+         '#购物先领优惠券可叠加折扣使用#\n'
+         '《满199减100囤货专区劲省钱！快戳此处去凑单抢购》',
+ 'price': 68.0,
+ 'searchKey': '小蓝瓶',
+ 'uniqueId': '10366461819',
+ 'url': '//item.jd.com/10366461819.html'}
+2019-03-24 20:45:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E5%B0%8F%E8%93%9D%E7%93%B6&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '希芸',
+ 'category': 'Health&Beauty',
+ 'name': '希芸（syrinx）嫩白修护液小蓝瓶10ml 面部精华 保湿淡化痘印 肌底液',
+ 'price': 29.0,
+ 'searchKey': '小蓝瓶',
+ 'uniqueId': '1068258866',
+ 'url': 'https://ccc-x.jd.com/dsp/nc?ext=aHR0cDovL2l0ZW0uamQuY29tLzEwNjgyNTg4NjYuaHRtbA&log=JECkgTEjtopSxwo0cabDRAW0WAh6mifSCSwXb7G2K22z2_0_xQSrz4n42_OZ2mH_UO9xyiWexW4I2HNFlqJ2u3IDyC2CYStPPthNAZHaM5Gu2wfONpW5d3Bq5_jK89HWLUjzaxAounCMIhXtj9BwJwqu0iAYXOga0idIxWFGs3Qe8B-0e22YQHDhVrO9SvLRTrPXNUSxbtFsBbj84vsmQdzP-aWgIx0DhHaMiA9uG4GBUfKLriGan-ME-sH7YlY_8c9WdsyKvhxIynfJUF-3ayvGGhdIj4qQgF98b9wC2S8tMeiL6XFIzKLt6u8ohweLcGbj8IVHvjdhrI1xp-37NRk6NCULN8tC8lLH2-lJHj6xO2ZuSNH4THl6h45ViFlCTnvT4xcB2oZIT2oMxcwQYU0VyI_kITwguovsppVm6C6-_7JUomzshvEfFISORHkdzqVXdVA-kusGcWk5LzkRtLUQ_r2KD8X1J1LPz7skuRMUWxBH4odVUNjNihkXVNgYBMlFckpfvmuGU8ECWflsmDm5MpZ0haSc-Nd92EVB4roW7iKG63mRGsZIa15xxQc37PL1dwheU61JQjWH9jFttw&v=404'}
+2019-03-24 20:45:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E5%B0%8F%E8%93%9D%E7%93%B6&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '希芸',
+ 'category': 'Health&Beauty',
+ 'name': '希芸面部精华液 嫩白御痕淡化痘印面部补水保湿精华液深层修护 希芸小蓝瓶10ml  6瓶装',
+ 'price': 95.0,
+ 'searchKey': '小蓝瓶',
+ 'uniqueId': '11253364537',
+ 'url': 'https://ccc-x.jd.com/dsp/nc?ext=aHR0cHM6Ly9pdGVtLmpkLmNvbS8xMTI1MzM2NDUzNy5odG1s&log=JECkgTEjtopSxwo0cabDRAW0WAh6mifSCSwXb7G2K22buXx6eVphiVFQXggrbjn385WLMu1aP8ZAp-UO7pZz-0_44j5VgTL43Lf9dW_qSb-aWhhHm8dDFRW0KQimHf1gzoF40Bg9OokThxg2aIHva9yGiPjKSeux_PRVcEVhZGW3Mq4u8PDpN1R0f3FnCDXh-iCeCIZ-jgD2aav0DMeIXDi2qIuhA6YGAVMbD4Tuj4UqMzn9F9HsZsyntMIX-yYxhSZA4bsekH128vJR-MPoUgkjUQl3wmJZ-iQxYeFnSnNhqAX_eMPksVz3V0QXmZIs4GaBcMxpDNoMjX4-9OgFD58h8WNIN1K6cfjacy06E5iCog3z9vDx4U5FWA7GxYgS-L-zxPC6qlhZY-KxgCBJiHBsvNl02pTDR4oL5sJYmg9C60QN4wVqZelPmJdytMH-AteOZEI1LqfruIPQo-WjdjWPJ8LEDmeoQRzmecSbJADBVkO9mmblzkDNouE2IHR5DhDsz6-DVaJiB8dSbzXQ4z-Xe9e-_l1d7VumBYk2tHXFfm2krr2-ub4q8aHIcwGD&v=404'}
+2019-03-24 20:45:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E5%B0%8F%E8%93%9D%E7%93%B6&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': 'TAKAMI',
+ 'category': 'Health&Beauty',
+ 'name': '海囤全球TAKAMI 【日本直邮】日本takami小蓝瓶去黑头去角质闭口精华液30ml 彻底改善角质层\n'
+         '看直播，买正品！请关注每周一周四扫货现场直播，点击看回放！看直播，买正品！请关注每周一周四扫货现场直播，点击看回放！',
+ 'price': 326.0,
+ 'searchKey': '小蓝瓶',
+ 'uniqueId': '1986881214',
+ 'url': '//item.jd.com/1986881214.html'}
+2019-03-24 20:45:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E5%B0%8F%E8%93%9D%E7%93%B6&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '希芸',
+ 'category': 'Health&Beauty',
+ 'name': '希芸（syrinx）嫩白修护液40ml+10ml 小蓝瓶淡化痘印补水\n希芸旗舰店，正品保证。',
+ 'price': 99.0,
+ 'searchKey': '小蓝瓶',
+ 'uniqueId': '1006634870',
+ 'url': '//item.jd.com/1006634870.html'}
+2019-03-24 20:45:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E5%B0%8F%E8%93%9D%E7%93%B6&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '其他',
+ 'category': 'Health&Beauty',
+ 'name': '海囤全球【香港直邮】日本Takami 美容面部精华液 去闭口 痘痘粉 收缩毛孔黑头小蓝瓶角质调理液30ml\n'
+         '岁末大促，全店购满99元免邮（部分地区除外），亲！记得领取超值优惠券哦！',
+ 'price': 316.0,
+ 'searchKey': '小蓝瓶',
+ 'uniqueId': '33566286174',
+ 'url': '//item.jd.com/33566286174.html'}
+2019-03-24 20:45:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E5%B0%8F%E8%93%9D%E7%93%B6&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '水肌美',
+ 'category': 'Health&Beauty',
+ 'name': '小米有品 水肌美玻尿酸原液 补水保湿 助渗增效 调控油光 日本生产 百搭补水小蓝瓶 30ml/L\n'
+         '【3.9-3.15蝴蝶节】部分第二件半价！99任选5件！199任选5件！部分1件9折！点击进入会场查看击进入会场查看',
+ 'price': 169.0,
+ 'searchKey': '小蓝瓶',
+ 'uniqueId': '41411926516',
+ 'url': '//item.jd.com/41411926516.html'}
+2019-03-24 20:45:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E5%B0%8F%E8%93%9D%E7%93%B6&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '希芸',
+ 'category': 'Health&Beauty',
+ 'name': '希芸嫩白修护液精华液小蓝瓶补水保湿10ml\n实付满189元送肌初美容液15ml+100洁面 实付满288送4件中样',
+ 'price': 19.0,
+ 'searchKey': '小蓝瓶',
+ 'uniqueId': '29994769446',
+ 'url': '//item.jd.com/29994769446.html'}
+2019-03-24 20:45:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E5%B0%8F%E8%93%9D%E7%93%B6&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '希芸',
+ 'category': 'Health&Beauty',
+ 'name': '希芸精华嫩白修护液小蓝瓶10ml 面部精华液 保湿淡化痘印肌底液玻尿酸烟酰胺精华 毛孔粗大女\n'
+         '【京东物流，美丽不等待】品牌专营店，正品保证。全店满189送旅行套装，联系客服备注~',
+ 'price': 19.0,
+ 'searchKey': '小蓝瓶',
+ 'uniqueId': '30859018962',
+ 'url': '//item.jd.com/30859018962.html'}
+2019-03-24 20:45:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E5%B0%8F%E8%93%9D%E7%93%B6&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '希芸',
+ 'category': 'Health&Beauty',
+ 'name': '希芸/syrinx 嫩白修护精华液 收缩毛孔面部小蓝瓶补水保湿淡化痘印 精油肌底液10ml\n'
+         '3瓶包邮  买5瓶送1瓶 （ 每瓶都送袋包美容油！） 淡化斑淡化痘印',
+ 'price': 19.0,
+ 'searchKey': '小蓝瓶',
+ 'uniqueId': '25815272544',
+ 'url': '//item.jd.com/25815272544.html'}
+2019-03-24 20:45:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E5%B0%8F%E8%93%9D%E7%93%B6&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': 'TAKAMI',
+ 'category': 'Health&Beauty',
+ 'name': '海囤全球日本TAKAMI小蓝瓶去黑头角质软化消闭口精华液30ml 一瓶',
+ 'price': 328.0,
+ 'searchKey': '小蓝瓶',
+ 'uniqueId': '42411745199',
+ 'url': '//item.jd.com/42411745199.html'}
+2019-03-24 20:45:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E5%B0%8F%E8%93%9D%E7%93%B6&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '兰蔻',
+ 'category': 'Health&Beauty',
+ 'name': '海囤全球兰蔻（LANCOME） 兰蔻小黑瓶精华50ml安瓶肌底修护舒润精华液20ml舒缓 补水 抗皱 紧致 '
+         '小黑瓶修护舒润精华液安瓶精华小蓝瓶 20ml\n'
+         '【香港直邮品质无忧】温柔你的岁月，惊艳他的年华！全店满69包邮！更多优惠请咨询在线客服',
+ 'price': 439.0,
+ 'searchKey': '小蓝瓶',
+ 'uniqueId': '40343805200',
+ 'url': '//item.jd.com/40343805200.html'}
+2019-03-24 20:45:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E5%B0%8F%E8%93%9D%E7%93%B6&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': 'TAKAMI',
+ 'category': 'Health&Beauty',
+ 'name': '海囤全球【品质保障 海外直供】日本TAKAMI小蓝瓶角质软化美容液精华液肌底液 去角质黑头精华30ml 赠品勿拍 面膜一片\n'
+         '全球进口美妆护肤精选好货，全场领券满减点击进入精选专场',
+ 'price': 10.0,
+ 'searchKey': '小蓝瓶',
+ 'uniqueId': '32461057186',
+ 'url': '//item.jd.com/32461057186.html'}
+2019-03-24 20:45:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E5%B0%8F%E8%93%9D%E7%93%B6&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '希芸',
+ 'category': 'Health&Beauty',
+ 'name': '【官方授权】希芸嫩白修护液专柜正品面部护肤烟酰胺玻尿酸肌底液旗舰店同款正品小蓝瓶面部精华 40g+10g(小铁盒）\n'
+         '1.【官方正品】品牌直授，防伪标识\n'
+         '2.【满减优惠】满88-5元，满165-10\n'
+         '3.【满送赠品】点击进入希芸专场活动',
+ 'price': 89.0,
+ 'searchKey': '小蓝瓶',
+ 'uniqueId': '41847199780',
+ 'url': '//item.jd.com/41847199780.html'}
+2019-03-24 20:45:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E5%B0%8F%E8%93%9D%E7%93%B6&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '彼得罗夫',
+ 'category': 'Health&Beauty',
+ 'name': '海囤全球PTR彼得罗夫精华 维A晚间精华30ml小蓝瓶\n海外直邮！',
+ 'price': 340.0,
+ 'searchKey': '小蓝瓶',
+ 'uniqueId': '1952339113',
+ 'url': '//item.jd.com/1952339113.html'}
+2019-03-24 20:45:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E5%B0%8F%E8%93%9D%E7%93%B6&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '希芸',
+ 'category': 'Health&Beauty',
+ 'name': '希芸（syrinx） 希芸嫩白修护液小蓝瓶淡化痘印面部补水保湿精华液深层修护紧致肌肤 嫩白小蓝瓶10ML\n'
+         '10ML三瓶包邮 五瓶送一瓶  40+10ML套装包邮',
+ 'price': 19.0,
+ 'searchKey': '小蓝瓶',
+ 'uniqueId': '17348416934',
+ 'url': '//item.jd.com/17348416934.html'}
+2019-03-24 20:45:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E5%B0%8F%E8%93%9D%E7%93%B6&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '思姬',
+ 'category': 'Health&Beauty',
+ 'name': '思姬玻尿酸原液精华液收缩毛孔补水提亮光泽度保湿淡纹紧致小蓝瓶8瓶\n'
+         '【官方直营 正品】 8支装，清爽浓缩型适合任何肌肤使用，百搭产品淡化细纹改善粗糙无光泽度',
+ 'price': 89.0,
+ 'searchKey': '小蓝瓶',
+ 'uniqueId': '1721332851',
+ 'url': '//item.jd.com/1721332851.html'}
+2019-03-24 20:45:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E5%B0%8F%E8%93%9D%E7%93%B6&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '希芸',
+ 'category': 'Health&Beauty',
+ 'name': '希芸嫩白修护液小蓝瓶肌底液套装美容油补水保湿祛黄淡化斑美颜嫩白玻尿酸烟酰胺精华40ml+10ml 希芸嫩白修护液50ml\n'
+         '厂家授权 正品保证 假一罚十  国妆特字号去斑类',
+ 'price': 89.0,
+ 'searchKey': '小蓝瓶',
+ 'uniqueId': '34238299328',
+ 'url': '//item.jd.com/34238299328.html'}
+2019-03-24 20:45:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E5%B0%8F%E8%93%9D%E7%93%B6&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '希芸',
+ 'category': 'Health&Beauty',
+ 'name': '爱心东东希芸嫩白修护液精华液 小蓝瓶精华液去黄嫩白补水保湿肌底液 希芸嫩白修护液套装 嫩白修复液10ml\n'
+         '购物先领卷,30天退换货,满189元送两个中样,满288元送四个中样,多买多送',
+ 'price': 19.0,
+ 'searchKey': '小蓝瓶',
+ 'uniqueId': '10703238489',
+ 'url': '//item.jd.com/10703238489.html'}
+2019-03-24 20:45:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E5%B0%8F%E8%93%9D%E7%93%B6&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '希芸',
+ 'category': 'Health&Beauty',
+ 'name': '希芸精华嫩白修护液小蓝瓶礼盒 面部精华液 保湿淡化痘印肌底液玻尿酸烟酰胺精华 毛孔粗大女\n'
+         '【京东物流，美丽不等待】品牌专营店，正品保证。全店满189送旅行套装，联系客服备注~',
+ 'price': 89.0,
+ 'searchKey': '小蓝瓶',
+ 'uniqueId': '30859063337',
+ 'url': '//item.jd.com/30859063337.html'}
+2019-03-24 20:45:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E5%B0%8F%E8%93%9D%E7%93%B6&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '希芸',
+ 'category': 'Health&Beauty',
+ 'name': '希芸（syrinx）嫩白修护液10ml 补水保湿玻尿酸精华肌底液收缩毛孔 紧致肌肤嫩白修护液小蓝瓶1',
+ 'price': 19.0,
+ 'searchKey': '小蓝瓶',
+ 'uniqueId': '30796095450',
+ 'url': '//item.jd.com/30796095450.html'}
+2019-03-24 20:45:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E5%B0%8F%E8%93%9D%E7%93%B6&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '希芸',
+ 'category': 'Health&Beauty',
+ 'name': '正品希芸嫩白修护液小蓝瓶补水面部精华液修护精油定妆液 去黄正品淡化色补水男女抖音同款斑',
+ 'price': 19.0,
+ 'searchKey': '小蓝瓶',
+ 'uniqueId': '24955658895',
+ 'url': '//item.jd.com/24955658895.html'}
+2019-03-24 20:45:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.jd.com/Search?keyword=%E5%B0%8F%E8%93%9D%E7%93%B6&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&s=54&click=0&page=1>
+{'brand': '希芸',
+ 'category': 'Health&Beauty',
+ 'name': '兵哥美妆 希芸嫩白修护液小蓝瓶祛黄淡化痘印补水保湿面部精华液肌底液增强吸收减少黑色素生成修复肌肤 嫩白修护液10ml\n'
+         '满189元送两个中样，满288元送四个中样，多买多送，记得一定要先领劵再买哦，狠划算',
+ 'price': 19.0,
+ 'searchKey': '小蓝瓶',
+ 'uniqueId': '26284953490',
+ 'url': '//item.jd.com/26284953490.html'}
+2019-03-24 20:45:30 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-03-24 20:45:30 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1390,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/GET': 4,
+ 'downloader/response_bytes': 75079,
+ 'downloader/response_count': 4,
+ 'downloader/response_status_count/200': 3,
+ 'downloader/response_status_count/302': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 3, 24, 12, 45, 30, 234517),
+ 'item_scraped_count': 30,
+ 'log_count/DEBUG': 35,
+ 'log_count/INFO': 7,
+ 'log_count/WARNING': 3,
+ 'request_depth_max': 1,
+ 'response_received_count': 3,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2019, 3, 24, 12, 45, 28, 412915)}
+2019-03-24 20:45:30 [scrapy.core.engine] INFO: Spider closed (finished)

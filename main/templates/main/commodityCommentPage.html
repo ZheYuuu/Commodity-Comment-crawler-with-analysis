@@ -1,0 +1,57 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品评论</title>
+    <link href="{% static 'main/bootstrap.min.css' %}" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="pagination">
+            <span class="step-links">
+                {% if commentList.has_previous %}
+                    <a href="?page={{ commentList.previous_page_number }}">previous</a>
+                {% endif %}
+
+                <span class="current">
+                    Page {{ commentList.number }} of {{ commentList.paginator.num_pages }}.
+                </span>
+
+                {% if commentList.has_next %}
+                    <a href="?page={{ commentList.next_page_number }}">next</a>
+                {% endif %}
+            </span>
+    </div>
+    <table class="table table-hover">
+        <th>id</th>
+        <th>commodityId</th>
+        <th>content</th>
+        <th>picNum</th>
+        <th>videoNum</th>
+        <th>replyNum</th>
+        <th>creationTime</th>
+        <th>userLevelName</th>
+        <th>score</th>
+        <th>usefulVoteCount</th>
+        {% for comment in commentList%}
+        <tr>
+            <td>{{comment.id}}</td>
+            <td>{{comment.commodityId}}</td>
+            <td>{{comment.content}}</td>
+            <td>{{comment.picNum}}</td>
+            <td>{{comment.videoNum}}</td>
+            <td>{{comment.replyNum}}</td>
+            <td>{{comment.creationTime}}</td>
+            <td>{{comment.userLevelName}}</td>
+            <td>{{comment.score}}</td>
+            <td>{{comment.usefulVoteCount}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+
+
+</body>
+</html>

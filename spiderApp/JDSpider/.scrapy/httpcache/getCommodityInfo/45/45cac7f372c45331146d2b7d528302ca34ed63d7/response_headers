@@ -1,0 +1,11 @@
+Server: jfe
+Date: Sun, 24 Mar 2019 07:38:21 GMT
+Content-Type: text/html; charset=utf-8
+Access-Control-Allow-Origin: *
+Location: https://www.jd.com/error.aspx
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Xss-Protection: 1; mode=block
+Expires: Sun, 24 Mar 2019 07:38:21 GMT
+Cache-Control: max-age=0
+Strict-Transport-Security: max-age=86400

@@ -1,0 +1,3380 @@
+2019-03-24 21:58:15 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: JDSpider)
+2019-03-24 21:58:15 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'JDSpider', 'HTTPCACHE_ENABLED': True, 'LOG_FILE': 'logs\\JDSpider\\getCommentDetail\\dc8cbfa44e3c11e9b432ace010528bab.log', 'NEWSPIDER_MODULE': 'JDSpider.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['JDSpider.spiders'], 'USER_AGENT': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'}
+2019-03-24 21:58:15 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-03-24 21:58:16 [scrapy.middleware] WARNING: Disabled HttpCacheMiddleware: Unable to find scrapy.cfg file to infer project data dir
+2019-03-24 21:58:16 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-03-24 21:58:16 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-03-24 21:58:16 [py.warnings] WARNING: c:\users\柘宇\appdata\local\temp_~1\jdspider-1553435875-d9fhb8v1.egg\JDSpider\pipelines.py:11: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+
+2019-03-24 21:58:16 [scrapy.middleware] INFO: Enabled item pipelines:
+['JDSpider.pipelines.JdspiderPipeline']
+2019-03-24 21:58:16 [scrapy.core.engine] INFO: Spider opened
+2019-03-24 21:58:16 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-03-24 21:58:16 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2019-03-24 21:58:17 [scrapy.core.engine] DEBUG: Crawled (404) <GET http://sclub.jd.com/robots.txt> (referer: None)
+2019-03-24 21:58:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1> (referer: None)
+2019-03-24 21:58:17 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2019-03-24 21:58:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=22> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 21:58:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=26> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 21:58:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=19> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 21:58:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=23> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 21:58:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=21> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 21:58:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=24> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 21:58:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=20> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 21:58:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=18> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 21:58:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=25> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 21:58:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=17> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 21:58:17 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=22>
+{'commodityId': '2269354',
+ 'content': '手感，配重还算很棒。其实相比其他品牌的杂乱，还是老牌外设的比较好用。手感，做工，都是老厂风范。无线的很不行，有线的依旧不错。只要不是竞技要求，很棒了。',
+ 'creationTime': '2018-01-07 10:30:13',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=22>
+{'commodityId': '2269354',
+ 'content': '做工质感都相当的不错，按键和滚轮都很有手感，确实算是网红款，玩起游戏很舒服。京东快递一如既往的好。',
+ 'creationTime': '2018-11-12 23:03:24',
+ 'isTop': 0,
+ 'picNum': 0,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=22>
+{'commodityId': '2269354',
+ 'content': '耶！！！不是二手的。运气不错，设置很爽，我玩FPS的，那个左边的键用起来不错，而且，都说是练武之人，可能我健身的原因吧，我觉得全加也不是很重，不加又太轻了，所以装了4个，纠结了我很久很久的鼠标，今天还愿了，开心爆炸',
+ 'creationTime': '2018-10-15 19:25:23',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=22>
+{'commodityId': '2269354',
+ 'content': '鼠标收到了，不得不说mx518的外观既不失内敛的稳重感也不失娱乐的现代感，有着超高的DPI和回报率可以应对多种环境。搭配g633即使不玩也是一种美的享受。\n'
+            '驱动更新后完美识别，编程按键存取DPI超方便～',
+ 'creationTime': '2018-10-16 17:17:16',
+ 'isTop': 0,
+ 'picNum': 6,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 1,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=22>
+{'commodityId': '2269354',
+ 'content': '看着好看，配重块很不错。这个线也很喜欢，看着蛮结实。鼠标上按键很多。还没开始用不知道效果咋样舒不舒服。过段时间再看',
+ 'creationTime': '2018-06-04 19:36:55',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '银牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=22>
+{'commodityId': '2269354',
+ 'content': '鼠标非常好用下载驱动以后简直就是开了挂的人生，无敌是多么寂寞难耐！非常喜欢非常满意非常耐用，非常热爱！非常喜欢 包装很好',
+ 'creationTime': '2018-12-06 15:08:25',
+ 'isTop': 0,
+ 'picNum': 0,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '铜牌会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=22>
+{'commodityId': '2269354',
+ 'content': '最近用买电脑送的鼠标玩彩虹六号老是出现不稳的情况，再三比较了几款流行鼠标后最后选择了G502，外观上够炫酷，特别是呼吸灯，手感没有想象的那么重，不装配重块跟以前老鼠标手感差不多，电脑上装了驱动后可调节DPI是比较人性化的一点，玩FPS游戏再也不用担心鼠标大晃动了，我已经已迫不及待要打开游戏试试了！和往常一样，很满意的一次购物。',
+ 'creationTime': '2017-08-30 21:46:55',
+ 'isTop': 0,
+ 'picNum': 4,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 1,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=22>
+{'commodityId': '2269354',
+ 'content': '这次的价格真的很划算，到手价才二七九，同学们也都惊呆了，纷纷一起下单，用起来非常舒服，最爱的无敌手感，高颜值，扎实的做工，满满的幸福感。物流一如既往的快，哈哈哈',
+ 'creationTime': '2018-11-07 19:26:05',
+ 'isTop': 0,
+ 'picNum': 7,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=22>
+{'commodityId': '2269354',
+ 'content': '特地用了两天才来评价，之前一直用赛睿R300，新款比原来的鼠标稍小偏重，微动很脆不像赛睿的有点肉，握感好，灯光很炫，超多侧键，滚轮模式也可以切换FPS游戏超级推荐！',
+ 'creationTime': '2017-08-27 13:09:47',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=16> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=22>
+{'commodityId': '2269354',
+ 'content': '这鼠标用这手感很棒，我手19.5cm，用这正合适，我这很舒服，按键很清脆，玩lol很有手感，鼠标比较重，还可以加重，很稳。',
+ 'creationTime': '2017-05-26 10:29:49',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=15> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=26>
+{'commodityId': '2269354',
+ 'content': '之前一直在用达尔优，换了罗技之后手感方面也没有多少不适应。这鼠标我觉得是个玩游戏的就认识，不多bb。非常舒服，csgo的kz用这个滚轮跳就像飞起来了一样！',
+ 'creationTime': '2018-07-09 10:07:57',
+ 'isTop': 0,
+ 'picNum': 8,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=26>
+{'commodityId': '2269354',
+ 'content': '很好，用了马上排位拿了两局mvp，盲憎r闪很顺畅，非常适合我，玩各种游戏都可以！',
+ 'creationTime': '2018-12-13 20:57:12',
+ 'isTop': 0,
+ 'picNum': 4,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=26>
+{'commodityId': '2269354',
+ 'content': '等待502很久了 一直不见降价 终于被我等到了 手感比402要好 两侧防汗设计很棒，滚轮键真是太灵性了。以后再也！怕游戏玩不好惹',
+ 'creationTime': '2018-09-01 10:44:46',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=26>
+{'commodityId': '2269354',
+ 'content': '非常满意，大手也很舒服，打游戏灵敏度很好，各方面都很满意，滚轮刚开始还不会用，上网查了一下才知道是有俩模式的，很好很满意',
+ 'creationTime': '2017-09-09 15:41:18',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '钻石会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=26>
+{'commodityId': '2269354',
+ 'content': '502经典的手感没变，握起来还是那么舒服。特别是金属滚轮很有质感，鼠标线由橡胶外皮升级了编织外皮包网，包装简化了，具体光学引擎的变化还有待观察。最后祝大家猪年快乐，少长肉肉，阖家安康！',
+ 'creationTime': '2019-02-06 18:28:18',
+ 'isTop': 0,
+ 'picNum': 5,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 2,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=26>
+{'commodityId': '2269354',
+ 'content': '罗技的东西确实好用 我的G1现在还好好的能用了 这个配重很好 可以自己调节重心 自适应没啥感觉 就是滑轮真的很松 不喜欢 '
+            '还好能切换 玩游戏不错 定位很准 配合我的G710+ 爽死了',
+ 'creationTime': '2016-08-25 21:53:00',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=19>
+{'commodityId': '2269354',
+ 'content': '手感超棒 设置不同的模式 可以适应不同的工作场景 灯光的调节也非常漂亮 方便 。 罗技一如既往地设计风格 加配重块 手感沉稳 '
+            '不管是打游戏 画图 还是浏览网页 感受都特别棒 。在618入手 又领了优惠券 比之前同学买的便宜了近200块 美滋滋 '
+            '。就是没有鼠标垫赠送 这有点坑  希望自营以后可以考虑一下礼品！',
+ 'creationTime': '2018-06-09 15:09:10',
+ 'isTop': 0,
+ 'picNum': 5,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=19>
+{'commodityId': '2269354',
+ 'content': '特意用过几天才来评价，确实好，比我以前的那个好使用多了。就是用软件有些游戏限制。关了软件也是很好用这个。',
+ 'creationTime': '2018-11-28 08:45:25',
+ 'isTop': 0,
+ 'picNum': 4,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '银牌会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=19>
+{'commodityId': '2269354',
+ 'content': '真的非常的丝滑，而且不粘汗，我是容易出汗的那种，之前买个鼠标每次打完游戏都要擦，现在很方便了，而且两边的防滑胶也很舒适',
+ 'creationTime': '2019-02-09 15:31:00',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '银牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=19>
+{'commodityId': '2269354',
+ 'content': '京东的送货首先不用说了，上午下单下午就到了好吧，满分。之前的雷蛇鼠标一年没用 '
+            '最近发现左右键都连击了。不想用雷蛇了正好发现罗技出新品，经典**升级版，还有优惠果断下单。极简包装 简约而不简单 这样很好 '
+            '毕竟买的是鼠标 花在包装上的钱越少越好，钱都要用在刀刃上。鼠标很好，没发现不好的地方 感觉马上就可以在游戏里大杀四方了！很满意',
+ 'creationTime': '2018-10-15 20:40:53',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '钻石会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=19>
+{'commodityId': '2269354',
+ 'content': '全新未拆封，相当实惠的一次购物体验，本人以前一直用罗技无线鼠标的，从G602到G603都给我留下很深刻的办公游戏体验，这次新的三代G502看到有活动就下手了，16K的传感器又省电性能又强，还更换了5000万次的微动按键，真的是为G502注入新的灵魂，已经预定了下次GPW的活动，希望不会错过。\n'
+            '新的一年，祝罗技祥风阵阵,福来运转,猪年新春,新春快乐！',
+ 'creationTime': '2019-02-06 02:27:04',
+ 'isTop': 0,
+ 'picNum': 5,
+ 'replyNum': 4,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=19>
+{'commodityId': '2269354',
+ 'content': 'G502很好，拿起来很舒服，手感很高，设计很完美，适应我玩的所有游戏，整体不错，配重块是个不错的选择，1680万种灯光效果，简直不要太酷炫，狠狠的在室友面前装了一波，11个编程键位，瑞文光速qa,李青摸眼r闪，只要一个键，用完后排位直接上两个大段，简直了！',
+ 'creationTime': '2016-10-20 10:53:30',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 2,
+ 'score': 5,
+ 'usefulVoteCount': 1,
+ 'userLevelName': '银牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=19>
+{'commodityId': '2269354',
+ 'content': '物流给力，价格适宜，用着不错，左右键很爽脆，本来是准备用来玩游戏的，结果买来后就上上网，功能都没开发，没有物尽其用，也没有体会到他的妙处。',
+ 'creationTime': '2017-12-12 09:41:01',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=19>
+{'commodityId': '2269354',
+ 'content': '自营的东西快递是一如既往的快，翻阅了大部分的差评，很多都说拆开过&hellip;&hellip;或者包装破损，我的运气挺好，包装完好，所有配件，说明书，齐全，鼠标全新内外序列号一致，一直很想买502，一直关注价格，赶上活动，立刻下手，很高兴～',
+ 'creationTime': '2018-10-29 00:10:52',
+ 'isTop': 0,
+ 'picNum': 7,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=19>
+{'commodityId': '2269354',
+ 'content': '跟610一起买的，总体不错，喜欢滚轮的两种模式，按键比较舒服，按键宏也很方便，做文件鼠标能省很多事。打游戏手感很赞',
+ 'creationTime': '2018-10-07 14:57:36',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=19>
+{'commodityId': '2269354',
+ 'content': '手感可以说很奶思了，之前见同学用过这款鼠标，被它的颜值吸引，使用后才发现它的手感也是极佳的，确认过眼神，是我想要的鼠标。\n'
+            '拿钱买喜欢的东西，钱并没有消失，而是以另一种你喜欢的形式陪在你身边！',
+ 'creationTime': '2018-11-12 22:57:05',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=23>
+{'commodityId': '2269354',
+ 'content': '头一次买这么贵的鼠标，可调配重，比以前的G100S重的多，手感舒适很多，反应敏捷指向准确；两侧防滑防汗；可变标识灯逼格很高，虽然我不喜欢光污染，哈哈。总体来说果然一分钱一分货，感觉值得这个价。',
+ 'creationTime': '2017-07-23 15:04:03',
+ 'isTop': 0,
+ 'picNum': 6,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=23>
+{'commodityId': '2269354',
+ 'content': '用了5年的罗技g400 '
+            'mx518**版仍然在服役，质量杠杠的，看到g502降价了买一个屯着，手感不错，定位精准，习惯了g400的手感需要时间适应下',
+ 'creationTime': '2018-09-12 19:10:29',
+ 'isTop': 0,
+ 'picNum': 7,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 1,
+ 'userLevelName': '钻石会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=23>
+{'commodityId': '2269354',
+ 'content': '用了一个多月了 玩吃鸡和全军出击模拟器LOL都很好 女孩子也不会感觉很大 握着舒服 不同的游戏自己设定鼠标的快慢还能调配重 '
+            '目前没发现什么缺点',
+ 'creationTime': '2018-07-06 11:15:49',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=23>
+{'commodityId': '2269354',
+ 'content': '看了G502好久了，担心鼠标太大所以一直在犹豫，618因为别的原因错过了，然后一直等等等，现在价格又降了一些，用券之后符合心理价位就出手了。 '
+            '自定义的键位挺多的，可玩性高。下载驱动设好自己常用的几种设置，一键切换DPI很方便，有线鼠标没有延迟（以前用无线鼠标，别人用手机连wifi下东西的时候鼠标飘飘飘的想要骂人）。以前一直用的轻便型的无线鼠标，所以配重块暂时没有加，后面再研究下。RGB信仰灯好评！Logitech好评！ '
+            '哦，对了，看包装看鼠标，（感觉）应该不是二手货，哈哈。。。',
+ 'creationTime': '2017-07-09 17:48:53',
+ 'isTop': 0,
+ 'picNum': 9,
+ 'replyNum': 3,
+ 'score': 5,
+ 'usefulVoteCount': 4,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=23>
+{'commodityId': '2269354',
+ 'content': '鼠标用起来很舒服，按键很多挺方便的，还可以更改滚轮的模式，减压神器好不好。呼吸灯颜色随意切换，而且又不像很多低端游戏鼠标那样全身呼吸灯，看着逼格就很高。五档变速也可以适应各种不同人群的需求。',
+ 'creationTime': '2017-01-27 13:34:01',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '银牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=23>
+{'commodityId': '2269354',
+ 'content': '第一时间下单入手。当天收到，晚上使用，一切还是熟悉的手感。两侧表面是高亮材质，两侧不是类肤材质好评，手汗星人碰到类肤无力表达。线材也不是编织的那种钢筋，很软。总体很满意，要是再**弹坑版就更好了。',
+ 'creationTime': '2018-10-16 14:46:45',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=21>
+{'commodityId': '2269354',
+ 'content': '用了一个多月,暂时没啥问题,手感非常好,有些东西容易误触,第一次入罗技的坑,终于跳出了蛇坑哈哈哈哈哈',
+ 'creationTime': '2018-12-17 15:52:29',
+ 'isTop': 0,
+ 'picNum': 0,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员[试用]',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=21>
+{'commodityId': '2269354',
+ 'content': '京东的速度，没得说！鼠标很帅气，加上配重之后更舒服！侧键较多，功能齐全。用一段时间再追加。',
+ 'creationTime': '2018-08-30 11:31:33',
+ 'isTop': 0,
+ 'picNum': 0,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=21>
+{'commodityId': '2269354',
+ 'content': '不错，加了三块配重后感觉挺好，这次终于不再手滑了，汗手的可以用这款，之前用的蝰蛇2013简直滑的不要不要的。另外驱动也很好用，比雷蛇的要好。',
+ 'creationTime': '2017-09-28 11:34:21',
+ 'isTop': 0,
+ 'picNum': 0,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=21>
+{'commodityId': '2269354',
+ 'content': '之前用了3年的402给我哥了，自己换了502，鼠标很好用，用了几天没发现问题，灯也好看',
+ 'creationTime': '2018-11-05 12:32:51',
+ 'isTop': 0,
+ 'picNum': 0,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=21>
+{'commodityId': '2269354',
+ 'content': '鼠标很好用，好多按键，个人用的最贵的一次鼠标，轻轻的我走了，正如我轻轻的来，我挥一挥衣袖，不带走一丝云彩！鼠标好用！',
+ 'creationTime': '2018-11-06 14:01:03',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '钻石会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=21>
+{'commodityId': '2269354',
+ 'content': '相比于???，更习惯用罗技的手感，之前买过罗技的套装，一直用到现在将近四年，现在看到在京东新品首发，毫不犹豫就下了单，送货很快，拿到手试用了下，果然没让我失望，不论是从手感 '
+            '还是 外形 都很合我心意。PS：本来不太喜欢现在游戏鼠标那种有棱有角还带灯的造型，这款罗技的外形太漂亮了 简直大爱。',
+ 'creationTime': '2018-10-16 23:04:11',
+ 'isTop': 0,
+ 'picNum': 4,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=21>
+{'commodityId': '2269354',
+ 'content': '拿到鼠标后试了一局游戏，感觉很轻很好用，大小比g903稍微小一点，握起来也很顺手，外观看起来很酷!总的来说是一个不错的选择。',
+ 'creationTime': '2018-10-16 11:10:48',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=21>
+{'commodityId': '2269354',
+ 'content': '抛弃了用了两年多的牧马人，直接搞g502，配我的赛睿机械键盘，信仰满满，外设坑大家还是不要掉啊，随随便便就是2k，g502的炫光很好看，还有呼吸模式。可以配重5块铁片，diy性很强，打了两天csgo感觉不错。领劵买划算些。',
+ 'creationTime': '2017-03-22 20:30:42',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 1,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=21>
+{'commodityId': '2269354',
+ 'content': '双11和G610键盘一起买的活动套装，键盘很快12号就到了。鼠标却迟迟没踪影，急死本宝宝了。问了客服好多次，终于16号送到了?。手感很不错，没用过这么好的鼠标。所以给不出什么建议和经验之谈，做工好没话说。我觉得可以信赖',
+ 'creationTime': '2017-11-16 11:31:34',
+ 'isTop': 0,
+ 'picNum': 4,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=24>
+{'commodityId': '2269354',
+ 'content': '很好，心仪已久的鼠标，滚轮是无阻力小旋风吗？哈哈，好玩，按键多，基本满足我的需要了，不知道编织线会不会容易坏，有同学的已经开花了',
+ 'creationTime': '2017-04-18 17:02:03',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=24>
+{'commodityId': '2269354',
+ 'content': '鼠标非常好，还在慢慢适应，拿到第一天就吃了鸡，握感也不错，不会因为换了鼠标还要去适应新鼠标，，可以直接上手！',
+ 'creationTime': '2018-12-10 09:24:49',
+ 'isTop': 0,
+ 'picNum': 7,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '钻石会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=24>
+{'commodityId': '2269354',
+ 'content': '鼠标功能是真的很棒 有配重槽 可以自由调节鼠标重量 滑轮有左右拨动的功能 官网有驱动 非常推荐 嘻嘻嘻',
+ 'creationTime': '2018-05-15 10:20:55',
+ 'isTop': 0,
+ 'picNum': 0,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '银牌会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=24>
+{'commodityId': '2269354',
+ 'content': '钟意好久的鼠标了 我非常非常喜欢这个手感 就是包装可能不是很完美 不过整体而言还是赞赞赞 非常喜欢',
+ 'creationTime': '2019-02-10 14:57:01',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=24>
+{'commodityId': '2269354',
+ 'content': '收到包装完好，第一次用这款鼠和我的大手很合，外壳在灯光下有彩色闪金，从头到尾是一种深灰到黑的渐变很好看，点击声音清脆，滑动顺畅，体验不错，希望耐用。',
+ 'creationTime': '2018-10-19 20:29:42',
+ 'isTop': 0,
+ 'picNum': 5,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '铜牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=24>
+{'commodityId': '2269354',
+ 'content': '左右键很清脆，本人身高184，手掌正常大小，感觉很合适，没上配重感觉还可以，仅供参考',
+ 'creationTime': '2018-09-01 23:02:16',
+ 'isTop': 0,
+ 'picNum': 0,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=24>
+{'commodityId': '2269354',
+ 'content': '非常帅，非常喜欢，真的好棒，鼠标铁片全装上了还是觉得不重，可能一直都是用很重的原因！看贴吧很多说不好的，反正我很喜欢，不错',
+ 'creationTime': '2018-08-30 19:46:47',
+ 'isTop': 0,
+ 'picNum': 5,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=20>
+{'commodityId': '2269354',
+ 'content': '鼠标很炫很酷，有呼吸灯，晚上超帅，呼吸灯亮度可调，颜色也可调。配重块很人性化。如果按键手感能柔和点，按下去是静音的就更好了',
+ 'creationTime': '2018-04-14 15:20:33',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '钻石会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=20>
+{'commodityId': '2269354',
+ 'content': '第二个g502了，这鼠标是真心好用，按键清脆，可设宏，最主要的是无阻滚轮太好用了。罗技驱动也不错。大爱。如果能兼容auru就更完美了',
+ 'creationTime': '2018-11-11 12:39:29',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '银牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=20>
+{'commodityId': '2269354',
+ 'content': '主播草莓使用的一款鼠标，质感非常好，特别喜欢中间的滚轮，金属材料，转起来声音特别好听。自由宏设定，摸眼援护，R闪等非常方便。',
+ 'creationTime': '2017-04-14 08:51:28',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=20>
+{'commodityId': '2269354',
+ 'content': '罗技G502练武之人必备，当然是配重块全加啦（滑稽）\n'
+            '总体满意，这款升级款跟老款比换了传感器和微动，还有线材，手感超好，我手不太大用着也是很舒服。\n'
+            '本穷人第一次买这么贵的鼠标，罗技出品，京东服务没话说。出来好多年了，还在推升级款肯定是精品啦，不要犹豫，快买叭！',
+ 'creationTime': '2019-02-09 13:00:10',
+ 'isTop': 0,
+ 'picNum': 4,
+ 'replyNum': 1,
+ 'score': 5,
+ 'usefulVoteCount': 2,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=20>
+{'commodityId': '2269354',
+ 'content': '第二个502鼠标，十一价格喜人 '
+            '入手，收到货包装完好，封签完好，拆开看，鼠标底部好几处划痕，尤其是鼠标脚贴开口处有很明显划痕，脚贴缝隙少许灰尘不知道是否二手，插电脑试用几下完好，能用就好，好评。',
+ 'creationTime': '2018-11-02 21:42:08',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '钻石会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=20>
+{'commodityId': '2269354',
+ 'content': '好用，这鼠标舒服，稳的一批，带8400加980ti超频照样稳，算是比较便宜的500w了，水冷光效漂亮，跟我的幻光鸡搭配太合适了一起评论就不用再手打',
+ 'creationTime': '2018-04-03 17:04:46',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=20>
+{'commodityId': '2269354',
+ 'content': '关注这款鼠标很久了，终于在618降价，手感很棒，点击很有质感，还能调节配重，还有呼吸灯！宏编程没有了解，不会用',
+ 'creationTime': '2018-06-20 13:06:48',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=20>
+{'commodityId': '2269354',
+ 'content': '很棒的手感。适合18-20cm的大手，无极模式的轮子特别好玩。重量不带配重用来办公挺合适。就是说明书太简单了。各种按键说明都没有。只能在驱动上查看。用段时间再看。',
+ 'creationTime': '2017-03-17 12:45:30',
+ 'isTop': 0,
+ 'picNum': 5,
+ 'replyNum': 1,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=20>
+{'commodityId': '2269354',
+ 'content': '第一次用这么贵的鼠标。质感确实很好，拿在手里感觉很有感觉，做工不错，还有三个加重片。就是比想象中的小了。好评！支持京东，支持#！',
+ 'creationTime': '2019-01-02 18:12:36',
+ 'isTop': 0,
+ 'picNum': 9,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=20>
+{'commodityId': '2269354',
+ 'content': '手感优良，切换灵敏度也很方便，还有配重随心调配，虽然我一口气全加上了省事儿，同学说像网吧鼠标，好吧，反正挺好用',
+ 'creationTime': '2018-10-10 17:22:01',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=28> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 21:58:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=11> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 21:58:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=29> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 21:58:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=12> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 21:58:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=13> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=26>
+{'commodityId': '2269354',
+ 'content': '为了游戏而配备的，外形酷帅，很受年轻人欢迎，给力的设计，手感也不错，操作起来很舒服，当然价格也给力了&hellip;&hellip;如果能再便宜点就好了。',
+ 'creationTime': '2019-02-05 12:52:22',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '钻石会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=26>
+{'commodityId': '2269354',
+ 'content': '久仰习武之人专用鼠标，确实有点重了，不过按键和功能很多，正是我需要的，手感也不错，汗手用着也很干爽',
+ 'creationTime': '2018-11-02 11:54:37',
+ 'isTop': 0,
+ 'picNum': 4,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=26>
+{'commodityId': '2269354',
+ 'content': '心怡已久的鼠标，手感是真的不错，握着很舒服，全部配重都加上去了，稳的很，还有很多功能等待后续再摸索吧，吐槽一下包装，真的是不敢恭维，好歹垫一垫，直接一个盒子包着塑料袋就扔出来了。',
+ 'creationTime': '2018-10-16 15:41:46',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=26>
+{'commodityId': '2269354',
+ 'content': '用了一阵才来评论，一分钱一分货，手感没得说，高DPI基本用不上，就维持在一千左右。办公时设置各种快捷键，很爽，背光很赞，其他同事买了个一百多块的，一上手质感完全不同。',
+ 'creationTime': '2017-07-08 18:03:43',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=23>
+{'commodityId': '2269354',
+ 'content': '这款第二次购买了，真的不错，非常好用。前个月也在这买了个G903，虽然无线方便，但一点都不好用，宏经常不触发，频率也有问题，只能闲置了。',
+ 'creationTime': '2018-03-14 09:27:11',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=23>
+{'commodityId': '2269354',
+ 'content': '鼠标收到了，用起来很棒，非常喜欢。就是鼠标左右平移事时，滚轮左右晃动厉害，并发出碰撞声，这个是正常的吗？',
+ 'creationTime': '2018-08-20 20:17:58',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '银牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=23>
+{'commodityId': '2269354',
+ 'content': '鼠标还是罗技的好使。非常喜欢。特别是他有一个按键，一按可以降帧，压*特别爽。nice',
+ 'creationTime': '2018-11-04 17:17:12',
+ 'isTop': 0,
+ 'picNum': 0,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=23>
+{'commodityId': '2269354',
+ 'content': '不错呢，这个鼠标很好用，虽然我现在还不怎么会用，但是我很喜欢。跟我的电脑超配',
+ 'creationTime': '2018-08-13 20:15:34',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 1,
+ 'score': 5,
+ 'usefulVoteCount': 1,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=21>
+{'commodityId': '2269354',
+ 'content': '第一次使用可编程的鼠标，花了点时间学习了配置，非常的方便，无论是浏览器还是玩游戏都方便了很多！目前正在探索更多办公程序的快捷键，可以大大提高工作效率。',
+ 'creationTime': '2018-10-17 15:26:46',
+ 'isTop': 0,
+ 'picNum': 4,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=24>
+{'commodityId': '2269354',
+ 'content': '一直听闻G502手感怎么好，自己用了以后，这。。。真的真的真的。手感好！！配合罗技游戏软件。。。真的是，太好用了，手感真的超级棒。以前从来没有过这么好的手感。自从用上了这个鼠标，我连女朋友都不摸了，现在女朋友要跟我闹分手。要么和鼠标过，要么和她过，我想了想。。嗯。。。她怎么可能有G502的手感好。。。现在我正抱着G502独守空房。。。。唉，什么都不说了。我先去洗洗手。粘手。。。',
+ 'creationTime': '2017-08-30 21:15:43',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 2,
+ 'userLevelName': '钻石会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=24>
+{'commodityId': '2269354',
+ 'content': '鼠标的握感非常舒服，加了配重和不加配重感觉很不一样。调节灵敏度也很方便，滚轮有两种模式一种是自由模式，一种是传统滚轮模式，切换非常方便。很不错，以后还会买的。',
+ 'creationTime': '2017-08-11 22:10:54',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '银牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=24>
+{'commodityId': '2269354',
+ 'content': '用了一段时间了，很好用，握起来很合手，设置好之后用起来太方便了，很满意，就是买的有点早，没赶上活动      ps '
+            '我喜欢重一点，全加上刚好',
+ 'creationTime': '2017-06-06 13:17:12',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=27> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=18>
+{'commodityId': '2269354',
+ 'content': '手感很不错，还是很爽的。另外，个人觉得滚轮键左右侧滑的功能没有必要，基本没用，还会导致鼠标滑快了，滚轮会响，像松了一样。',
+ 'creationTime': '2018-06-06 22:14:36',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=18>
+{'commodityId': '2269354',
+ 'content': '不得不说京东发货速度真的很快 服务也很好 拿到手后迫不及待的打开 然后看了看外观  底座像磨损了一点 不过没什么问题  '
+            '配重这个功能很不错 可以根据个人需要 来用适合自己的  滚轮很轻 很滑 跟德芙一样 哈哈 才开始用还不错 用一段时间再来追加评论 '
+            '最后祝店家生意越来越好',
+ 'creationTime': '2017-06-20 20:26:11',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=18>
+{'commodityId': '2269354',
+ 'content': '鼠标很好用，rgb的炫光可以调三种不同的模式，鼠标握感很舒服，很贴合手型，表面磨砂质感手感很棒，唯一的缺陷就是表面特别容易被划出痕迹，我的就出现了，总体不错的还是！',
+ 'creationTime': '2017-09-13 19:10:40',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '银牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=18>
+{'commodityId': '2269354',
+ 'content': '鼠标非常好用，反应迅速，手掌握持感舒适，比蝰蛇重，以前的蝰蛇用到按键双击可以退休了。包装完整，没发现二手痕迹。',
+ 'creationTime': '2018-11-11 12:38:25',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '钻石会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=18>
+{'commodityId': '2269354',
+ 'content': '罗技的忠实用户，从07年到现在键鼠都是罗技，逢人也推荐罗技。G系列的体验还得从10年买的G500说起，使用1年后出现左键双击直接找售后换新，然后刚过保几天又双击，去售后付费换了微动又撑了几年。G500还有以下几个突出问题：蛇皮线太硬，以致上面的尼龙网莫名其妙就把线弄得很扭曲，无法恢复，而且鼠标和线的结合部没有保护，导致时常接触不良。最近微动又出问题，这个G500已经摇摇欲坠了。后面出的G500s基本上就是个克隆版，没啥意思。直到这个G502 '
+            'RGB，从硬件到软件完全是罗技的一次超级进化。拆开包装首先注意线材，软了很多，而且接头处有很好的保护；然后外观上紧跟当下追求极致炫酷、个性化的电竞需求，RGB灯也是电竞风格的标配了，自由设置颜色和显示方式带来可玩性；手感上延续出色的人体工学设计，相比前代又有明显的改进和提升，侧面的防滑区和表面疏水疏油涂层观感和触感都很棒；DPI一如既往强悍；配重块有改进，不用再担心整个模块掉出来；自定义按键的大小和位置设置也更加科学，新加入的狙击键比较有意思，表面自适应技术也是很人性化的功能；此外，这鼠标还能结合手机端的Arx '
+            'Control玩出新花样。物有所值！',
+ 'creationTime': '2016-04-08 15:27:19',
+ 'isTop': 0,
+ 'picNum': 6,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 4,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=18>
+{'commodityId': '2269354',
+ 'content': '手感没得说，很舒服，加上驱动也很好用，容易误触的直接把功能调没，平时按到也没事，手感很爽。\n'
+            '不要听别人说着鼠标适合大手或是说很沉，都是假的，我很瘦的17的男生，用起来觉得一点不沉，当然我也不经常抬起来滑动。\n'
+            '灯很炫，刚好漏出来，很漂亮。\n'
+            '就是不知道怎么加配重，然而我也不准备折腾。\n'
+            '那些想买的，可以下单了，很值。',
+ 'creationTime': '2017-08-14 17:53:56',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 1,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=18>
+{'commodityId': '2269354',
+ 'content': '非常#的一款鼠标已经买了第二个了，我主要拿它用来办公，因为有非常多个编程键，额，我一个鼠标就相当于半个键盘，用办公起来非常方便，而且非常舒服，还有樱桃的鼠标垫和樱桃轴的键盘办公非非常爽',
+ 'creationTime': '2019-02-21 23:31:30',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=18>
+{'commodityId': '2269354',
+ 'content': '用了几天才来评论的，第一外观炫酷，第二手FPS游戏手感很好，第三游戏鼠标还是这款符合我的胃口！看了很多的游戏鼠标，喜欢罗技的格调，简单而附有科技感！很满意！',
+ 'creationTime': '2018-03-20 01:34:34',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 1,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=18>
+{'commodityId': '2269354',
+ 'content': '感觉鼠标里面就罗技的质量最好了，雷蛇的一年就双击了，罗技的用两年都还是照样起飞，这款电竞款外形很酷，自定义键也很多，dpi范围大，适应各种游戏，中意蛮久了~',
+ 'creationTime': '2017-06-11 17:25:49',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=18>
+{'commodityId': '2269354',
+ 'content': '拿到手后 欣喜若狂 拆包 摸上 手感很爽 握在手 感觉质量非常棒！就是加上全部 加重块后 太重 容易手酸',
+ 'creationTime': '2017-05-06 11:40:12',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=25>
+{'commodityId': '2269354',
+ 'content': '鼠标质量还是很不错的啦，用罗技的软件还可以适应鼠标垫，调节鼠标的灵敏程度。侧键比我想象中还要强大，三种模式，最后一种简直逆天完美，之前用的g302，再用到这个鼠标，感觉体验不是一般的好，太棒啦，哈哈哈哈哈哈哈哈哈哈哈',
+ 'creationTime': '2018-07-02 22:41:11',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=25>
+{'commodityId': '2269354',
+ 'content': '传说中的518，真的很大，比之前用的鼠标都要大..不过手感不错，几个快捷键也很实用。不错的鼠标。',
+ 'creationTime': '2018-10-22 20:26:06',
+ 'isTop': 0,
+ 'picNum': 6,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '钻石会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=25>
+{'commodityId': '2269354',
+ 'content': '这个鼠标是弟弟推荐来买的，本来想买9的，弟弟说对我这样的，用十块钱的就可以，我太受打击了，弟弟说这个他用了很久，一直没坏。很好用，就买了。不错，手感比我之前买的好多了，没那么大。。。。',
+ 'creationTime': '2018-06-07 17:25:29',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '铜牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=25>
+{'commodityId': '2269354',
+ 'content': '非常喜欢这个鼠标，买的时候便宜了好多，入手之后里马试了下，和Mac很好兼容，非常喜欢，可以推荐给朋友。\n'
+            '一直很信任罗技品牌，买了这个鼠标之后用了一个月没什么问题，手感挺好的',
+ 'creationTime': '2018-10-05 07:23:07',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=25>
+{'commodityId': '2269354',
+ 'content': '鼠标很不错，很有质感，500s也可以退休了，退休的手感也很不错，点击声音也很好听，502声音相对来说会大点，总体感觉很不错！',
+ 'creationTime': '2017-11-12 21:06:37',
+ 'isTop': 0,
+ 'picNum': 9,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=25>
+{'commodityId': '2269354',
+ 'content': '开箱美滋滋，我用着是真的舒服，因为握鼠标姿势和罗技人体工学刚好符合，拿着很舒服，然后室友握鼠标姿势,emmm,怎么说呢，怪怪的，他们就觉得侧键碍事。不过我用的刚刚好，爽！',
+ 'creationTime': '2018-03-20 22:43:59',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=25>
+{'commodityId': '2269354',
+ 'content': '这款鼠标外观没得说，超级炫酷。这个鼠标设计很棒，有多个按钮，可以自己调节鼠标，这款鼠标的重量不错，还搭配了多块配重块。我喜欢玩重点一点的鼠标，把配重块全装上了，巴适得很，玩warframe极其舒适。\n'
+            '就算是双11补货，物流也照样比隔壁那谁谁谁快!!!\n'
+            '还有一件重要的事，客服服务态度也非常好，关于产品保障服务的问题，客服很快就回答我了。',
+ 'creationTime': '2018-11-17 22:43:43',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '铜牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=25>
+{'commodityId': '2269354',
+ 'content': '做工优！鼠标手感很好，手小的人用起来很不错！外观设计很美观，很有科技感，芯片和驱动很合适，调节随心所欲！一分钱还是一分货的\n'
+            '我也用过宜博m639,按键相对一般人而言比较生硬，做工优良，唯一外观好看以及性价比高！芯片*3050\n'
+            '达尔牧马人优升级版，和宜博m639相近，唯一一点较好的是鼠标按键相对清脆不会那么生硬！',
+ 'creationTime': '2017-05-26 02:31:19',
+ 'isTop': 0,
+ 'picNum': 4,
+ 'replyNum': 2,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '钻石会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=25>
+{'commodityId': '2269354',
+ 'content': '鼠标以收到，很满意很赞。，超爽的手感。真的很舒服，完美。 这个鼠标已经看很久了 ，哈哈。喜欢 ，快递也很快，一天就到了。完美赞?',
+ 'creationTime': '2017-02-26 17:11:35',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '银牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=25>
+{'commodityId': '2269354',
+ 'content': '上午买，下午送达。很棒，之前用的102简单说一下，首先比102重，感觉玩lol还是102舒服轻一点比较流畅，502fps舒服，主要玩R6。',
+ 'creationTime': '2018-10-16 18:02:17',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 1,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=17>
+{'commodityId': '2269354',
+ 'content': '罗技的品质是真的没得说！鼠标很好用，就是那个驱动差评，不过鼠标好用我忍了！鼠标刚来电脑跟着就来了，打吃鸡是真的舒服，本人技术差不能怪热备，舍友体验了两把也买了个！！！哈哈哈，下次还来买罗技！',
+ 'creationTime': '2017-10-12 21:27:01',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=17>
+{'commodityId': '2269354',
+ 'content': '感觉整体偏重，但是还是用的来的。滚轮无阻力模式真的爽，看网页再也不用一直滑滚轮了。配套的罗技驱动也感觉很方便很好用。',
+ 'creationTime': '2018-03-03 18:45:29',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 1,
+ 'userLevelName': '银牌会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=17>
+{'commodityId': '2269354',
+ 'content': '速度很快，基本隔日就到，目测没有问题，使用四天，手感很好，实际使用并没有想象中的重，配重全加以后手感奇稳，是一款值得购买的鼠标，502名不虚传。',
+ 'creationTime': '2018-07-19 02:26:32',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '铜牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=17>
+{'commodityId': '2269354',
+ 'content': '很喜欢。 适合大手。 重量我很喜欢?\n。。就是包装不是很好。而且里面简装。没有雷蛇那么看起来高大上',
+ 'creationTime': '2018-11-02 20:24:54',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '钻石会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=17>
+{'commodityId': '2269354',
+ 'content': '萝卜青菜各有所爱，说这款鼠标不好用的人大概他喜欢轻的，如果喜欢重的鼠标的朋友这是个非常不错的选择，鼠标功能很多，其实这不是专业的游戏鼠标更像是办公游戏的用的全能鼠标，外观非常前卫，总之还是非常不错的',
+ 'creationTime': '2018-02-19 09:30:04',
+ 'isTop': 0,
+ 'picNum': 6,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 1,
+ 'userLevelName': '铜牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=17>
+{'commodityId': '2269354',
+ 'content': '鼠标很不错，手感完美，左右键的点击手感比G500有很大飞跃，清脆有力，适合小手玩家使用。鼠标本身重量合适，我不加砝码，重量正好。做工很好，侧面橡胶材质很舒服，外形低调奢华，12000dpi虽用不上，但是能体现出性能上的优势。',
+ 'creationTime': '2016-09-07 11:29:12',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=17>
+{'commodityId': '2269354',
+ 'content': '很好的一款鼠标，全新没有质量问题。特别适合右手办公，人体工程学让鼠标摸起来手感很好。重量合适，定位精准，京东服务很好快递也很快！',
+ 'creationTime': '2018-12-08 22:38:09',
+ 'isTop': 0,
+ 'picNum': 4,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '钻石会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=17>
+{'commodityId': '2269354',
+ 'content': '用了一段时间了，感觉还不错，没有感觉到很重，配种块我觉得没必要上，手感也很好很舒服的感觉，质保多一年，感觉还是蛮不错的～',
+ 'creationTime': '2018-11-16 22:22:57',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=17>
+{'commodityId': '2269354',
+ 'content': '这个是我用过的最好都鼠标了（qiong）以前用的都是20-30块的鼠标  一直以来都很想要一个好点的鼠标 看到罗技挺帅的 '
+            '忍了大半年 没忍住 咬咬牙就下单了 配重全上是因为有强迫症 也是怕弄丢了 加了配重和没加配重手感差别还是很大的  很贴合手掌  '
+            '刚开始不习惯  握久了手疼  现在好了很多',
+ 'creationTime': '2018-06-27 11:05:38',
+ 'isTop': 0,
+ 'picNum': 5,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '钻石会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=17>
+{'commodityId': '2269354',
+ 'content': '非常强大的鼠标，功能非常多，建议没有特殊要求的人没必要选这款，毕竟价格在这里放着，可以多加点钱弄个好用的键盘。另外，我本人比较喜欢重的鼠标。加了配重块之后非常顺手',
+ 'creationTime': '2019-01-08 10:59:29',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '钻石会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=16>
+{'commodityId': '2269354',
+ 'content': '加满了配重，没有想象中的那么重，日常办公没有感到很辛苦。鼠标表面手感非常好，左右键摸着很舒服，用一段时间再看看',
+ 'creationTime': '2018-12-03 17:43:08',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '银牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=16>
+{'commodityId': '2269354',
+ 'content': '使用非常舒适，有很多配置可以设置，灯光效果也很炫酷，重量不是很大，没有笨重的感觉。',
+ 'creationTime': '2019-03-13 18:35:22',
+ 'isTop': 0,
+ 'picNum': 6,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '银牌会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=16>
+{'commodityId': '2269354',
+ 'content': '久违的手感，非常棒，右键的话，确实有点松，很多网友都有同样的反馈，最近两年一直在\n'
+            '用G402，因为大小以及手感都比较适合，本来打*一个二手的MX518来着，没想到过几天看见有MX518的**预订，及时下手，',
+ 'creationTime': '2018-10-16 18:56:53',
+ 'isTop': 0,
+ 'picNum': 5,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=16>
+{'commodityId': '2269354',
+ 'content': '特意用了几天才来评价的，一个字 '
+            '爽，手感超好，配重正合我意！喜欢重的鼠标。第一次买这么贵的鼠标，看这款鼠标很久了，了解很久了，也比较了很久了！等降价活动的时候入手了！果然一分钱一分货！罗技值得拥有。赞啊！',
+ 'creationTime': '2018-06-09 01:33:25',
+ 'isTop': 0,
+ 'picNum': 4,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '银牌会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=16>
+{'commodityId': '2269354',
+ 'content': '买之前还上网找过与g402对比，就怕用不习惯，没想到手感比想象的要好。总的来说各方面都很好，这鼠标挺适合你我的',
+ 'creationTime': '2018-06-12 11:49:50',
+ 'isTop': 0,
+ 'picNum': 0,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '铜牌会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=16>
+{'commodityId': '2269354',
+ 'content': '不错，个人觉得比较良心的鼠标，新货无划痕无损伤，本人手算是男生中很小的手了，大小完美合适，机械感很强，不错的，灯光也很炫酷哦，之前都是用的雷蛇，第一次买罗技的，妥妥的这波不亏啊！',
+ 'creationTime': '2017-08-07 01:27:28',
+ 'isTop': 0,
+ 'picNum': 6,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=16>
+{'commodityId': '2269354',
+ 'content': '鼠标很不错，带有配重的金属块，全安上去了，但是整体手感跟千元级的比还是差些，功能很多，编程还没研究，滚轮非常的性感，这是非常突出的优点，大家可以放心买。',
+ 'creationTime': '2018-11-16 22:19:04',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=16>
+{'commodityId': '2269354',
+ 'content': '拿起来非常舒服，大小刚好合适，手心有支撑，两侧磨砂材质不易老化，侧键位置刚好，线材够轻够长很适合机箱在桌子下面。当然精确定位也是无可挑剔的',
+ 'creationTime': '2018-10-17 17:58:37',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=16>
+{'commodityId': '2269354',
+ 'content': '鼠标握起来很舒服。本人身高180cm，鞋穿44码，罗技这款鼠标的大小对我来说很合适。重量方面，没有加配重片就足够了，鼠标太重用着累。我不喜欢用个鼠标还要装驱动，反正按键默认功能对我也够用了。',
+ 'creationTime': '2018-02-16 11:38:27',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=16>
+{'commodityId': '2269354',
+ 'content': '才用不是很适应，用了几天是真的舒服。十七的手也能用，刚刚好。才到的时候连不上G '
+            'hub，换了罗技游戏软件识别了。总体还不错。很棒。希望能用十年',
+ 'creationTime': '2018-10-21 22:55:12',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=15>
+{'commodityId': '2269354',
+ 'content': '滚轮用起来让人想到德芙的~，纵享丝滑，真的很顺滑，头一次用到这么舒服的鼠标，我和小伙伴们都惊呆了，另外灯光也很炫酷。',
+ 'creationTime': '2018-12-16 18:08:59',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=15>
+{'commodityId': '2269354',
+ 'content': '棒棒棒，质量完美，买回来就派上了用场，功能键丰富，按键清脆，软件好用，宏定义很方便，开心开心开心，买的超值！',
+ 'creationTime': '2018-11-12 23:53:14',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=15>
+{'commodityId': '2269354',
+ 'content': '惊艳到我了，手感确实很好，掌心的位置很好地贴合，特别是拇指位置更舒服，类肤质的材料比较防油，汗手的同学可以考虑，各种自定义的按键，灯光等可以个性设置，办公游戏两不误，不错不错！！',
+ 'creationTime': '2017-09-26 15:19:41',
+ 'isTop': 0,
+ 'picNum': 6,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 1,
+ 'userLevelName': '钻石会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=15>
+{'commodityId': '2269354',
+ 'content': '第一次买这么贵的鼠标，确实是一分钱一分货，比我原来买的几十的好多了，鼠标反应很灵敏，而且手感很好。我个人感觉本身的重量就足够了，给我的配重盘我也没加。我游戏玩的不是太多，日常生活用足够了。',
+ 'creationTime': '2019-01-05 16:24:46',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=15>
+{'commodityId': '2269354',
+ 'content': '很帅鼠标，有配重块，可以自己调节重力，侧键很多下个驱动可以自己编程卡刀和压*，贼好用。',
+ 'creationTime': '2019-01-11 18:33:04',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员[试用]',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=15>
+{'commodityId': '2269354',
+ 'content': '很喜欢重的鼠标，可以根据自己的需求增减，玩游戏的不二选择，性价比超高！！！左右键和玩游戏时候手的弧度一致，贴合，中间的滚轮很惊艳！',
+ 'creationTime': '2018-12-16 23:54:06',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=15>
+{'commodityId': '2269354',
+ 'content': '首用感觉手感不错，左右两侧都有防汗设计，握在手心的感觉就如同握住初恋对象般的手一样，细腻！做工很给力配重块全部加上正合我意，G502颜值很高！做工处处精细！虽然只有一个罗技logo呼吸灯，但是代表着它的低调！不像其他品牌只靠颜值灯光来吸引客户，品质却没有罗技强！总而言之G502让人觉得值得拥有，还买了款罗技侧刻的机械键盘，和这个G502很配，同样的低调不失品质！颜值高！做工好！',
+ 'creationTime': '2017-03-01 20:56:25',
+ 'isTop': 0,
+ 'picNum': 10,
+ 'replyNum': 12,
+ 'score': 5,
+ 'usefulVoteCount': 8,
+ 'userLevelName': '银牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=15>
+{'commodityId': '2269354',
+ 'content': '用了几天才来评价，物流速度没的说早上买的中午就到了，非常快，鼠标是全新的，运气不错，下了罗技的游戏软件简单编辑了一下，用着方便多了。无阻滚轮用的感觉真的爽，那速度，绝对够新鲜，RGB也可以和耳麦同步，看起来不错，好评',
+ 'creationTime': '2018-10-18 20:28:20',
+ 'isTop': 0,
+ 'picNum': 4,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '钻石会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=15>
+{'commodityId': '2269354',
+ 'content': '包装盒印刷得精美，颜色搭配和谐，有了它，我马上上网和朋友们打起了网络游戏，鼠标的设计很贴合手形，在光标移动方面非常平稳、而且反应十分灵敏，使我在游戏和生活中更加得心应手。',
+ 'creationTime': '2018-10-17 06:20:42',
+ 'isTop': 0,
+ 'picNum': 4,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '银牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=15>
+{'commodityId': '2269354',
+ 'content': '鼠标吃鸡很好用，响应快，定位准确，最好用的还是多档dpi调节一键最低dpi玩狙很好用，物流超级快，遗憾是:鼠标脚垫有一点小划痕，应该是制作时候的小瑕疵，可以忽略，还有最坑的买了9天618活动满300-50，价保也申请不了了，另外说一句配重块也很好用',
+ 'creationTime': '2018-05-26 10:48:30',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '银牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=10> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=28>
+{'commodityId': '2269354',
+ 'content': '用了六年的第一代502坏了，买了这个新的。\n'
+            '用习惯了也不想换别的，滚轮可以切换模式，浏览网页做表格特别方便。\n'
+            '驱动很好用，按键都可以自定义设置。',
+ 'creationTime': '2018-10-15 19:22:12',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=28>
+{'commodityId': '2269354',
+ 'content': '自用第三个罗技G502，而且这次升级了配置，春节特价，特地囤一个备用。特喜欢无阻尼滚轮。虽然基本不玩游戏，作为办公鼠标用自定义按键也是十分好用的',
+ 'creationTime': '2019-02-12 10:43:10',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=28>
+{'commodityId': '2269354',
+ 'content': '质量非常好，用了之后吃了两把鸡，好东西还是不错的，大部分东西还是一分钱一分货的，我个人觉得很适合我的手型，也能加非常给力，喜欢很久了终于入手了。开心哈哈哈',
+ 'creationTime': '2018-03-08 18:43:04',
+ 'isTop': 0,
+ 'picNum': 0,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=28>
+{'commodityId': '2269354',
+ 'content': '朋友推荐的。果然不错。很有分量。很有质感。功能键多而实用。我最喜欢的就是滑轮的质感了。两个模式。非常好。价格也算合适。总之买了！收藏了好久。',
+ 'creationTime': '2018-08-31 12:02:45',
+ 'isTop': 0,
+ 'picNum': 4,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=28>
+{'commodityId': '2269354',
+ 'content': '去年买的403坏了准备返修，所以双十一又下单买了个502，到手适应了一下确实比我之前那个好用不少。有很多的功能键，G键随时切换功能和Dpi等等。很好用，价格也很美丽。',
+ 'creationTime': '2018-11-18 08:36:10',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=28>
+{'commodityId': '2269354',
+ 'content': '关注这款鼠标很长时间了，趁活动入了一个。第一次用这么贵的鼠标，很合手，贴合度很好，按键反馈比我以前用的鼠标好太多了。果然不愧是健身器材，全部配重装上以后挺沉的，不过个人感觉重点手感才好',
+ 'creationTime': '2018-09-02 00:42:07',
+ 'isTop': 0,
+ 'picNum': 4,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '银牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=28>
+{'commodityId': '2269354',
+ 'content': '决定买鼠标是因为昨天打了一局联盟，看看我之前的小赠品鼠标，虽然真的受不了，现在一看还挺可爱的哈哈。这款罗技鼠标很满意，握感指针速度什么的都有了很大的提升，超神去吧。RNG加油！！！',
+ 'creationTime': '2018-10-16 14:48:03',
+ 'isTop': 0,
+ 'picNum': 5,
+ 'replyNum': 5,
+ 'score': 5,
+ 'usefulVoteCount': 3,
+ 'userLevelName': '铜牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=11>
+{'commodityId': '2269354',
+ 'content': '我买的罗技G502弦彩自适应鼠标，很好用，已装了罗技的游戏软件，上机试了一下，很霸道，非常喜欢，主要在游戏中反应很快，抢得先机，制服对手，还有就是炫彩灯很漂亮，爱不释手，打个比喻，就象自已第一次穿皮鞋那种感觉，OK！',
+ 'creationTime': '2017-01-19 00:31:39',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 1,
+ 'userLevelName': '钻石会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=11>
+{'commodityId': '2269354',
+ 'content': '满满的情怀，当时打cs基本人均一个ie3，基本外设如果是罗技键鼠确实会吸引一些崇拜的目光，而我本人对这个模具情感很深，从第一次见mx518，到弹坑版g400，再到g400s(400s应该是我使用的非常久的一款鼠标了，我断断续续使用了接近一年半)，再到现在的mx518hero，手感真的好熟悉好熟悉，操纵感完美，移动，瞬间急停，稳得很。',
+ 'creationTime': '2018-10-30 09:41:31',
+ 'isTop': 0,
+ 'picNum': 5,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=11>
+{'commodityId': '2269354',
+ 'content': '罗技经典鼠标之一，很早之前就想买一个了，?很多人抱怨这款鼠标??很重，我想大概是他们的?太小，像我们这样的习武之人就喜欢这样的沉甸甸的厚重，仿佛抡着几十斤的大铁锤呼呼生风。鼠标很酷炫，呼吸灯，各种侧键，还有配重，适合我这种喜欢大鼠标的人，618活动不到300入，还等什么呢？为信仰好评！',
+ 'creationTime': '2018-06-10 23:54:59',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=11>
+{'commodityId': '2269354',
+ 'content': '据说是罗技的经典？那以前的经典我没有尝试过，现在的**入手一试。握感舒适，长时间使用也不会很累，表面是镜面材质，花纹很好看，拇指和小指捏的位置是磨砂塑料材质，很防滑，鼠标整体也比较轻。价格首发领券减50，觉得性价比较高，有hero引擎还是不错的。总之，不失为一款简约大气的个性鼠标，办公游戏皆可！',
+ 'creationTime': '2018-10-18 11:46:26',
+ 'isTop': 0,
+ 'picNum': 5,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=11>
+{'commodityId': '2269354',
+ 'content': '上手比我同学的403稍重，用起来还挺舒服，没有加配重块，还可以，握起来很舒服，功能很多，习武之人必备！',
+ 'creationTime': '2018-11-04 16:11:31',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '银牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=11>
+{'commodityId': '2269354',
+ 'content': 'G910+G502套装很不错，G052鼠标手感舒适。配重块设计新颖，组合方式多，吸附式保护盖很好开启。驱动程序很不错，设置宏，键位，DPI都很方便，RGB调色效果丰富，可与G910键盘同步，G910键盘配合iPhone上安装的Arx '
+            'Control软件后，也可直接调整，监控手机的DPI。',
+ 'creationTime': '2016-02-07 12:12:43',
+ 'isTop': 0,
+ 'picNum': 4,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 1,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=11>
+{'commodityId': '2269354',
+ 'content': '换了五年的G1，前面用过雷蛇炼狱蝰蛇，实在是太大了，不适合亚洲人手，看了赛睿同价位的，最后还是选择了逻辑，因为看到了手模的效果，还是健康最重要，最后总结是个好鼠，握着舒服，使用轻松，好评！',
+ 'creationTime': '2017-06-08 15:53:15',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '钻石会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=11>
+{'commodityId': '2269354',
+ 'content': '快递很快的，鼠标换了一次货不得不说，京东服务挺好的，挺不错，鼠标功能性很多，很全面，用着也很舒服，手感也特别好，挺不错的，也很好，不错，好评',
+ 'creationTime': '2019-01-22 10:00:22',
+ 'isTop': 0,
+ 'picNum': 4,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '银牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=29>
+{'commodityId': '2269354',
+ 'content': '科技感十足，快捷键的功能很强大，还可以切换快捷键的功能，很不错！线材用料很用心！金属滚轮很流畅，12000DPI真心够了。如果非要说鼠标哪不好：1，滚轮下按生硬2，大拇指处宽度较小3，USB无镀金。',
+ 'creationTime': '2016-07-21 15:27:54',
+ 'isTop': 0,
+ 'picNum': 4,
+ 'replyNum': 1,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=29>
+{'commodityId': '2269354',
+ 'content': '手感有一点不适应。中间的滚轮很好用。推动全加上了，分量挺足的。后期在使用过程中慢慢调试吧，非常值得购买的一款鼠标。',
+ 'creationTime': '2018-04-25 00:10:26',
+ 'isTop': 0,
+ 'picNum': 5,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=29>
+{'commodityId': '2269354',
+ 'content': '鼠标握感很好，没有想象中的那么大！比预想中的舒服很多，操作灵敏！按键反馈感强！很喜欢！',
+ 'creationTime': '2018-09-02 22:57:38',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=29>
+{'commodityId': '2269354',
+ 'content': '鼠标拿到手就迫不及待的拆开用了，熟悉的手感，仿佛回到了大学那会儿，很轻巧，按键很脆。可惜没灯，也不能无线充电，能出个高配版本就好了，一定买。',
+ 'creationTime': '2018-10-16 19:01:02',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=29>
+{'commodityId': '2269354',
+ 'content': '之前都是用无线鼠标，哪怕无线鼠标也就100-150的价格区间，第一买这种专业游戏鼠标，其实我游戏玩的也并不多，但这款鼠标的功能确实很多，设置也很多，上手后确实方便',
+ 'creationTime': '2017-04-24 20:44:10',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '银牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=29>
+{'commodityId': '2269354',
+ 'content': '一如既往喜欢502，宏功能实在棒，虽然我不会太复杂的设置，不过挂挂机还是可以的，rgb一闪一闪的。晚上看着就想睡觉，因为这个鼠标，我不再熬夜打电脑了，无语',
+ 'creationTime': '2017-12-10 12:20:45',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=29>
+{'commodityId': '2269354',
+ 'content': '因为我一直喜欢FPS一类的游戏，像以前的穿越火线，现在的&ldquo;吃鸡&rdquo;，还是一个使命召唤迷，所以对鼠标要求比较高，最近几年一直在使用罗技的鼠标，感觉很棒，从来没有掉链子，因此几次换鼠标都是在罗技里面挑，这次也不例外！～～～',
+ 'creationTime': '2018-03-26 16:11:51',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '钻石会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=29>
+{'commodityId': '2269354',
+ 'content': '首先物流很快，挺不错，其次这款鼠标真的真的只适合*战类RPG '
+            '玩英雄联盟啥的很难受太重太硬，真的不太习惯，好处是可以自由设置灵敏自适应鼠标垫还是不错的！',
+ 'creationTime': '2018-09-28 09:35:43',
+ 'isTop': 0,
+ 'picNum': 5,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '钻石会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=29>
+{'commodityId': '2269354',
+ 'content': '不错，很帅，手感也很不错，一拿到我就铁片全加进去了，鼠标也不大，对我反正刚好，赞一个。',
+ 'creationTime': '2018-12-17 22:16:46',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=9> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 21:58:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=8> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 21:58:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=5> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=28>
+{'commodityId': '2269354',
+ 'content': '鼠标太漂亮了，大爱呀，送的手办也很漂亮，盒子很大很霸气，操作也很流畅，没有丝毫漂移，很棒',
+ 'creationTime': '2018-12-14 10:05:36',
+ 'isTop': 0,
+ 'picNum': 8,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=28>
+{'commodityId': '2269354',
+ 'content': '去年就想买的鼠标，看着这次618价格确实可以，就没忍住下手了，总体使用很不错，鼠标宏很好用，刚开始用觉得有点重，主要之前用的雷蛇鼠标很轻，哈哈！配重块一个都没有下！觉得已经很重了！看个人需求，有些人比较喜欢鼠标重点就加！总体满意！京东送货也快！',
+ 'creationTime': '2018-06-13 23:43:37',
+ 'isTop': 0,
+ 'picNum': 4,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=28>
+{'commodityId': '2269354',
+ 'content': '信仰，那是屁话，关键还真的好用(?▽?)！大小刚好，重量也完美。就是这鼠标用久了怕得病啊?键销炎。非常推荐，去官网下个软件然后设置一下，几个快捷键都很使用。',
+ 'creationTime': '2018-03-16 16:14:04',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '银牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=12>
+{'commodityId': '2269354',
+ 'content': '挺好的，质量没的说，驱动秒识别，灯没什么大用，一般来那3个小指示灯就特别好看，鼠标握感特别舒服，砝码配重也特别棒，尤其是滚轮用着特别舒服，没事就喜欢转一下，可编辑的按键用出非常大方便了不少事情。',
+ 'creationTime': '2017-02-16 16:09:07',
+ 'isTop': 0,
+ 'picNum': 4,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '铜牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=12>
+{'commodityId': '2269354',
+ 'content': '滚轴很灵敏，外圈是一个金属环，滑动起来很快。可软件更换显示的呼吸灯颜色，左右键反应快速清晰。配重都加上了，也不感觉沉重。',
+ 'creationTime': '2018-10-07 15:42:20',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=12>
+{'commodityId': '2269354',
+ 'content': '期待已久的鼠标。  首先外形非常炫酷，特别是连接到笔记本上是那闪烁的不断变换颜色的标。 然后功能也特别多，可以随心所欲的掌控游戏。 '
+            '还配有配重块，可以根据自己习惯选择是否安装。',
+ 'creationTime': '2019-03-01 12:59:50',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '注册会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=12>
+{'commodityId': '2269354',
+ 'content': '鼠标高端大气上档次，玩绝地求生真的很爽，外形炫酷，手感很好，还很好玩',
+ 'creationTime': '2018-03-11 12:25:26',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '银牌会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=12>
+{'commodityId': '2269354',
+ 'content': '拆开的时候一定要有小刀，小刀，刀！！！！我手扣半天也没扣开?，最后用菜刀把封条隔开的?，鼠标怎么说，和预想的一样，我以前用的是罗技169元的鼠标，我买的时候是200，罗技还是一样的好，鼠标看起来很舒服，很干净的，配重块是大赞！！我的手放上去很舒服，无压力，我的手比较大，所以，值得购买！！！',
+ 'creationTime': '2017-01-08 22:01:15',
+ 'isTop': 0,
+ 'picNum': 4,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=12>
+{'commodityId': '2269354',
+ 'content': '一部分情怀，一部分新颖，熟悉的模具和手感，新的材质，灯光下像R车的星空顶很漂亮。用了两天，日常和游戏体验都相当不错。搭配硬垫和布垫的情况下稳定性都相当不错，无直线修正。，非常不错，再加上出色的按键手感。价格便宜量又足。',
+ 'creationTime': '2018-10-18 12:24:08',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '铜牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=12>
+{'commodityId': '2269354',
+ 'content': '鼠标虽然是偏fps游戏的鼠标，但是我用来玩moba游戏也没有发现有什么不适。用了一个多周了，鼠标定位很棒，玩游戏更爽了。配重块没有加上去，感觉重量刚好。外形很贴手，很舒服',
+ 'creationTime': '2017-04-04 20:14:44',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '银牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=12>
+{'commodityId': '2269354',
+ 'content': 'G502是一款很好用的鼠标，产品做工精良，操控稳定。在1080P屏幕分辨率下用到6000dpi都不显得漂。由于是从G300S的2500dpi使用手感直接切换到G502的12000dpi，所以没装配重，也暂时不适应更高的分辨率，先适应一段时间再调重心和使用更高dpi。很喜欢无可见光的自适应光学传感器，再无耀眼的光从鼠标底部发出来。双模式疾速滚轮在疾速状态真的很好用，也能横向左右滚动，可惜左右滚动不是全部软件都支持的。必须五星好评。',
+ 'creationTime': '2018-11-07 20:45:47',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '银牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=12>
+{'commodityId': '2269354',
+ 'content': '双十一期间忍不住买的，比平时便宜很多，外观时尚，手感很好，做工细致，还有炫酷的RGB灯光，而且可以自主调节配重，下载驱动后有很多模式可以调节，玩法很多，感觉非常不错',
+ 'creationTime': '2018-11-17 16:50:11',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 1,
+ 'userLevelName': '银牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=12>
+{'commodityId': '2269354',
+ 'content': '鼠标很好用，一方面是设计上，不同部位防滑防油污设计很好，即使用很久握持手感也不会变差；另一方面是dpi随时可控可调，我个人吃鸡和lol还有很多独立游戏都玩，三块芯片装不同配置切换很方便。美中不足就是从官网下驱动速度太慢了，每秒20k不到简直要等到天荒地老。。。',
+ 'creationTime': '2018-11-06 13:45:10',
+ 'isTop': 0,
+ 'picNum': 5,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=11>
+{'commodityId': '2269354',
+ 'content': '重量和按键都很舒适，手感用料目前看来还不错，用了这么多年PC，第一次用这类稍微好点的鼠标，所以手感提升对我来说，还是很大。可惜JD店铺不提供，LOL的游戏宏教程，研究了比较长时间，也没弄得怎么设置LOL的宏，在**的一些店铺下单，就免费提供宏教程，这个非常不错，但为了保证正品，还是在JD下的单。现在**降价了，个人觉得价格更合适，而且有宏教程，非常不错。看个人选择吧，也许后期有质量问题，JD的服务更跟的上吧。',
+ 'creationTime': '2019-01-08 00:45:02',
+ 'isTop': 0,
+ 'picNum': 6,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '钻石会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=11>
+{'commodityId': '2269354',
+ 'content': '不得不说g502还是挺好用的，非常喜欢，配重加满化身&ldquo;习武之人&rdquo;。灯效方面配上罗技自家的软件，简直了，罗技还是挺会玩灯的。',
+ 'creationTime': '2018-11-04 09:32:03',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=29>
+{'commodityId': '2269354',
+ 'content': '罗技G502适应游戏鼠标在配重，平衡及追踪表面的适应性需要有更好的提升，尽可能满足每一位玩家的精确需求。\n'
+            '\n'
+            '其热成像技术精确打造人体工学外形，革新的高级表面材质提供更为舒适的操控体验。超强表面自适应游戏级传感器，搭载罗技专属的Delta '
+            'Zero传感器技术 。升级的5块&lt;3.6克&gt; 精确配重，可以随心所欲的调整配重系统，寻找最适合你的专属方案。',
+ 'creationTime': '2017-08-21 14:03:53',
+ 'isTop': 0,
+ 'picNum': 4,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=13>
+{'commodityId': '2269354',
+ 'content': '京东非常给力，春节不休。鼠标很喜欢用着很舒服。握着比302舒服，灯效很棒，玩吃鸡手感也还挺好的。以前都是用雷蛇，海盗船，这次一下买了两个302送朋友我留个502用，手感都不错，价格也不贵。很满意',
+ 'creationTime': '2018-02-17 15:56:53',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '钻石会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=13>
+{'commodityId': '2269354',
+ 'content': '看了很久，最后总算买了东西，用的真不错，早知道就早一点买了，真的手感挺好的，特别好，不愧是200多块的鼠标和9块9包邮，就是不一样，非常好，非常完美，以后有需要的话就早点下手，虽然出来好几年了，60个，但是真的好远好远',
+ 'creationTime': '2018-11-04 23:41:35',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=13>
+{'commodityId': '2269354',
+ 'content': '鼠标大小可以！适合手大的用，加上配重块，瞬间手感十足！玩坦克世界完全无压力！各种激光炮！哈哈',
+ 'creationTime': '2018-10-31 13:14:24',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '钻石会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=13>
+{'commodityId': '2269354',
+ 'content': '这个东西真的很nice，买的人很多，各种东西都比较满意，外形美观，质量很好，不用过多的担心质量，买来用了一段时间了，这个还是很香的，也非常信赖京东的东西，每次购物都是非常愉快，客服也很给力，耐心。看上了就动手吧',
+ 'creationTime': '2019-03-13 17:16:12',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 1,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=13>
+{'commodityId': '2269354',
+ 'content': '经典版，过渡的亮黑色，老G标，熟悉的味道。\n和mx2**较，毫不逊色，高DPI在 Mac 上用也很舒服。太赞了',
+ 'creationTime': '2018-10-16 14:03:27',
+ 'isTop': 0,
+ 'picNum': 5,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 1,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=13>
+{'commodityId': '2269354',
+ 'content': '鼠标真的很好用，没有想象中的那么重，可能是我用重鼠标习惯了吧。各种功能都设置的相当华丽，真的让我爱不释手，十分推荐玩游戏的买这款鼠标！',
+ 'creationTime': '2018-12-13 14:04:58',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=13>
+{'commodityId': '2269354',
+ 'content': '在罗技官网在下一个辅助软件，功能齐全，鼠标也很稳，我个人喜欢把附重全加上，产品很满意',
+ 'creationTime': '2018-07-24 12:28:12',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 2,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=13>
+{'commodityId': '2269354',
+ 'content': '手感超级棒，和g403键盘一起买的，无敌帅，一分钱一分货！！！！功能太多，感觉我有好多都用不上',
+ 'creationTime': '2017-11-07 14:00:13',
+ 'isTop': 0,
+ 'picNum': 0,
+ 'replyNum': 1,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=13>
+{'commodityId': '2269354',
+ 'content': '鼠标很好，自定义安键很丰富，滑轮很爽。鼠标确实有分量，不加配重块重心有点靠前。形状适合大手，拱形在中间，我更喜欢靠后的形状',
+ 'creationTime': '2018-03-14 20:48:11',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=13>
+{'commodityId': '2269354',
+ 'content': '第一次用G502鼠标，手感不错很好，还有配重，还是感觉合理吧！这鼠标卖的挺火的，朋友推荐的，毫不犹豫买了！用了几个月感觉还是可以！适合我的手感，可以调试不过要下载驱动，还是方便！支持罗技！',
+ 'creationTime': '2017-12-14 00:02:24',
+ 'isTop': 0,
+ 'picNum': 5,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=4> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 21:58:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=7> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=27>
+{'commodityId': '2269354',
+ 'content': '用过很多的鼠标了，从雷蛇到赛睿，用着都觉得不是特别顺手，偶然间去网吧用到了这款鼠标，感觉十分顺手，十分适合我，回来果断入了一款，没话说，完美！',
+ 'creationTime': '2018-12-14 15:55:55',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '银牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=27>
+{'commodityId': '2269354',
+ 'content': '很满意！之前用的自带配件，现在已经退休了。第一次使用时，LOL各种失误&hellip;&hellip;???完全掌控不住！忍着打了3局，中间又设置了一下！现在感觉吊爆了！完美契合！',
+ 'creationTime': '2017-07-24 16:40:14',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=27>
+{'commodityId': '2269354',
+ 'content': '某灯厂的双击问题非常烦人，果断换了罗技，之前的MX518用了5年依然坚挺，非常佩服。因为对快捷键有需求，入了502，这段时间用下来基本满意，手感OK，驱动比某蛇那渣渣云驱动好多了，看情况再上G900试试无线。满意推荐。',
+ 'creationTime': '2017-06-19 21:31:34',
+ 'isTop': 0,
+ 'picNum': 9,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 2,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=27>
+{'commodityId': '2269354',
+ 'content': '手感很好，用着很不错，之前用的雷蛇，刚用的时候还不适应G502的按键和滚轮，感觉滚轮两种模式都有点轻，更习惯滚轮阻力大一点的。整体来说很不错，颜值也很高，值的购买。这款是我活动的时候买的，加券买318元。',
+ 'creationTime': '2017-07-25 08:34:42',
+ 'isTop': 0,
+ 'picNum': 4,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=27>
+{'commodityId': '2269354',
+ 'content': '不装配重都有点沉了。装了更需要适应一下。不过很好看。按键感觉很好。滚轮两种模式很舒服。缝隙太多。不易清理。京东配送一天到真的是快！',
+ 'creationTime': '2018-01-12 08:00:52',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '钻石会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=27>
+{'commodityId': '2269354',
+ 'content': '对比一下双飞燕的烂b鼠标，就可以明显看出区别。首先手感很顺滑，其次质感很好，一看就是高档货。我在购买的时候刚好是促销总共才花了340左右，大小手感都很不错。滑轮很舒服，一用就知道给不给力',
+ 'creationTime': '2017-07-30 17:48:07',
+ 'isTop': 0,
+ 'picNum': 4,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=27>
+{'commodityId': '2269354',
+ 'content': '原来玩游戏的时候买个一个，挺顺手的，去网吧没长心，丢网吧了，再来个摆在那看，罗技罗技的此款鼠标设计很经典',
+ 'creationTime': '2018-11-07 16:24:31',
+ 'isTop': 0,
+ 'picNum': 4,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=27>
+{'commodityId': '2269354',
+ 'content': '大名鼎鼎的518**，当然不能错过。第一印象，很大，特别长的那种，比手头的海盗船执法者还要大。第二，很顺滑，移动平稳。满分好评！',
+ 'creationTime': '2018-10-16 20:03:15',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=27>
+{'commodityId': '2269354',
+ 'content': '手掌小的不建议买，而且因为宏键位和重量。不太适合女孩子，用来打FPS类比较好。总体体验很好。光效也不错',
+ 'creationTime': '2018-10-30 15:12:57',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=27>
+{'commodityId': '2269354',
+ 'content': '好用，对我这种习武之人，这款鼠标中奖简直是太合适了！满负重&hellip;FPS游戏贼稳',
+ 'creationTime': '2019-01-03 21:09:58',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 7,
+ 'score': 5,
+ 'usefulVoteCount': 5,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=14> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=10>
+{'commodityId': '2269354',
+ 'content': '新年新气象，祝各位玩家猪年大吉！G502手感超级棒，3套自定义按键简直是游戏神器，习惯了你就离不开她！\n'
+            '新的一年给自己换个新鼠标，也祝罗技越来越好！！！顺便和老款502合个影，用了快3年了！！！',
+ 'creationTime': '2019-02-09 11:32:12',
+ 'isTop': 0,
+ 'picNum': 4,
+ 'replyNum': 1,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=10>
+{'commodityId': '2269354',
+ 'content': '快递超快，双十一凌晨下单，下午就到了。手感没话说，滚轮需要适应下。关注G502很久了，正好上一个鼠标开始双击了，趁双十一换掉。配重块不算太重，打算用一段时间，找找最适合的重量。',
+ 'creationTime': '2018-11-11 19:52:34',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=10>
+{'commodityId': '2269354',
+ 'content': '第二个罗技g502，帮朋友买的，很好用，适合手掌比较大的人群，握住鼠标非常舒服，还有就是rgb信仰灯养眼。不得不说的就是11个可编程宏，玩吃鸡太方便了，b键切换单发和全自动，还有切换地图m，都可以在鼠标实现。',
+ 'creationTime': '2018-09-12 17:08:45',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=10>
+{'commodityId': '2269354',
+ 'content': '优点\n'
+            '鼠标整体采用类肤材质，不沾指纹。左右两侧防滑也非常出色。5个个性化配*，12000的DPI，11个定制按键以及双滑轮模式，手感非常好。加上驱动宏设置和rpg灯，简直是游戏玩家*。MOBA    '
+            'FPS  魔兽都非常适合。\n'
+            '缺点\n'
+            '鼠标稍大，手小的不适用，配上配*标很有分量，操作准确但是时间久会手酸。usb接口没有镀金',
+ 'creationTime': '2016-12-22 15:44:20',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '银牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=10>
+{'commodityId': '2269354',
+ 'content': '手感很棒，配重块全加上并不觉得重，侧面按键设置成常用组合快捷键 用起来超级方便。\n'
+            '无论办公还是游戏 鼠标都很适合。推荐。\n'
+            '光效逼格高，很出色。\n'
+            '经常有活动，可以等合适价位入手。',
+ 'creationTime': '2017-09-20 20:30:48',
+ 'isTop': 0,
+ 'picNum': 5,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=10>
+{'commodityId': '2269354',
+ 'content': '可以了解一下，中键很骚，配重基本没用，G神标配502，各有所爱吧，喜欢轻鼠标的可以不买，因为这个确实很重，女孩子不推荐，办公用来感觉很舒服，加上黑轴的机械键盘，手也舒服了很多',
+ 'creationTime': '2018-04-22 23:29:42',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=10>
+{'commodityId': '2269354',
+ 'content': '第一次装机，好激动好激动，终于可以玩电脑了，年轻人的第一台电脑，从京东开始，我从来没玩过电脑，就听说很好玩，里面的人还会动，超级喜欢在里面的！',
+ 'creationTime': '2018-08-03 14:24:03',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=10>
+{'commodityId': '2269354',
+ 'content': '首先东西要从供货商哪里拿，等了好久，我电脑都到了鼠标还没到，到手时开箱一看很惊艳，还有配重块，很多功能键看起来挺高级的，手感杠杠的，滚轮滑起来很流畅，没有声音，下载个驱动不会用就不管了，反正打游戏就是好，第一次用这么贵的鼠标，希望可以用个几年',
+ 'creationTime': '2018-11-21 22:56:43',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '银牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=10>
+{'commodityId': '2269354',
+ 'content': '三年的狂蛇都磨出包浆了，纠结好久买了g502，没有失望，体验确实很好，133mm看着很长，却不适合手太大的人，因为手长容易误触左边按键。我18.5cm的手，感觉刚刚好。',
+ 'creationTime': '2017-08-05 20:34:34',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=10>
+{'commodityId': '2269354',
+ 'content': '整體看上去高大上，安上去的感覺也很不錯，裝上驅動發現還有更多可以改進的！不錯！',
+ 'creationTime': '2018-06-05 22:32:39',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=9>
+{'commodityId': '2269354',
+ 'content': '非常不错的鼠标，超酷的外观，做工精细把握感很好。我主玩fps游戏用着不错，值得入手。也说下美中不足，按键太多，尤其那两个在左键旁的灵敏度调节键，经常误击，太讨厌了，我把它改成单一灵敏度。',
+ 'creationTime': '2017-01-14 14:19:35',
+ 'isTop': 0,
+ 'picNum': 6,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=9>
+{'commodityId': '2269354',
+ 'content': '滚轮是最惹争议的地方，用起来需要适应，反应速度是没的说，我个人感觉偏小了，没有雷蛇高。很满意。',
+ 'creationTime': '2018-03-29 22:14:32',
+ 'isTop': 0,
+ 'picNum': 5,
+ 'replyNum': 1,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '钻石会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=9>
+{'commodityId': '2269354',
+ 'content': '超出预期！本来犹豫是罗技还是雷蛇，上一个罗技用的603无限，微动坏了。这个503上手后第一感觉就是转为游戏打造的鼠标，配重，手感，体验都很赞，尤其可以根据自己的习惯调整重量和灯光，这个喜欢。我老wower，鼠标，顺便晒晒我的作战平台！呵呵。',
+ 'creationTime': '2018-10-15 22:59:11',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 1,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=9>
+{'commodityId': '2269354',
+ 'content': '用了一段时间，非常好用，鼠标手感因人而异，适合大部分人使用，对于我来说手感没的说非常棒！！！这种桌子面对它来说毫无压力，出差带出来没带鼠标垫但是丝毫不影响使用棒棒的',
+ 'creationTime': '2018-11-22 13:26:22',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '银牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=9>
+{'commodityId': '2269354',
+ 'content': '鼠标很好不愧是大厂出品，真的舒服，那个滚轮看文件是真的舒服啊，侧键狙击键用处好大的，而且灯也很好看，低调奢华',
+ 'creationTime': '2018-04-05 19:33:36',
+ 'isTop': 0,
+ 'picNum': 0,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '铜牌会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=9>
+{'commodityId': '2269354',
+ 'content': '挺大的，还有自带的配重块，挺专业的，上手感觉挺好的，RGB效果也不错，第一次送来的有点问题，但是京东很快留给解决了，专业服务，信赖京东，希望再接再厉，加油加油加油加油加油！',
+ 'creationTime': '2018-11-03 15:17:25',
+ 'isTop': 0,
+ 'picNum': 0,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=9>
+{'commodityId': '2269354',
+ 'content': '鼠标手感不错！！！平常游戏玩的坦克世界，比较喜欢厚重的感觉，配重搭配的非常完美！！！灵敏度也可以，按键的声音非常清脆，正品就是正品啊！！！竞技类游戏必备之鼠标啊',
+ 'creationTime': '2018-11-05 08:14:28',
+ 'isTop': 0,
+ 'picNum': 6,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=9>
+{'commodityId': '2269354',
+ 'content': '当时罗技超级品牌日对折下单买的，手感和302  '
+            '402相比大小和402差不多，然后多的几个配重块全装上，手感很好。鼠标滚轮每次摸第一次很舒服，而且滚轮可以稍微用力刨一下可以滚很久。手感方面也是很舒服的。',
+ 'creationTime': '2018-10-05 13:43:09',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 1,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=9>
+{'commodityId': '2269354',
+ 'content': '很早就想要一个罗技鼠标了，这是大减价，就忍不住入手了。RGB的灯光很低调，按键声音也很小。滚轮挺好玩的，可以设置无阻力，不停的~，有时候就莫名的玩起来了。各个功能很快上手，剩下的就是钻研一下宏设置了。我觉得打折时入手真的超值！',
+ 'creationTime': '2018-10-19 21:19:10',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '银牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=9>
+{'commodityId': '2269354',
+ 'content': '完美的产品，首先物流没得说，快，今天下单，明天就到。现在城市的发展速度越来越快，环境污染问题日益突出，我每天起床都感觉喉咙不适，痰多咳嗽。这个用了三天，空气状况指数明显好转，每天起床也不觉得头昏，痰多，嗓子不舒服了，这款产品真心不错。装修急住，都需要这个产品来除甲醛净化空气，完美，您值得入手',
+ 'creationTime': '2018-11-03 15:44:47',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=8>
+{'commodityId': '2269354',
+ 'content': '手感很好，本以为自己手小用这种专业电竞鼠标会有不适，没想到所有按键都能轻松按到，打FPS游戏非常舒服，可配合罗技 '
+            'G软件实现精确到1dpi，最大12000dpi的自由定制，加上配重块以后手感厚重了一点，更适合精确的操作需求\n'
+            'PS：早就听说G502的鬼畜滚轮，今天上手才感觉确实鬼畜，完全停不下来啊（滑稽）',
+ 'creationTime': '2017-08-24 11:46:43',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=8>
+{'commodityId': '2269354',
+ 'content': '就很尴尬 刚键盘的发成鼠标了 键盘的手感是真的狠不错 L轴比樱桃红轴舒服多了嘛 鼠标颜值手感都不错 但是功能键太多 对我没** '
+            '很囧&hellip;&hellip;',
+ 'creationTime': '2018-08-31 22:19:31',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=8>
+{'commodityId': '2269354',
+ 'content': '第一次买罗技的鼠标，真的很贵，但收到货之后，还是不错的，期待能使用很长时间，不玩游戏，平时办公用，完全足够了，毕竟价格摆在那里，这个灯很有个性，鼠标手感不错?，超级喜欢',
+ 'creationTime': '2018-12-26 16:31:41',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=8>
+{'commodityId': '2269354',
+ 'content': '京东物流真的太棒啦，没得说，罗技是外设大品牌，502观望很久啦，618果断入手，有配重可自行搭配，滚轮设计很人性化。有两种模式，就是按键太多啦，哈哈，值得购买！',
+ 'creationTime': '2018-06-24 15:21:48',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=8>
+{'commodityId': '2269354',
+ 'content': '鼠标挺漂亮，上手就喜欢上这种紧握感。定位很精准，不愧是一把fps神器。微动清脆，声音偏大，玩儿LOL的话得先适应，csgo搞起来',
+ 'creationTime': '2018-10-19 18:19:17',
+ 'isTop': 0,
+ 'picNum': 4,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=8>
+{'commodityId': '2269354',
+ 'content': '特意用了一段时间才评价，包装全新，没有磨损、压坏和任何二手痕迹，在京东买了很多电子产品，都没有出现二手的问题。罗技的鼠标很好用，入了坑就再也回不去了。502相比602窄了一点，握感很好，比较适合手大的玩家，指向精准，距离模式很好用，只是现在部分游戏不支持鼠标宏了，有些遗憾。话不多说，上图',
+ 'creationTime': '2018-07-19 09:23:10',
+ 'isTop': 0,
+ 'picNum': 5,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '钻石会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=8>
+{'commodityId': '2269354',
+ 'content': '可能定位亲民级的原因，mx518**的外包装朴实简洁，光看外包装还以为是个小鼠标，取出后发现鼠标还是挺大的，18cm的手刚刚好，上壳漆面很漂亮，像汽车金属漆，外形不说了，绝对经典，因为重量的减轻，使这款鼠标手感很好！没有灯光的渲染，反而透漏出低调的精致！',
+ 'creationTime': '2018-10-16 12:27:30',
+ 'isTop': 0,
+ 'picNum': 5,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=8>
+{'commodityId': '2269354',
+ 'content': '原来用了一年的冰豹退役了，因为有双键问题。心仪G502一段时间了，今天379拿下。功能非常多，驱动也很棒。鼠标手感不错，键程适中，不硬不软。第一次用逻辑的鼠标。感觉还不错。',
+ 'creationTime': '2017-07-22 17:29:51',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=8>
+{'commodityId': '2269354',
+ 'content': '很好用的鼠标，各方面都不错，手感很好右手人工体学摸起来很舒服，引擎定位精准反应很快，按键清脆很不错。驱动可以调节灯光效果，灯光效果很好物流也很快！',
+ 'creationTime': '2018-10-21 23:07:26',
+ 'isTop': 0,
+ 'picNum': 4,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '钻石会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=8>
+{'commodityId': '2269354',
+ 'content': '用了 用了几天，所以才这么用心的来评价这个鼠标。 我属于男生当中手点大小算适中的人了。 '
+            '刚拿到这个鼠标就非常喜欢，嗯，虽然看起来价位很多，觉得他会很零散，但是拿到手之后发现他只是，这个设计上给的感觉，像是和零散，其实它很好用。手感很不错，呼吸声感觉很炫酷，然后有三个车灯就是当按键按的时候，他有三个灯像充能一样，反复闪烁。质量感觉也是很好的，不是二手的，嗯，拿起来感觉很舒服，然后还有配重，整体给我的感觉非常好，然后将为上游有一个调频的，上面有一个调节滚轮的，安一下能卡动，在一下之后他就可以自由滚动，非常方便这个鼠标完美无缺。',
+ 'creationTime': '2017-02-24 23:38:18',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '钻石会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=5>
+{'commodityId': '2269354',
+ 'content': '从没有用过罗技的鼠标，一用上，就感觉离不开了。滚轮简直就是最爱，金属且畅快的滑动，让每一次上下都很鸡冻。多个键相互组合，操作起来，游戏别说玩的有多爽。',
+ 'creationTime': '2018-11-27 21:05:51',
+ 'isTop': 0,
+ 'picNum': 9,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=5>
+{'commodityId': '2269354',
+ 'content': '15日第一时间预定了518，16日收到，目前正在使用中，外形和老版无异，点击感很好，左右手握部分磨砂较硬感突出，因本人汗手，希望后期不要褪色严重。 '
+            '滚轮的手感和老版518的也很相似，较松，LOGO亮眼，总体来说这是一款不错的鼠标，希望它能继承518的所有特色，在耐用性上有更佳的表现！',
+ 'creationTime': '2018-10-16 12:25:16',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=5>
+{'commodityId': '2269354',
+ 'content': '外观不错\n按键声音小\n大小合适\n反应灵敏\n按键很舒服\n接收器很小\n鼠标很好\n无线鼠标\n定位准确',
+ 'creationTime': '2018-06-30 19:58:34',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '钻石会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=5>
+{'commodityId': '2269354',
+ 'content': '本地仓不到一天就到了，包装有点旧但没有开封过。一到手加上所有配重，手感非常好，而且很稳，不会乱飘。无线滚轮非常爽，浏览网页的利器啊。RGB也低调奢华，很值！',
+ 'creationTime': '2018-10-02 14:03:04',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 1,
+ 'userLevelName': '银牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=5>
+{'commodityId': '2269354',
+ 'content': 'MX518终于有**了，满怀欣喜!直接买买买，，，，以前老版玩1.6 '
+            '狙和点射很准，但泼水压*别扭，大手握感舒服，玩游戏办公皆可，引擎也由3060？3080？升级到自家英雄引擎，16000DPI '
+            '400IPS 40G加速度，性能赶上原相3389和3390了。情怀系列~18 5 18 ~     ~     6666',
+ 'creationTime': '2018-10-16 10:40:21',
+ 'isTop': 0,
+ 'picNum': 8,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=5>
+{'commodityId': '2269354',
+ 'content': '嘛，等了很久，终于买了g502，和想象中的一样，灰常霸气，鼠标大小和我的手也刚刚好，dpi调节也很舒服，按键的压力克数也很棒，用了一天，感觉没毛病，就是大拇指总是会按到狙击键。另外一个，g502驱动不支持xp，所以我只能等到六月份换电脑再rgbdpi随便调了，哈哈',
+ 'creationTime': '2017-05-01 07:40:06',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 1,
+ 'userLevelName': '银牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=5>
+{'commodityId': '2269354',
+ 'content': '帮别人购买的，收到货后很满意，安装也很容易，颜色也很好看，显得很大气，很喜欢，质量也不错，收到货很快，已经用了一段时间了，挺好的，没有破损，喜欢京东购物，方便又快，满意满意。',
+ 'creationTime': '2018-12-23 18:54:05',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=5>
+{'commodityId': '2269354',
+ 'content': '种草了很久，乘着秒杀加券，不到300拿下，不加配重的话我觉得鼠标蛮轻的，是大鼠标，握着挺舒服，宏按键还有待研究，目前来看，打游戏，上网都很舒服。',
+ 'creationTime': '2018-09-02 07:28:34',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=5>
+{'commodityId': '2269354',
+ 'content': '第一次在京东买东西，比较忐忑，盛传jd二手多，拿到货检查了一下，外包装有点损坏，鼠标底无大划痕。很早相中这款鼠标了，功能相当强大，滚轮用起来真舒服，左右按键相当清脆，灵敏度切换功能也很实用，特别是在射击游戏表现优异',
+ 'creationTime': '2018-08-30 07:37:44',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=5>
+{'commodityId': '2269354',
+ 'content': '以前就很喜欢G500的手感，用了5-6年，微动也换了2次了，这次趁有活动换了。包装有点小褶皱，应该是运输过程挤压的，鼠标上手手感不错，鼠标滚轮的阻尼感超棒，机械质感满满的，自定义键位置也不错，用起来方便，最爱的是双模滚轮，无阻尼的滚轮翻动超长的电子表格很爽。',
+ 'creationTime': '2018-11-12 11:40:39',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=2> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 21:58:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=0> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=4>
+{'commodityId': '2269354',
+ 'content': '我最喜欢的鼠标，这三个有俩罗技鼠标，都是好的没坏，g502还是很帅的，吃鸡最好的鼠标宏，我正在设置，准备吃鸡，嘿嘿，可以绝地求生账号一起去吃鸡奥Lamway',
+ 'creationTime': '2018-05-06 19:06:14',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '钻石会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=4>
+{'commodityId': '2269354',
+ 'content': '它的握感非常好，偏向于静脉那里悬空那种握法\n'
+            '误触的话35%有可能，毕竟是多键鼠标!\n'
+            '其次他的灯是非常用心，logo灯完美!没有丝毫漏光，非常匀称!色也非常纯!但是DPI灯就看脸了，有些人的会漏光，很刺眼，有些人包括帅帅的楼主的则不会。\n'
+            '还有按键触感超级爽!这是G502一大特点!',
+ 'creationTime': '2018-07-30 20:00:04',
+ 'isTop': 0,
+ 'picNum': 7,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=4>
+{'commodityId': '2269354',
+ 'content': '第一次买这么贵的的鼠标，感觉非常不错，重量如果再多一点就完美了，个人比较喜欢非常重的鼠标，不要问我为什么，一分价钱一分货?新鼠标，正在适应中',
+ 'creationTime': '2019-02-01 01:51:51',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '银牌会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=4>
+{'commodityId': '2269354',
+ 'content': '第一次用罗技鼠标，真心很不错，功能贼强大。拥有一款好鼠标，是吃鸡的第一步。g502功能多，随时随地切换快捷键，全自动也很稳，比起一般游戏鼠标，强了很多。只要多练习，这款鼠标能在游戏带来很多惊喜。。。真的值得一用。。。',
+ 'creationTime': '2018-05-29 23:06:47',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '铜牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=4>
+{'commodityId': '2269354',
+ 'content': '搭配键盘G413同时买的，手感棒棒的，功能也多，呼吸道可变色还是不错的，自由配重铅块很人性化！第一次买罗技，也是第一次买这么贵的外设，希望能耐用吧！',
+ 'creationTime': '2017-11-08 01:22:34',
+ 'isTop': 0,
+ 'picNum': 8,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 5,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=4>
+{'commodityId': '2269354',
+ 'content': '开箱真的很高兴，虽说不玩游戏了，但是还是很喜欢硬件的。滑轮特别舒服，价格也可以接受，可以说是性价比很高，有很多自定义键，七彩呼吸灯，颜值也够了，推荐大家购买吧，加重块我个人没有放，纯属懒，估计放上后效果更好一点。我手偏大',
+ 'creationTime': '2018-11-19 01:04:29',
+ 'isTop': 0,
+ 'picNum': 5,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=4>
+{'commodityId': '2269354',
+ 'content': '六月一号凌晨下单，当天不到十一点就到了。京东速度真的快！\n'
+            '用了卷320的价格应该说很划算的，一开始很想买gpro，最后被g502的三年质保打动了。\n'
+            '我主要玩FPS游戏，手腕流。这个鼠标不装配重块的情况下，重量都偏重。但同时，会有前后失衡的感觉，所以我加了一块在后部，保证平衡性。整体上的重量能接受，玩久了也不会有很强烈的负重感。\n'
+            '罗技鼠标一贯是科技感很足，这个鼠标的侧键很多，有个是可以切换文件的的，鼠标预装了三个文件，文件内有四档dpi，有一个按键可以调节dpi，有指示灯呼应。鼠标也分两种不同模式，一种很有利于游戏内切道具，另一种无阻力适合浏览文件疯狂下拉。其他按键与其他鼠标类似。\n'
+            '鼠标的大小我觉得偏小鼠标，我手不大，能触碰到游戏所需要的按键。总体来说还是很出色，性价比很高的鼠标，我还是很满意的。',
+ 'creationTime': '2018-06-09 07:41:31',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '银牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=4>
+{'commodityId': '2269354',
+ 'content': '外形美观，手感舒适，功能齐全。功能也和强大，玩游戏必备。而且能能自己调配重，这个设计很好。整体感觉还好，且双十一入手的价格非常给力，总的来说不错。而且这款鼠标还有宏功能。',
+ 'creationTime': '2017-12-04 01:10:53',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '钻石会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=4>
+{'commodityId': '2269354',
+ 'content': '家里都买了两只鼠标，吃鸡压*超好用，性价比超高，我快手有压*视频可以看一下，喜欢玩吃鸡喜欢玩吃鸡的可以关注下我快手号可以一起玩快手id王朔哥哥',
+ 'creationTime': '2018-09-30 13:03:49',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=4>
+{'commodityId': '2269354',
+ 'content': '帅的嘛，很舒服，特别是滚轮可以固定，真的很舒服，用习惯了，离不开',
+ 'creationTime': '2019-02-10 15:01:25',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 1,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=7>
+{'commodityId': '2269354',
+ 'content': '鼠标很舒服，配重可调节，不过我感觉不加配重刚刚好；按键清脆轻微有段落声音小；滚轮用着非常好，金属滚轮疾速模式非常爽，并且是四向滚轮；设计漂亮，握感舒适；并且功能强大，驱动里面好多东西待研究。',
+ 'creationTime': '2017-05-22 14:55:16',
+ 'isTop': 0,
+ 'picNum': 9,
+ 'replyNum': 2,
+ 'score': 5,
+ 'usefulVoteCount': 5,
+ 'userLevelName': '钻石会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=7>
+{'commodityId': '2269354',
+ 'content': '好用  滚轮是金属的  很有质感   配重都装上了  沉甸甸的  很有质感  底部的盖子开闭很方便  磁力吸附  '
+            '合上以后基本看不到缝隙  装配工艺精良  非常好',
+ 'creationTime': '2018-08-11 14:13:40',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=7>
+{'commodityId': '2269354',
+ 'content': '首先，个人觉得重量正好，并不是网上所谓的超重。重量平衡性而言加一个偏后的配重完美。\n'
+            '其次，握着很舒服。贴合手型。\n'
+            '总结：同价位里面完美选择。',
+ 'creationTime': '2018-03-26 01:13:56',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '钻石会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=7>
+{'commodityId': '2269354',
+ 'content': '鼠标重量刚好，不加配重刚刚顺手，加两个玩FPS游戏稳的一批。入手罗技是最稳的选择，手感舒服，有点磨砂的感觉。棒到飞起来，',
+ 'creationTime': '2017-11-12 19:25:53',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=7>
+{'commodityId': '2269354',
+ 'content': '131握法，致敬518经典，换了线材很不错，终于罗技知道换线了，好评！侧裙换成磨砂塑料更耐用，微动清脆无空键程好评，不过滚轮编码器要吐槽都8012年了，总体来说，这个价位很值得入手',
+ 'creationTime': '2018-10-16 21:24:04',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '铜牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=7>
+{'commodityId': '2269354',
+ 'content': '中意很久的一款鼠标，趁活动买来刚好，用了半个多月来评一下。手比较大，这鼠标正好适合我，握持感很棒，极速滚轮用起来也很方便，罗技还是那么棒',
+ 'creationTime': '2018-07-06 09:42:58',
+ 'isTop': 0,
+ 'picNum': 0,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '银牌会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=7>
+{'commodityId': '2269354',
+ 'content': '本人手长175cm，之前用g400，g400鼠标有点撑手，久了有点累。        说下502的感受吧。  '
+            '优点：1.g502的大小、工学设计完全符合我的手长，用起来很舒服，握感很棒。重量我觉得很合适，并不重   '
+            '2.定位很准，灯光很好赞。     '
+            '3.配合驱动，可设置的东西挺多的，可以给每个游戏设定单独的配置，完全可以根据自己的喜好设定。    '
+            '4.金属滚轮很有质感，也很有分量，用起来手感不错，无阻尼模式 很适合晚上使用，没有任何噪音，也很好用。         '
+            '缺点：1.两侧的防滑设计 有点适得其反，抬鼠的时候 '
+            '总觉得抓的不是很稳，没有防滑设计的g400反而抓得更稳，等适应以后应该不会有什么问题。  '
+            '2.（这个是个人使用环境的原因）左右键声音过于清脆，比较大声，晚上玩dota类 '
+            '左右键高频率使用的游戏，会比较吵，怕打扰到别人。   以上是个人的使用感受，希望能帮到其他人',
+ 'creationTime': '2016-06-04 01:50:16',
+ 'isTop': 0,
+ 'picNum': 6,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '钻石会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=7>
+{'commodityId': '2269354',
+ 'content': '帅气的游戏鼠标，外设一直相信罗技的品质！还在摸索更多的个性化设置，目前感觉握感很棒，操作跟手，点击舒适，还具备可调节的配重，很不错哦。（非专业鼠标评论，描述下直观感受）',
+ 'creationTime': '2019-03-04 14:22:57',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=7>
+{'commodityId': '2269354',
+ 'content': '传说中的G502 '
+            'RGB，终于上手了，高大上！左右按键很清脆，滚轮双模也很有特点，自定义按键很多，配重块全装上很有手感，RGB灯也很骚，感觉和K70更配，不过就是喜欢6Gv2。全新的没接盘，哈哈哈哈！',
+ 'creationTime': '2017-03-22 18:38:09',
+ 'isTop': 0,
+ 'picNum': 4,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=7>
+{'commodityId': '2269354',
+ 'content': '喜欢这个滚轮，重量也很合适，买了一个有线的一个无线的。都很满意。五星，打了下游戏，手感很不错?',
+ 'creationTime': '2018-11-18 20:47:08',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=14>
+{'commodityId': '2269354',
+ 'content': '有线游戏鼠标之王，对于我这种175mm手是完美握感，配重块全加上去了。从此不怕手抖打滑。然后滚轮无阻尼模式好评。功能键很多，可以自定义，写文章的时候非常舒服。',
+ 'creationTime': '2017-03-09 12:38:55',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=14>
+{'commodityId': '2269354',
+ 'content': '很好，第一次用这么贵的鼠标，功能很多也很好用，玩游戏很爽，无阻力模式浏览网页什么的很爽，设置也很简单',
+ 'creationTime': '2018-10-20 06:39:55',
+ 'isTop': 0,
+ 'picNum': 0,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '铜牌会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=14>
+{'commodityId': '2269354',
+ 'content': '手感很棒，无配重感觉重心偏前，给后边加了两块配重，明显感觉重心改变，很舒服，对我这种大手很友好，无论打游戏还是日常使用，都是很好用的一款鼠标，双十一249，价格很不错，被罗技圈粉，准备入手一个罗技耳机',
+ 'creationTime': '2018-11-22 13:31:16',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=14>
+{'commodityId': '2269354',
+ 'content': '很喜欢罗技的鼠标，一直想买，但是价格不美丽，双十一看到价格很合适，就决定拿下，果然挺重的，很喜欢，就是包装太简陋了，脚垫连个保护膜都没有。',
+ 'creationTime': '2018-12-04 18:07:17',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=14>
+{'commodityId': '2269354',
+ 'content': '晚上下的单，第二天下午就到货了。鼠标特别满意，之前用的302 ，这回升级了，换的502 ，手感没的说，一直都是用的罗技的。',
+ 'creationTime': '2019-02-21 17:03:52',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 2,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '铜牌会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=14>
+{'commodityId': '2269354',
+ 'content': '鼠标到货了，打开一看一如既往的炫酷，非常喜欢这款鼠标，握着手感也很舒服。打游戏听说效果挺棒，好好感受一下高端大气上档次的鼠标了。',
+ 'creationTime': '2018-11-12 23:50:11',
+ 'isTop': 0,
+ 'picNum': 6,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=14>
+{'commodityId': '2269354',
+ 'content': '啧啧啧  '
+            '说实话这款G502是我用过手感比较好的一款，当时我看差评的时候都想退款了，实物真的让我惊艳。外观很帅，跟我的键盘颜色正好搭配。喜欢！',
+ 'creationTime': '2018-11-08 13:43:56',
+ 'isTop': 0,
+ 'picNum': 4,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=14>
+{'commodityId': '2269354',
+ 'content': '非常完美的鼠标，全新外观，大小正好贴我的手，手感非常不错，配重也很用心，京东物流非常快，当天就到了，玩了很久的pg和昆特牌。\n'
+            '\n'
+            'RGB没有说的，跳高闪烁频率更好看，DPI太高没需求，我还是调了4档，设置了G键，总之是非常良心的产品，买买买。',
+ 'creationTime': '2017-02-22 15:52:52',
+ 'isTop': 0,
+ 'picNum': 6,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=14>
+{'commodityId': '2269354',
+ 'content': '之前一直用的小小的无线鼠标，用起来很不方便。这款鼠标也盯了好久，直到618期间降价了，才决定下手买，算下来的话大概是270多左右，挺划算的。而且工作游戏两不误，适合台式机，感觉大小合适，键位也很多，给个赞！',
+ 'creationTime': '2018-07-26 22:52:28',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '钻石会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=14>
+{'commodityId': '2269354',
+ 'content': '下单到手不过15小时，非常快的物流简直nice，个人手感不觉得重，配重块全部加上了！很舒服的握感，琢磨1小时就会用了，手感上佳，即使有人喷这个鼠标还是买了，因为不好用的话，当做经典纪念也行啊。毕竟502是一代经典！',
+ 'creationTime': '2018-10-16 15:12:25',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 1,
+ 'userLevelName': '铜牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=2>
+{'commodityId': '2269354',
+ 'content': '服役5年多的G400s完美完成了它的使命！刚刚看到518的时候就感觉是经典重现，毫不犹豫买了一个！\n'
+            '和400**手感还是有些差别，518更高些，手感还是熟悉的感觉，很亲切！颜值提升了许多！新的配色还是很惊喜！没有光污染，很沉稳！\n'
+            '总之好评！首发价格很实惠！',
+ 'creationTime': '2018-10-16 17:36:12',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 2,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=2>
+{'commodityId': '2269354',
+ 'content': '比较惊艳，手感很不错，之前一直用502，502的手感还是非常不错的，用了两个502了，听说这次升级了芯片，正好搞活动就入手了，编号正好是1024，很有意思。物流也很快，好评。',
+ 'creationTime': '2018-12-17 14:34:42',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=2>
+{'commodityId': '2269354',
+ 'content': '这个确实不错，关注很久了，确实很不错，快递很快，而且很漂亮，适合大手，配重很棒，',
+ 'creationTime': '2018-12-13 22:57:12',
+ 'isTop': 0,
+ 'picNum': 5,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=2>
+{'commodityId': '2269354',
+ 'content': '功能强大，手感好，准备把配重块全去掉，然后试试星际争霸，都说rts游戏不方便，我感觉手感不错，倒数据把游戏删了，正在下载，等试一试再来汇报。如果用来玩儿sps游戏，那么强烈推荐。',
+ 'creationTime': '2018-08-19 16:22:06',
+ 'isTop': 0,
+ 'picNum': 5,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=2>
+{'commodityId': '2269354',
+ 'content': '非常满意，好滴凶，哈哈哈，谁能告诉我哪里能换G500的微动啊，感觉这个有点小，G500大小刚刚好，怀念啊！',
+ 'creationTime': '2018-11-03 10:06:25',
+ 'isTop': 0,
+ 'picNum': 0,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '钻石会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=2>
+{'commodityId': '2269354',
+ 'content': '哈哈，激动，MX518竟然**了，毫不犹豫的下单，作为忠实的罗技粉，作为还在用已经十年的MX518用户，这型号手感简直炸天，比家里用的G502手感速度很多。一直玩FPS游戏，MX518伴随我走过很多游戏，自己换过微动，换过外壳，换过滚轮，换过线，用过那么多鼠标，只有买的人生第一只游戏鼠标MX518陪伴着我。今天拿到新鼠标，熟悉的手感，熟悉的外形，吊炸天！！！太开心了~~',
+ 'creationTime': '2018-10-16 11:33:29',
+ 'isTop': 0,
+ 'picNum': 4,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 1,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=2>
+{'commodityId': '2269354',
+ 'content': '罗技的g502，是款不错的鼠标，收货之后几天的使用，感觉挺好的，如果有优点将继续添加，感觉api设置到的话感觉3200-4000是最好的，快递，速度很快，继续保持',
+ 'creationTime': '2018-06-14 12:48:54',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=2>
+{'commodityId': '2269354',
+ 'content': '用了一个月才来评价，首先手感非常好，根据手掌握持设计的，反应速度也很快，可以自行设置dpi，按键也可以自己设置功能，那个配重是玄学，搞不懂。',
+ 'creationTime': '2018-07-18 16:15:00',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=2>
+{'commodityId': '2269354',
+ 'content': '让基层下沉，速度很快，当天下单，隔天早上送到，内包装略有破损，有暴力分拣和堆积的痕迹，本人使用主攻游戏和，制图，也是慕名而来，前一个鼠标是G400s已经停产，用了五年之久，健在，想换一个手感更棒的，看到大家的推荐，才来的！线的外包是织物抗拉的，鼠标表面磨砂质感，两侧为类肤质感，防汗防滑，做工不错，用一段时间后再来评价。',
+ 'creationTime': '2018-06-19 12:32:11',
+ 'isTop': 0,
+ 'picNum': 6,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=2>
+{'commodityId': '2269354',
+ 'content': '拿在手里，重量适中，手感不错，做工也挺精致，给人一种厚实，且有很强的设计感，不管从功能也好，外观也好，我都挺喜欢的，耐用嘛，现在不好说，应该不会令我失望，总体满意。',
+ 'creationTime': '2018-10-18 13:53:39',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=0>
+{'commodityId': '2269354',
+ 'content': '鼠标非常不错，调控非常灵敏，而且能够调整。磨砂面比较繁华，滚轴能在，办公和游戏两个，调节。比较喜欢，重一点的鼠标，所以配重块儿，全部加上，手感非常棒。表面质感，感觉不是特别结实，不是特别厚重，但整体不错，希望能够耐用。京东买东西还是非常的放心，特别是售后，是正品，是行货。用惯了蓝牙，和无线鼠标，换回有线鼠标，非常舒服。',
+ 'creationTime': '2018-10-04 17:29:14',
+ 'isTop': 0,
+ 'picNum': 8,
+ 'replyNum': 2,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=0>
+{'commodityId': '2269354',
+ 'content': '非常喜欢，关注好几个月了，看评论有说重心差的，有说重量大的，有说抓着不舒服的，我只能说都是胡扯，重量跟我原来用的便宜雷柏的一样，手感很舒服，我小手，很贴合手型，滚轮做的真漂亮，金属的，很有质感，而且还有极速模式，这个鼠标做工真的漂亮，越看越喜欢，跟我G610搭在一起完美，还有配重块，现在刚入手还在摸索，不知道加在哪里合适，总之很喜欢，完美，拿在手里非常精致。',
+ 'creationTime': '2019-03-15 22:23:58',
+ 'isTop': 0,
+ 'picNum': 6,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 1,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=0>
+{'commodityId': '2269354',
+ 'content': '很满意的一次购物：\n'
+            '1优惠力度给力！\n'
+            '2速度快！凌晨下的单，早上九点就到手了！\n'
+            '3鼠标满意，之前用的g500外形设计沉稳内敛大气恢弘。线条流畅圆润，就像历经战场的一把1911，性能也十分优秀。这次g520设计走科幻路线了，棱角分明，酷炫骚气的rgb还能自定义，估计年轻的学生会更加喜欢。只是外形很激进，感觉不会像g500那么经看，说实话这外形放办公室就不像g500那么合适了。\n'
+            '     '
+            '跟g500相比，握感要小一点，滚轮更加舒服。不过引擎位置在掌心，用惯了像g500这样前置引擎的玩家可能需要适应一下。尼龙线明显粗了很多，试了下cs1.5,使用性能上感觉不出明显区别，移动定位都很优秀，驱动很强大，可玩性更高,是款不错的游戏鼠标。',
+ 'creationTime': '2018-11-03 15:51:00',
+ 'isTop': 0,
+ 'picNum': 8,
+ 'replyNum': 1,
+ 'score': 5,
+ 'usefulVoteCount': 3,
+ 'userLevelName': '钻石会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=0>
+{'commodityId': '2269354',
+ 'content': '鼠标好用，比原来的MX518小一点点，518用了很多年了，滚轮不太好用了就想到换个好点的，罗技的用习惯了，按键手感清脆，指针准确，关键是看上502的多编程键，办公游戏都能设置快捷键，很方便，罗技的软件界面也很好用，简单明了一看就会，这里也谢谢京东的师傅，过年期间都在送货。',
+ 'creationTime': '2019-02-12 19:16:29',
+ 'isTop': 0,
+ 'picNum': 6,
+ 'replyNum': 2,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=0>
+{'commodityId': '2269354',
+ 'content': '鼠标确实很好，刚买来就用了一下午，感觉都不一样了，自定义的DPI，打头是真的准。唯一美中不足的就是，鼠标中间感觉很松，晃动起来有声音，总体来说非常好，很满意',
+ 'creationTime': '2018-03-25 20:25:18',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=0>
+{'commodityId': '2269354',
+ 'content': '三组板载内存，换电脑不用软件设置，功能强大，定位准确，微动回弹手感非常好，手感好。原来用G100s，这次升级为G502，感觉提升非常大，灯光可以关闭，卡夫拉线抗拉性非常好。。双十一还是非常实惠的。',
+ 'creationTime': '2017-11-13 03:02:43',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 1,
+ 'score': 5,
+ 'usefulVoteCount': 1,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=0>
+{'commodityId': '2269354',
+ 'content': '一分钱一分货，超极好用，握的手感舒服，鼠标重，移动不会提起来，要不要鼠标垫在桌子上移动都畅快(自适应)。十一月八日买的，九日就拿到了，299元，正品，无划痕。',
+ 'creationTime': '2018-11-10 18:04:56',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '铜牌会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=0>
+{'commodityId': '2269354',
+ 'content': '同事是资深罗技鼠标使用者，强烈推荐我买的，*块以下的鼠标，这款的性价比很高，同事用了三年没啥毛病，自己使用感觉也不错，握着舒服，按键设置合理，可以编程，可以快速切换配置模式，很方便，灯光酷炫，最值得一提的是鼠标中键，两种滚动模式，用着非常爽，底部还有配重槽，提供五个配重块自由组合！',
+ 'creationTime': '2018-01-18 11:02:19',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 2,
+ 'score': 5,
+ 'usefulVoteCount': 2,
+ 'userLevelName': '钻石会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=0>
+{'commodityId': '2269354',
+ 'content': '用着很顺手，蛮舒服的，线材很结实，按键也不累，配重块全上了刚合适，这个还是看个人吧，有些人会觉得蛮重的，滚轮无阻力模式浏览网页文档很方便，还有就是没事滚着玩也真的很爽啊哈哈哈',
+ 'creationTime': '2017-10-10 21:17:13',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 2,
+ 'score': 5,
+ 'usefulVoteCount': 6,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=0>
+{'commodityId': '2269354',
+ 'content': '第一次用罗技的东西 也是第一次用这么好的鼠标 鼠标握着手感很好 对于我这种手大的人很合适 五块配重全部装上 不过感觉还是有点轻 '
+            '如果能达到150-170k就更完美了 目前就单纯的握了下鼠标 试了下手感 鼠标的其它功能还没试 等试完以后再追评 有一点必须肯定 '
+            '那就是 京东 在京东买东西真的很放心 物流真是完美 顺便晒一晒我的罗技两件套 同时买的',
+ 'creationTime': '2019-02-20 17:29:01',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 1,
+ 'score': 5,
+ 'usefulVoteCount': 1,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=6> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 21:58:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=3> (referer: http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1)
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=6>
+{'commodityId': '2269354',
+ 'content': '首先，配重块的设定很人性化，可以根据自己的手感来设置，然后鼠标的抓握感很好，玩游戏很有手感，再其次键位多，功能多，很好用。总之，完美。',
+ 'creationTime': '2017-09-20 12:25:17',
+ 'isTop': 0,
+ 'picNum': 8,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '银牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=6>
+{'commodityId': '2269354',
+ 'content': '关注很久的鼠标，双十二拿下，有了一个别的鼠标，想换换，用后感觉可以，配重很好，到货配重全加进去了，盖子是磁吸的，方便。有点分量的确是我需要的。玩守望@法的确提升了一个档次。所以值得拥有',
+ 'creationTime': '2018-12-19 20:32:30',
+ 'isTop': 0,
+ 'picNum': 5,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=6>
+{'commodityId': '2269354',
+ 'content': '非常好看的鼠标，曾经的经典游戏鼠标，算是为情怀买单吧，处理器HERO '
+            '16k算比较好的了吧，重量轻，仅仅100g，极简环保包装，没有光污染，线材不是粗尼龙的，应该是TPU的圆线，移动没有任何阻力，总之算做工不错的了，首发值得购买。',
+ 'creationTime': '2018-10-16 09:55:37',
+ 'isTop': 0,
+ 'picNum': 5,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 1,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=6>
+{'commodityId': '2269354',
+ 'content': '外观好评，配合罗技游戏软件使用效果极佳。尤其喜欢设置多按键宏，简单高效。fps玩家需要在控制面板关闭提高鼠标精准度，或者在罗技游戏软件中关闭鼠标加速。呼吸灯自定义帅爆，配重块好评。',
+ 'creationTime': '2018-07-06 19:14:55',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=6>
+{'commodityId': '2269354',
+ 'content': '家里一个 公司一个 \n'
+            '诶舒服的哟！\n'
+            '雷蛇鼠标买没一天就退了\n'
+            '手感和502没法比?\n'
+            '502的微动 和类肤质的触感 侧件 手感都非常的棒',
+ 'creationTime': '2018-05-16 15:56:50',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=6>
+{'commodityId': '2269354',
+ 'content': '线很软，用夹线器，移动很顺滑。按键左右键和老版的手感很接近，估计老版左右键缝隙进灰的毛病也保留了下来，推荐买两个，坏一个换一个。适合大手，握感很饱满，脚垫是几块大的，鼠标垫适配性很不错，都能正常识别不丢帧',
+ 'creationTime': '2018-10-16 14:31:19',
+ 'isTop': 0,
+ 'picNum': 5,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 1,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=6>
+{'commodityId': '2269354',
+ 'content': '手感很好  质量很好  汗手玩这个没什么影响 就是键多 大拇指那个容易按到  快递很快  总之买就完事了 别舍不得前 '
+            '之前一直买的几十块的  老坏',
+ 'creationTime': '2018-12-29 16:37:39',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '银牌会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=6>
+{'commodityId': '2269354',
+ 'content': '宝贝不错。是正品。需要注意得是这个鼠标线上面的保护编绳很容易磨损很正常。配上相应的软件可以用或者制作各种宏，设置每个按键的快捷键，有三组内存可以一键切换。手感非常好配重块也可以任意添加，灯光效果可以自定义。',
+ 'creationTime': '2018-12-25 20:27:44',
+ 'isTop': 0,
+ 'picNum': 3,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=6>
+{'commodityId': '2269354',
+ 'content': '特地用了好长一段时间才来评价，这个鼠标很好用，我觉得很适合男孩子用。不论是打游戏还是办公，用习惯了了总之是超级顺手的。宏用起来也很方便，可以办到手指没办法办到的操作。总之键位太多，还有些不习惯，之前用的雷蛇，感觉这个好用一些。',
+ 'creationTime': '2018-12-03 22:21:02',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=6>
+{'commodityId': '2269354',
+ 'content': '鼠标握起来很舒服，性能也没得说。最主要的是lgs可以编写lua语言的脚本，不仅可以编写普通的宏，而且可以实现鼠标定位、鼠标指针移动、dpi设置等操作，而且lua的api很好学，英文的API文档十几分钟浏览完就可以编写代码了。已经写了一个用于操作同花顺的脚本很好用，之后打算再写一个压qiang宏。但api没有拾色器哈，做gua的话还是别想了。',
+ 'creationTime': '2018-05-11 20:37:58',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 1,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=3>
+{'commodityId': '2269354',
+ 'content': '习武之人必备鼠标  买来练麒麟臂用的  对比G102   灯光方面  亮度还是102亮一点  个人还是喜欢502这种闷骚型的  '
+            '灯不在多  够骚就行  重量方面满配重几乎相当于两个102的重量 日常使用推荐在鼠标尾部那里放两个配重  重量就平衡了  '
+            '太重了用的很累   502非常稳 但如果频繁甩动时间长了会很累 自定义按键很多  工作游戏都能兼顾  握持舒服  '
+            '编织线材是真的硬  而且还粗   京东物流是没的说  早上下单下午就到了',
+ 'creationTime': '2018-11-02 01:44:56',
+ 'isTop': 0,
+ 'picNum': 7,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员[试用]',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=3>
+{'commodityId': '2269354',
+ 'content': '用着很舒服，加了一块配重，用着很稳。材质不错，我的天生油手摸上去也不会摸油。形状好看，科技感十足。目前用的初始配置3，一键复制粘贴撤销返回，很方便。',
+ 'creationTime': '2018-09-03 08:52:17',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '铜牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=3>
+{'commodityId': '2269354',
+ 'content': '键盘很是喜欢，按着声音听着就舒服，软件更新了，还带音乐联动，很惊奇，不错，不错，罗技大法好啊。哈哈',
+ 'creationTime': '2018-11-18 00:16:27',
+ 'isTop': 0,
+ 'picNum': 0,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=3>
+{'commodityId': '2269354',
+ 'content': '鼠标很不错，又加重块，全加之后很稳重，鼠标滑轮有极速模式，设置以后就和轴承一样，非常的轻松就可以滑动，精确度很高，是光学的。赞!',
+ 'creationTime': '2019-03-03 14:36:35',
+ 'isTop': 0,
+ 'picNum': 0,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '银牌会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=3>
+{'commodityId': '2269354',
+ 'content': '骚气!很好看，手感很好，网上经常说鼠标太重了，个人觉得还行，难道是麒麟臂?哈哈，鼠标滚轮我能玩一年，刷贴吧超级实用，玩游戏手感也很嗨，DPI的话个人最高用2000，太高我觉得根本没有什么用，总体来说很好!',
+ 'creationTime': '2017-10-29 10:20:33',
+ 'isTop': 0,
+ 'picNum': 2,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=3>
+{'commodityId': '2269354',
+ 'content': '还不错！双十一活动入手！手感不怎习惯！适应一段时间看看！RGB灯光非常奈斯！适合手大一点的人！指向还不错！挺灵敏的！',
+ 'creationTime': '2018-11-04 12:56:40',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=3>
+{'commodityId': '2269354',
+ 'content': '刚开始用还误会了这个鼠标滚轮乱飘以为是坏的研究了下才发现是可以锁住的下载一个罗技游戏软件宏侧键非常好用可以代替游戏里一些普通的操作手感也很棒第一次用罗技鼠标总之就是他么的棒',
+ 'creationTime': '2017-12-07 23:40:06',
+ 'isTop': 0,
+ 'picNum': 4,
+ 'replyNum': 11,
+ 'score': 5,
+ 'usefulVoteCount': 30,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=3>
+{'commodityId': '2269354',
+ 'content': '这鼠标使用真的很舒服，手感非常好，拿在手里不大不小，握持\n'
+            '时非常的自然，按键轻巧，\n'
+            '以前用过罗技无线g602，那玩意真的漂亮，也真的大，特别的大，使用时非常别扭！\n'
+            '玩英雄联盟很顺手，精度高，这次换502非常的满意！',
+ 'creationTime': '2019-02-14 17:26:38',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=3>
+{'commodityId': '2269354',
+ 'content': '可以说有些惊喜吧，鼠标手感特别棒，这就是经典的味道吧，鼠标的滚轮有一些太灵敏了，打有游戏时候就会切开切去，哈哈&hellip;&hellip;挺喜欢的，外观也特别吸睛，总体来说很不错，值得入手！',
+ 'creationTime': '2018-10-15 21:51:05',
+ 'isTop': 0,
+ 'picNum': 1,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': '金牌会员',
+ 'videoNum': 0}
+2019-03-24 21:58:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=2269354&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=3>
+{'commodityId': '2269354',
+ 'content': '这鼠标手感真不是盖的，每个部位都很舒适，滚轮的手感实在太爽了，鼠标可以调节指针速度，rgb灯效，滚轮模式，相信罗技妥妥的，这价位，值得拥有',
+ 'creationTime': '2018-11-16 21:47:02',
+ 'isTop': 0,
+ 'picNum': 5,
+ 'replyNum': 0,
+ 'score': 5,
+ 'usefulVoteCount': 0,
+ 'userLevelName': 'PLUS会员',
+ 'videoNum': 1}
+2019-03-24 21:58:18 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-03-24 21:58:18 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 18768,
+ 'downloader/request_count': 31,
+ 'downloader/request_method_count/GET': 31,
+ 'downloader/response_bytes': 227640,
+ 'downloader/response_count': 31,
+ 'downloader/response_status_count/200': 30,
+ 'downloader/response_status_count/404': 1,
+ 'dupefilter/filtered': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 3, 24, 13, 58, 18, 754621),
+ 'item_scraped_count': 290,
+ 'log_count/DEBUG': 323,
+ 'log_count/INFO': 7,
+ 'log_count/WARNING': 2,
+ 'request_depth_max': 1,
+ 'response_received_count': 31,
+ 'scheduler/dequeued': 30,
+ 'scheduler/dequeued/memory': 30,
+ 'scheduler/enqueued': 30,
+ 'scheduler/enqueued/memory': 30,
+ 'start_time': datetime.datetime(2019, 3, 24, 13, 58, 16, 29208)}
+2019-03-24 21:58:18 [scrapy.core.engine] INFO: Spider closed (finished)

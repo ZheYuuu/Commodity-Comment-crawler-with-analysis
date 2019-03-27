@@ -1,0 +1,67 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品信息</title>
+    <link href="{% static 'main/bootstrap.min.css' %}" type="text/css" rel="stylesheet">
+    <!--<script src="{% static 'main/jquery-3.3.1.min.js' %}" type="text/javascript" >-->
+</head>
+<body>
+<div class="container">
+    <div class="pagination">
+            <span class="step-links">
+                {% if commodityList.has_previous %}
+                    <a href="?page={{ commodityList.previous_page_number }}">previous</a>
+                {% endif %}
+
+                <span class="current">
+                    Page {{ commodityList.number }} of {{ commodityList.paginator.num_pages }}.
+                </span>
+
+                {% if commodityList.has_next %}
+                    <a href="?page={{ commodityList.next_page_number }}">next</a>
+                {% endif %}
+            </span>
+    </div>
+    <table class="table table-hover">
+        <th>商品id</th>
+        <th>商品名称</th>
+        <th>商品价格</th>
+        <th>品类</th>
+        <th>品牌</th>
+        <th>链接</th>
+        <th></th>
+        {% for commodity in commodityList%}
+        <tr>
+            <td>{{commodity.uniqueId}}</td>
+            <td>{{commodity.name}}</td>
+            <td>{{commodity.price}}</td>
+            <td>{{commodity.category}}</td>
+            <td>{{commodity.brand}}</td>
+            <td><a href="{{commodity.url}}">{{commodity.url}}</a></td>
+            <td>
+                <form action="{% url 'main:getCommodityCommentSummary'%}" method="POST">
+                    {% csrf_token %}
+                    <input class="hidden" value="{{commodity.uniqueId}}" name="uniqueId">
+                    <button type="submit" class="btn btn-default" >Comment Summary</button>
+                </form>
+            </td>
+            <td>
+                <form action="{% url 'main:getCommodityCommentDetail'%}" method="POST">
+                    {% csrf_token %}
+                    <input class="hidden" value="{{commodity.uniqueId}}" name="uniqueId">
+                    <input class="hidden" value="{{commodity.url}}" name="url">
+                    <button type="submit" class="btn btn-default" >Comment Detail</button>
+                </form>
+            </td>
+
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+
+
+</body>
+</html>

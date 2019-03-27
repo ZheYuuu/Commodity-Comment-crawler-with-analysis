@@ -1,0 +1,85 @@
+2019-03-26 17:42:49 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: JDSpider)
+2019-03-26 17:42:49 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'JDSpider', 'HTTPCACHE_ENABLED': True, 'LOG_FILE': 'logs\\JDSpider\\getCommentSummary\\80c247ae4fab11e983f5ace010528bab.log', 'NEWSPIDER_MODULE': 'JDSpider.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['JDSpider.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.0) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.36 Safari/536.5'}
+2019-03-26 17:42:49 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-03-26 17:42:49 [scrapy.middleware] WARNING: Disabled HttpCacheMiddleware: Unable to find scrapy.cfg file to infer project data dir
+2019-03-26 17:42:49 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-03-26 17:42:49 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-03-26 17:42:49 [py.warnings] WARNING: c:\users\柘宇\appdata\local\temp_~1\jdspider-1553592105-yhd18d0d.egg\JDSpider\pipelines.py:11: ScrapyDeprecationWarning: Module `scrapy.log` has been deprecated, Scrapy now relies on the builtin Python library for logging. Read the updated logging entry in the documentation to learn more.
+
+2019-03-26 17:42:49 [scrapy.middleware] INFO: Enabled item pipelines:
+['JDSpider.pipelines.JdspiderPipeline']
+2019-03-26 17:42:49 [scrapy.core.engine] INFO: Spider opened
+2019-03-26 17:42:49 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-03-26 17:42:49 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6024
+2019-03-26 17:42:49 [scrapy.core.engine] DEBUG: Crawled (404) <GET http://sclub.jd.com/robots.txt> (referer: None)
+2019-03-26 17:42:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=5068393&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1> (referer: None)
+2019-03-26 17:42:49 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&productId=5068393&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=1>
+{'afterCountStr': '300+',
+ 'commentCountStr': '14万+',
+ 'commodityId': '5068393',
+ 'generalCountStr': '400+',
+ 'goodCountStr': '12万+',
+ 'goodRate': 0.99,
+ 'hotCommentTagStatistics': '[{"name": "\\u4fdd\\u6e29\\u6027\\u597d", '
+                            '"count": 261}, {"name": '
+                            '"\\u9ad8\\u7aef\\u5927\\u6c14\\u4e0a\\u6863\\u6b21", '
+                            '"count": 111}, {"name": '
+                            '"\\u5b8c\\u597d\\u65e0\\u635f", "count": 41}, '
+                            '{"name": "\\u8d85\\u7ea7\\u597d\\u7528", "count": '
+                            '19}, {"name": "\\u4e0d\\u6613\\u6253\\u6ed1", '
+                            '"count": 16}, {"name": '
+                            '"\\u65e0\\u602a\\u5f02\\u5473\\u9053", "count": '
+                            '10}, {"name": "\\u5bc6\\u5c01\\u4e25\\u5b9e", '
+                            '"count": 9}, {"name": '
+                            '"\\u4f7f\\u7528\\u8212\\u9002", "count": 7}, '
+                            '{"name": "\\u5408\\u7406\\u53ef\\u9760", "count": '
+                            '7}, {"name": "\\u6beb\\u4e0d\\u8d39\\u529b", '
+                            '"count": 6}, {"name": '
+                            '"\\u5b8c\\u5168\\u591f\\u7528", "count": 3}, '
+                            '{"name": "\\u5bb9\\u6613\\u6e05\\u6d17", "count": '
+                            '2}, {"name": "\\u65b9\\u4fbf\\u5916\\u51fa", '
+                            '"count": 2}]',
+ 'imageListCount': 500,
+ 'poorCountStr': '300+',
+ 'videoCountStr': '400+'}
+2019-03-26 17:42:49 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-03-26 17:42:49 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 706,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 6682,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/404': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 3, 26, 9, 42, 49, 526089),
+ 'item_scraped_count': 1,
+ 'log_count/DEBUG': 4,
+ 'log_count/INFO': 7,
+ 'log_count/WARNING': 2,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2019, 3, 26, 9, 42, 49, 195296)}
+2019-03-26 17:42:49 [scrapy.core.engine] INFO: Spider closed (finished)
