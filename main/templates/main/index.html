@@ -12,89 +12,89 @@
 
 
 <body>
-<div id="test">
-    <div id="app">
-    ${message}
-</div>
-    <div id="app-2">
-      <span v-bind:title="message">
-        鼠标悬停几秒钟查看此处动态绑定的提示信息！
-      </span>
-    </div>
-    <div id="app-3">
-      <p v-if="seen">现在你看到我了</p>
-    </div>
-    <div id="app-4">
-        <ol>
-            <li v-for="todo in todos">
-                ${ todo.text }
-            </li>
-        </ol>
-    </div>
-    <div id="app-5">
-        <p>${message}</p>
-        <button v-on:click="reverseMessage">逆转消息</button>
-    </div>
-    <div id="app-6">
-        <p>${message}</p>
-        <input v-model="message">
-    </div>
-    <script type="text/javascript">
-        <!--绑定vue至html对象，更新message，但这个不行-->
-        var vm = new Vue({
-            delimiters: ['${', '}'],
-            el: "#app",
-            data: {
-                message:"Hello Vue",
-            }
-        });
-        <!-- v-bind:title= xxx 修改title，可行-->
-        var app2 = new Vue({
-          el: '#app-2',
-          data: {
-            message: '页面加载于 ' + new Date().toLocaleString()
-          }
-        });
-        <!-- v-if 修改condition判断 -->
-        var app3 = new Vue({
-          el: '#app-3',
-          data:{
-            seen : true
-          }
-        });
-        <!-- v-for 循环 -->
-        var app4 = new Vue({
-          delimiters:["${","}"],
-          el: '#app-4',
-          data:{
-            todos:[
-              {text: "学习Javascript"},
-              {text: "学习Vue"},
-              {text: "整个牛项目"}
-            ]
-          }
-        });
-        var app5 = new Vue({
-          delimiters:["${","}"],
-          el: '#app-5',
-          data:{
-            message: "Hello world!"
-          },
-          methods:{
-            reverseMessage:function(){
-              this.message = this.message.split('').reverse().join('')
-            }
-          }
-        });
-        var app6 = new Vue({
-          delimiters:["${","}"],
-          el: '#app-6',
-          data: {
-            message: "Input Sth. Here."
-          }
-        })
-    </script>
-</div>
+<!--<div id="test">-->
+    <!--<div id="app">-->
+    <!--${message}-->
+<!--</div>-->
+    <!--<div id="app-2">-->
+      <!--<span v-bind:title="message">-->
+        <!--鼠标悬停几秒钟查看此处动态绑定的提示信息！-->
+      <!--</span>-->
+    <!--</div>-->
+    <!--<div id="app-3">-->
+      <!--<p v-if="seen">现在你看到我了</p>-->
+    <!--</div>-->
+    <!--<div id="app-4">-->
+        <!--<ol>-->
+            <!--<li v-for=" in todos">-->
+                <!--${ .text }-->
+            <!--</li>-->
+        <!--</ol>-->
+    <!--</div>-->
+    <!--<div id="app-5">-->
+        <!--<p>${message}</p>-->
+        <!--<button v-on:click="reverseMessage">逆转消息</button>-->
+    <!--</div>-->
+    <!--<div id="app-6">-->
+        <!--<p>${message}</p>-->
+        <!--<input v-model="message">-->
+    <!--</div>-->
+    <!--<script type="text/javascript">-->
+        <!--&lt;!&ndash;绑定vue至html对象，更新message，但这个不行&ndash;&gt;-->
+        <!--var vm = new Vue({-->
+            <!--delimiters: ['${', '}'],-->
+            <!--el: "#app",-->
+            <!--data: {-->
+                <!--message:"Hello Vue",-->
+            <!--}-->
+        <!--});-->
+        <!--&lt;!&ndash; v-bind:title= xxx 修改title，可行&ndash;&gt;-->
+        <!--var app2 = new Vue({-->
+          <!--el: '#app-2',-->
+          <!--data: {-->
+            <!--message: '页面加载于 ' + new Date().toLocaleString()-->
+          <!--}-->
+        <!--});-->
+        <!--&lt;!&ndash; v-if 修改condition判断 &ndash;&gt;-->
+        <!--var app3 = new Vue({-->
+          <!--el: '#app-3',-->
+          <!--data:{-->
+            <!--seen : true-->
+          <!--}-->
+        <!--});-->
+        <!--&lt;!&ndash; v-for 循环 &ndash;&gt;-->
+        <!--var app4 = new Vue({-->
+          <!--delimiters:["${","}"],-->
+          <!--el: '#app-4',-->
+          <!--data:{-->
+            <!--todos:[-->
+              <!--{text: "学习Javascript"},-->
+              <!--{text: "学习Vue"},-->
+              <!--{text: "整个牛项目"}-->
+            <!--]-->
+          <!--}-->
+        <!--});-->
+        <!--var app5 = new Vue({-->
+          <!--delimiters:["${","}"],-->
+          <!--el: '#app-5',-->
+          <!--data:{-->
+            <!--message: "Hello world!"-->
+          <!--},-->
+          <!--methods:{-->
+            <!--reverseMessage:function(){-->
+              <!--this.message = this.message.split('').reverse().join('')-->
+            <!--}-->
+          <!--}-->
+        <!--});-->
+        <!--var app6 = new Vue({-->
+          <!--delimiters:["${","}"],-->
+          <!--el: '#app-6',-->
+          <!--data: {-->
+            <!--message: "Input Sth. Here."-->
+          <!--}-->
+        <!--})-->
+    <!--</script>-->
+<!--</div>-->
 
 
 
@@ -180,7 +180,12 @@
 <!--</script>-->
 
 <div class="container">
-    <div class="row" style="margin-top:400px">
+    <div class="row" style="margin-top:300px">
+        <div class="col-md-3"></div>
+        <div class="col-md-6"><img src="{%static 'main/searchImg.png'%}"></div>
+        <div class="col-md-3"></div>
+    </div>>
+    <div class="row" style="margin-top:30px">
         <div class="col-md-3"></div>
         <div class="col-md-6">
             <form  action="{%url 'main:getCommodityInfo'%}" method="POST">
