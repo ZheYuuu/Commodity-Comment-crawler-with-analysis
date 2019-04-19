@@ -7,221 +7,154 @@
     <!--<script src="{% static 'main/jquery.min.js' %}"></script>-->
     <script src="{% static 'main/vue.js' %}"></script>
     <script src="{% static 'main/axios.min.js' %}"></script>
+    <script src="{% static 'main/qs.min.js' %}"></script>
     <!--<script src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>-->
 </head>
 
 
 <body>
-<!--<div id="test">-->
-    <!--<div id="app">-->
-    <!--${message}-->
-<!--</div>-->
-    <!--<div id="app-2">-->
-      <!--<span v-bind:title="message">-->
-        <!--鼠标悬停几秒钟查看此处动态绑定的提示信息！-->
-      <!--</span>-->
-    <!--</div>-->
-    <!--<div id="app-3">-->
-      <!--<p v-if="seen">现在你看到我了</p>-->
-    <!--</div>-->
-    <!--<div id="app-4">-->
-        <!--<ol>-->
-            <!--<li v-for=" in todos">-->
-                <!--${ .text }-->
-            <!--</li>-->
-        <!--</ol>-->
-    <!--</div>-->
-    <!--<div id="app-5">-->
-        <!--<p>${message}</p>-->
-        <!--<button v-on:click="reverseMessage">逆转消息</button>-->
-    <!--</div>-->
-    <!--<div id="app-6">-->
-        <!--<p>${message}</p>-->
-        <!--<input v-model="message">-->
-    <!--</div>-->
-    <!--<script type="text/javascript">-->
-        <!--&lt;!&ndash;绑定vue至html对象，更新message，但这个不行&ndash;&gt;-->
-        <!--var vm = new Vue({-->
-            <!--delimiters: ['${', '}'],-->
-            <!--el: "#app",-->
-            <!--data: {-->
-                <!--message:"Hello Vue",-->
-            <!--}-->
-        <!--});-->
-        <!--&lt;!&ndash; v-bind:title= xxx 修改title，可行&ndash;&gt;-->
-        <!--var app2 = new Vue({-->
-          <!--el: '#app-2',-->
-          <!--data: {-->
-            <!--message: '页面加载于 ' + new Date().toLocaleString()-->
-          <!--}-->
-        <!--});-->
-        <!--&lt;!&ndash; v-if 修改condition判断 &ndash;&gt;-->
-        <!--var app3 = new Vue({-->
-          <!--el: '#app-3',-->
-          <!--data:{-->
-            <!--seen : true-->
-          <!--}-->
-        <!--});-->
-        <!--&lt;!&ndash; v-for 循环 &ndash;&gt;-->
-        <!--var app4 = new Vue({-->
-          <!--delimiters:["${","}"],-->
-          <!--el: '#app-4',-->
-          <!--data:{-->
-            <!--todos:[-->
-              <!--{text: "学习Javascript"},-->
-              <!--{text: "学习Vue"},-->
-              <!--{text: "整个牛项目"}-->
-            <!--]-->
-          <!--}-->
-        <!--});-->
-        <!--var app5 = new Vue({-->
-          <!--delimiters:["${","}"],-->
-          <!--el: '#app-5',-->
-          <!--data:{-->
-            <!--message: "Hello world!"-->
-          <!--},-->
-          <!--methods:{-->
-            <!--reverseMessage:function(){-->
-              <!--this.message = this.message.split('').reverse().join('')-->
-            <!--}-->
-          <!--}-->
-        <!--});-->
-        <!--var app6 = new Vue({-->
-          <!--delimiters:["${","}"],-->
-          <!--el: '#app-6',-->
-          <!--data: {-->
-            <!--message: "Input Sth. Here."-->
-          <!--}-->
-        <!--})-->
-    <!--</script>-->
-<!--</div>-->
-
-
-
-<!--<div class="container">-->
-    <!--<div class="row" style="margin-top:400px">-->
-        <!--<div class="col-md-3"></div>-->
-        <!--<div class="col-md-6">-->
-            <!--<form action="" id="searchForm">-->
-                <!--<label for="searchKey">KeyWords</label>-->
-                <!--<input v-model="searchKey" palceholder="Input Search Key" type="string" class="form-control" id="searchKey" name="searchKey">-->
-                  <!--<label for="category">Commodity Category</label>-->
-                <!--<select v-model="selected" id="category" name="category">-->
-                    <!--<option v-for="option in options" v-bind:value="option.value">-->
-                        <!--${option.text}-->
-                    <!--</option>-->
-                <!--</select>-->
-
-              <!--<button v-on:click="startSpider"  class="btn btn-default" >Submit</button>-->
-                <!--<p>KeyWords : ${ searchKey }</p>-->
-                <!--<p>Category : ${ selected }</p>-->
-
-            <!--</form>-->
-        <!--</div>-->
-        <!--<div class="col-md-3"></div>-->
-    <!--</div>-->
-<!--</div>-->
-<!--<script type="text/javascript">-->
-    <!--var searchApp = new Vue({-->
-        <!--delimiters:['${','}'],-->
-        <!--el: "#searchForm",-->
-        <!--data:{-->
-          <!--searchKey:'',-->
-          <!--selected:'',-->
-          <!--options: [-->
-            <!--{text: 'Baby', value:'Baby'},-->
-            <!--{text: 'Book', value:'Book'},-->
-            <!--{text: 'Electronics', value:'Electronics'},-->
-            <!--{text: 'Fashion', value:'Fashion'},-->
-            <!--{text: 'Food', value:'Food'},-->
-            <!--{text: 'Health&Beauty', value:'Health&Beauty'},-->
-            <!--{text: 'Home', value:'Home'},-->
-            <!--{text: 'Industrial&Scientific', value:'Industrial&Scientific'},-->
-            <!--{text: 'Motor', value:'Motor'},-->
-            <!--{text: 'Pet', value:'Pet'},-->
-            <!--{text: 'Sports', value:'Sports'},-->
-            <!--{text: 'Other', value:'Other'},-->
-          <!--]-->
-        <!--},-->
-        <!--created:function(){-->
-          <!--this.selected = "";-->
-        <!--},-->
-        <!--methods:{-->
-          <!--startSpider:function(event){-->
-            <!--console.log(this.searchKey);-->
-            <!--console.log(this.selected);-->
-            <!--alert("spider is ready to run!");-->
-            <!--var param = new URLSearchParams();-->
-            <!--param.append('searchKey',this.searchKey);-->
-            <!--param.append('category',this.selected);-->
-
-            <!--axios.post("{% url 'main:getCommodityInfo'%}",-->
-                        <!--param,-->
-                        <!--{headers:{'X-CSRFToken': this.getCookie('csrftoken')}})-->
-                <!--.then(response=>{-->
-                  <!--this.searchKey = "!!!";-->
-                  <!--this.category = "Baby";-->
-                  <!--console.log(response.data)-->
-                  <!--alert("response has been caught");-->
-                  <!--console.log(response.data)-->
-                <!--})-->
-                <!--.catch(error=>{-->
-                  <!--console.log(error);-->
-                  <!--alert("connection has error")-->
-                <!--})-->
-          <!--},-->
-          <!--getCookie:function(name) {-->
-              <!--var value = '; ' + document.cookie-->
-              <!--var parts = value.split('; ' + name + '=')-->
-              <!--if (parts.length === 2) return parts.pop().split(';').shift()-->
-            <!--},-->
-        <!--}-->
-    <!--});-->
-<!--</script>-->
-
 <div class="container">
-    <div class="row" style="margin-top:300px">
+    <div name = "header" class="row" style="margin-top:100px">
         <div class="col-md-3"></div>
         <div class="col-md-6"><img src="{%static 'main/searchImg.png'%}"></div>
         <div class="col-md-3"></div>
     </div>>
-    <div class="row" style="margin-top:30px">
-        <div class="col-md-3"></div>
-        <div class="col-md-6">
-            <form  action="{%url 'main:getCommodityInfo'%}" method="POST">
-                {% csrf_token %}
-              <div class="form-group">
-                <label for="searchKey">KeyWords</label>
-                <input type="string" class="form-control" id="searchKey" name="searchKey">
-              </div>
-              <div class="form-group">
-                  <label for="category">Commodity Category</label>
-                <select id="category" name="category">
-                    <option value="Home">Home</option>
-                    <option value="Fashion">Fashion</option>
-                    <option value="Motor">Motor</option>
-                    <option value="Food">Food</option>
-                    <option value="Health&Beauty">Health&Beauty</option>
-                    <option value="Book">Book</option>
-                    <option value="Electronics">Electronics</option>
-                    <option value="Industrial&Scientific">Industrial&Scientific</option>
-                    <option value="Pet">Pet</option>
-                    <option value="Sports">Sports</option>
-                    <option value="Other">Other</option>
-                </select>
-              </div>
-              <div class="form-group">
-                  <label for="num">Num needed:</label>
-                  <input type="Integer" class="form-control" id="num" name="num">
-              </div>
-
-              <button type="submit" class="btn btn-default" >Submit</button>
-            </form>
+    <div id="search-and-task">
+        <div name = "searchArea"class="row" style="margin-top:30px">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div>
+                    <label for="searchKey">KeyWords</label>
+                    <input v-model="searchKey" placeholder="Input Search Key" type="string" class="form-control" id="searchKey" name="searchKey">
+                    
+                    <label for="category">Commodity Category</label>
+                    <select v-model="selected" id="category" name="category">
+                        <option v-for="option in options" v-bind:value="option.value">
+                            ${option.text}
+                        </option>
+                    </select>
+                    <br>
+                    <label for="num">Amount</label>
+                    <input v-model="num" placeholder="Input amount needed" type="string" class="form-control" id="num" name="num" >
+                    <button v-on:click="startSpider"  class="btn btn-default" type='button'>Submit</button>
+                    <p>KeyWords : ${ searchKey }</p>
+                    <p>Category : ${ selected }</p>
+                    <p>Amount: ${ num }</p>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
         </div>
-        <div class="col-md-3"></div>
+        <div name = "taskArea" class="row" style="margin-top:50px">
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <button v-on:click="getTaskStatus" class="btn btn-default">Refresh</button>
+                <table class="table table-hover">
+                    <th>searchKey</th>
+                    <th>category</th>>
+                    <th>taskId</th>
+                    <th>taskStatus</th>
+                    <th>url</th>
+                    
+                    <tr v-for="task in taskList">
+                        <td>${task.searchKey}</td>
+                        <td>${task.category}</td>
+                        <td>${task.taskId}</td>
+                        <td>${task.status}</td>
+                        <td><a target="_blank" :href="'commodityInfo/'+task.category+'/'+task.searchKey" >Info</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
     </div>
 </div>
-</body>
+<script type="text/javascript">
+    var app = new Vue({
+        delimiters:["${","}"],
+        el:"#search-and-task",
+        data:{
+            searchKey : '',
+            selected : '',
+            num : '',
+            taskList : [],
+            options : [
+                {text: 'Baby', value:'Baby'},
+                {text: 'Book', value:'Book'},
+                {text: 'Electronics', value:'Electronics'},
+                {text: 'Fashion', value:'Fashion'},
+                {text: 'Food', value:'Food'},
+                {text: 'Health&Beauty', value:'Health&Beauty'},
+                {text: 'Home', value:'Home'},
+                {text: 'Industrial&Scientific', value:'Industrial&Scientific'},
+                {text: 'Motor', value:'Motor'},
+                {text: 'Pet', value:'Pet'},
+                {text: 'Sports', value:'Sports'},
+                {text: 'Other', value:'Other'},
+            ],
+            show : false,
+        },
+        created: function(){
+            this.selected = '';
+        },
+        methods:{
+            startSpider:function(){
+                alert('Spider is ready to run!');
+                
+                let data = Qs.stringify({
+                    'searchKey' : this.searchKey,
+                    'category' : this.selected,
+                    'num' : this.num,
+                })
+                axios.post(
+                    "{%url 'main:getCommodityInfo'%}",
+                    data,
+                    {headers:{'X-CSRFToken': this.getCookie('csrftoken')}})
+                .then((response)=>{
+                    console.log(this)
+                    console.log(response.data)
+                    
+                    this.taskList.push(response.data)
+                })
+                .catch((error)=>{
+                    console.log(error);
+                })
+            },
+            getCookie:function(name) {
+                let value = '; ' + document.cookie
+                let parts = value.split('; ' + name + '=')
+                if (parts.length === 2) return parts.pop().split(';').shift()
+            },
+            getTaskStatus:function(){
+                console.log("getTaskStatus");
+                console.log(this)
+                for (let i = this.taskList.length - 1; i >= 0; i--) {
+                    task = this.taskList[i];
+                    console.log(task.taskId);
+                    data = Qs.stringify({'taskId':task.taskId});
+                    axios.post("getTaskStatus/",
+                        data,
+                        {headers:{'X-CSRFToken': this.getCookie('csrftoken')}})
+                    .then((response)=>{
+                        this.taskList[i].status = response.data.status;
+                    })
+                    .catch((error)=>{
+                        console.log(error);
+                    })
+                }
+            }
+        },
+        watch:{
+            taskList:function(){
+                if (this.taskList.length>=1)
+                    show = true;
+                }
+            }
+        
+    })
+
+</script>
+
+
 
 
 </html>

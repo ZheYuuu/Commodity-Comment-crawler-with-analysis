@@ -19,7 +19,18 @@ def index(request):
     # context = {"obj_list":obj_list}
     return render(request,'main/index.html')
 # TODO: 跳转需等待，可尝试提供一个任务状态界面。
+def getTaskStatus(request):
+    if request.method=="POST":
+        taskId = request.POST.get("taskId", None)
+        print("Enter the POST view!  ", taskId)
+        if not taskId :
+            return JsonResponse({"error": "Missing args"})
+        status = scrapyd.job_status("JDSpider", taskId)
+        return JsonResponse({'status': status})
+
 def getCommodityInfo(request):
+    print(request.body)
+    # return JsonResponse({"searchKey":'switch','taskId':1,'status':'started','category':'electronic'}, safe=False)
     if request.method=="POST":
         # get POST parameters
         searchKey = request.POST.get('searchKey')
@@ -32,30 +43,14 @@ def getCommodityInfo(request):
             'USER_AGENT': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'
         }
         # taskId to indentify each task
-        task = scrapyd.schedule('JDSpider', 'getCommodityInfo',
+        taskId = scrapyd.schedule('JDSpider', 'getCommodityInfo',
                                 settings=settings, searchKey=searchKey, category=category, num=num)
         print("It seems everything is running well? ")
-        status = {'taskId': task, 'status': 'started'}
-        return HttpResponseRedirect(reverse('main:commodityInfoPage',args=(category,searchKey)))
-
+        status = {'searchKey':searchKey,'taskId': taskId, 'status': 'started','category':category}
+        # return HttpResponseRedirect(reverse('main:commodityInfoPage',args=(category,searchKey)))
         # return HttpResponse(json.dumps(status), content_type="application/json,charset=utf-8")
-        # return JsonResponse(status,safe=False)
-    elif request.method=="GET":
-        taskId = request.GET.get("taskId",None)
-        uniqueId = request.GET.get("uniqueId",None)
-        print("Enter the GET view!  ", taskId, uniqueId)
-        if not taskId and not uniqueId:
-            return JsonResponse({"error":"Missing args"})
+        return JsonResponse(status,safe=False)
 
-        status = scrapyd.job_status("JDSpider",taskId)
-        if status == "finished":
-            try:
-                item = JDCommodity.Objects.get(uniqueId = uniqueId)
-                return JsonResponse({"data":item.to_dict})
-            except Exception as e:
-                return JsonResponse({"error":str(e)})
-        else:
-            return JsonResponse({'status': status})
 
 def getCommodityCommentSummary(request):
     if request.method=="POST":

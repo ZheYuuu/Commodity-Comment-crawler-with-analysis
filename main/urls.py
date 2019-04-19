@@ -21,8 +21,10 @@ urlpatterns = [
     path('getCommodityInfo/',views.getCommodityInfo, name = 'getCommodityInfo'),
     path('getCommodityCommentDetail/',views.getCommodityCommentDetail, name="getCommodityCommentDetail"),
     path('getCommodityCommentSummary/',views.getCommodityCommentSummary, name="getCommodityCommentSummary"),
+    path('getTaskStatus/',views.getTaskStatus, name = 'getTaskStatus'),
     path('commodityInfo/<str:category>/<str:searchKey>/',views.commodityInfoPage, name = 'commodityInfoPage'),
     path('commentsInfo/<str:commodityId>/',views.commodityCommentPage,name = 'commodityCommentPage'),
     path('commentSummary/<str:commodityId>/',views.commodityCommentSummaryPage,name = 'commodityCommentSummaryPage'),
+
     # path(r'index/$',views.getCommodityInfo, name = 'getCommodityInfo'),
 ]
