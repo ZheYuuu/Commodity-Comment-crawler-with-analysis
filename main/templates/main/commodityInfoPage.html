@@ -39,7 +39,7 @@
             <td>{{commodity.price}}</td>
             <td>{{commodity.category}}</td>
             <td>{{commodity.brand}}</td>
-            <td><a href="{{commodity.url}}">{{commodity.url}}</a></td>
+            <td><a target="_blank" href="{{commodity.url}}">{{commodity.url}}</a></td>
             <td>
                 <form action="{% url 'main:getCommodityCommentSummary'%}" method="POST">
                     {% csrf_token %}
@@ -53,6 +53,13 @@
                     <input class="hidden" value="{{commodity.uniqueId}}" name="uniqueId">
                     <input class="hidden" value="{{commodity.url}}" name="url">
                     <button type="submit" class="btn btn-default" >Comment Detail</button>
+                </form>
+            </td>
+            <td>
+                <form action="{% url 'analysis:analysis'%}" method="POST">
+                    {% csrf_token %}
+                    <input class="hidden" value="{{commodity.uniqueId}}" name="uniqueId">
+                    <button type="submit" class="btn btn-default">Analysis</button>
                 </form>
             </td>
 

@@ -29,8 +29,6 @@ def getTaskStatus(request):
         return JsonResponse({'status': status})
 
 def getCommodityInfo(request):
-    print(request.body)
-    # return JsonResponse({"searchKey":'switch','taskId':1,'status':'started','category':'electronic'}, safe=False)
     if request.method=="POST":
         # get POST parameters
         searchKey = request.POST.get('searchKey')
@@ -45,11 +43,8 @@ def getCommodityInfo(request):
         # taskId to indentify each task
         taskId = scrapyd.schedule('JDSpider', 'getCommodityInfo',
                                 settings=settings, searchKey=searchKey, category=category, num=num)
-        print("It seems everything is running well? ")
-        status = {'searchKey':searchKey,'taskId': taskId, 'status': 'started','category':category}
-        # return HttpResponseRedirect(reverse('main:commodityInfoPage',args=(category,searchKey)))
-        # return HttpResponse(json.dumps(status), content_type="application/json,charset=utf-8")
-        return JsonResponse(status,safe=False)
+        status = {'searchKey': searchKey, 'taskId': taskId, 'status': 'started', 'category': category}
+        return JsonResponse(status, safe=False)
 
 
 def getCommodityCommentSummary(request):
@@ -66,10 +61,8 @@ def getCommodityCommentDetail(request):
         return HttpResponseRedirect(reverse('main:commodityCommentPage',args=(uniqueId,)))
 
 def commodityInfoPage(request,searchKey,category):
-    # 集成scrapy
     print("enter commodityInfoPage")
     commodityList = JDCommodity.objects.filter(searchKey=searchKey).all()
-
     paginator = Paginator(commodityList, 20)
     # page = request.POST.get('page')
     # Make sure page request is an int. If not, deliver first page.
@@ -82,7 +75,6 @@ def commodityInfoPage(request,searchKey,category):
         item = paginator.page(page)
     except (EmptyPage, InvalidPage):
         item = paginator.page(paginator.num_pages)
-
     context = {'commodityList': item}
     return render(request, 'main/commodityInfoPage.html', context)
 

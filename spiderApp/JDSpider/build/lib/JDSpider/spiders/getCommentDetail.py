@@ -15,27 +15,41 @@ class GetCommentDetail(scrapy.Spider):
     name = "getCommentDetail"
     def __init__(self,*args,**kwargs):
         self.uniqueId = kwargs.get("uniqueId")
-        self.bashUrl = 'http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&' \
-                        'productId=%s&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page='%self.uniqueId
-        self.start_urls = [self.bashUrl+'1']
+        self.rootUrl = "https://item.jd.com/" + self.uniqueId + ".html"
+        self.start_urls = [self.rootUrl]
+        self.headers = {
+            "Referer": self.rootUrl,
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'
+        }
 
-    def start_requests(self):
-        url = self.bashUrl + '1'
-        yield Request(url,callback=self.parse)
+    # def start_requests(self):
+    #     self.headers = {
+    #         "Referer": self.rootUrl,
+    #         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'
+    #     }
+    #     yield Request(self.start_urls[0], callback=self.parse)
 
     def parse(self, response):
         maxNum = 30
-        j = self.transferToJson(response)
-        hotComments = j['hotCommentTagStatistics']
-        # storing hot comments remains unfinished
+        # yield Request('http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv74&' \
+        #               'productId=%s&score=0&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=0'%(self.uniqueId), headers = self.headers, callback=self.getCommentDetail)
 
-        for i in range(maxNum):
-            url = self.bashUrl + str(i)
-            yield Request(url, callback=self.getCommentDetail)
+        for j in range(1,4):
+            bashUrl = 'http://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv4985&' \
+                       'productId=%s&score=%s&sortType=5&pageSize=10&isShadowSku=0&fold=1&page=' %(self.uniqueId, str(j))
+            for i in range(maxNum):
+                url = bashUrl + str(i)
+
+                yield Request(url, headers = self.headers, callback=self.getCommentDetail)
 
     def getCommentDetail(self,response):
-        j = self.transferToJson(response)
+        try:
+            j = self.transferToJson(response)
+        except:
+            print("Error!!! This url returns: ",response.text)
+            return
         comments = j['comments']
+        print(comments)
         for comment in comments:
             item = JDCommentDetailItem()
             item["commodityId"] = self.uniqueId
@@ -52,12 +66,11 @@ class GetCommentDetail(scrapy.Spider):
             yield item
 
     def transferToJson(self,response):
-        fetch_pattern = 'fetchJSON_comment\w+\((.*?)\);'
-        pattern = re.compile(fetch_pattern)
         try:
-            t = re.search(pattern, response.text).group(1)
+            res = re.match("^fetchJSON_comment(\w+)\((.*?)\);", response.text).groups()[1]
+            return json.loads(res)
         except:
-            return Exception
-        j = json.loads(t)
-        return j
+            print("response text:", response.text)
+            raise Exception("Fail to transfer response.text to json in commentSummary!")
+
 

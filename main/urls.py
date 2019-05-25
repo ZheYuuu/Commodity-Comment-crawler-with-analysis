@@ -16,7 +16,6 @@ from . import views
 app_name = 'main'
 
 urlpatterns = [
-    # eg:127.0.0.1:8000/main/
     path('', views.index, name = 'index'),
     path('getCommodityInfo/',views.getCommodityInfo, name = 'getCommodityInfo'),
     path('getCommodityCommentDetail/',views.getCommodityCommentDetail, name="getCommodityCommentDetail"),
@@ -25,6 +24,4 @@ urlpatterns = [
     path('commodityInfo/<str:category>/<str:searchKey>/',views.commodityInfoPage, name = 'commodityInfoPage'),
     path('commentsInfo/<str:commodityId>/',views.commodityCommentPage,name = 'commodityCommentPage'),
     path('commentSummary/<str:commodityId>/',views.commodityCommentSummaryPage,name = 'commodityCommentSummaryPage'),
-
-    # path(r'index/$',views.getCommodityInfo, name = 'getCommodityInfo'),
 ]

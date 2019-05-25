@@ -1,0 +1,48 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Analysis</title>
+    <link href="{% static 'main/bootstrap.min.css' %}" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>好评分析结果</h2>
+            <table class="table table-hover">
+                <th>潜在主题</th>
+                <tr>
+                    <td>{{positive.topics}}</td>
+                </tr>
+                <th>关键词</th>
+                <tr>
+                    <td>{{positive.keywords}}</td>
+                </tr>
+            </table>
+        <br>
+        <h2>差评分析结果</h2>
+            <table class="table table-hover">
+                <th>潜在主题</th>
+                <tr>
+                    <td>{{negative.topics}}</td>
+
+                </tr>
+                <th>关键词</th>
+                <tr>
+                    <td>{{negative.keywords}}</td>
+                </tr>
+            </table>
+        <br>
+        <h2>中评分析结果</h2>
+            <table class="table table-hover">
+                <th>潜在主题</th>
+                <tr>
+                    <td>{{general.topics}}</td>
+                </tr>
+                <th>关键词</th>
+                <tr>
+                    <td>{{general.keywords}}</td>
+                </tr>
+            </table>
+    </div>
+</body>
+</html>

@@ -10,5 +10,7 @@ from . import views
 app_name = 'analysis'
 
 urlpatterns = [
-    path("emotionalTendencyAnalysis/<str:commodityId>/",views.emotionalTendencyAnalysis,name="emotionalTendencyAnalysis"),
+    path("",views.analysis,name="analysis"),
+    path("commentProcess/",views.commentProcess, name = "commentProcess"),
+
 ]

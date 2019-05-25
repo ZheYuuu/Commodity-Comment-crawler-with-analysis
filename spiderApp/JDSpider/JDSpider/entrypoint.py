@@ -7,6 +7,6 @@
 
 from scrapy.cmdline import execute
 # execute(['scrapy','crawl','getCommodityInfo','-a','searchKey=手机','-a','category=electronics','-a','num=60'])
-# execute(['scrapy','crawl','getCommentDetail','-a','uniqueId=7081550'])
-execute(['scrapy','crawl','getCommentSummary','-a','uniqueId=6157652'])
+execute(['scrapy','crawl','getCommentDetail','-a','uniqueId=43172916757'])
+# execute(['scrapy','crawl','getCommentSummary','-a','uniqueId=6157652'])
 #
